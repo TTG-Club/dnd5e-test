@@ -1,0 +1,40 @@
+{
+  "id": "divine-smite-phb",
+  "name": "Божественная кара",
+  "nameEn": "Divine Smite",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Цель получает дополнительно от этой атаки 2к8 урона излучением. Урон увеличивается на 1к8, если цель является исчадием или нежитью.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки заклинания выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "paladin"
+  ],
+  "damageParts": [
+    {
+      "formula": "2к8@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

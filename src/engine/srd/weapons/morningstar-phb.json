@@ -1,0 +1,29 @@
+{
+  "id": "morningstar-phb",
+  "name": "Моргенштерн",
+  "nameEn": "Morningstar",
+  "description": "Моргенштерн — воинское рукопашное оружие без особых свойств.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "15 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "morningstar",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [],
+  "reach": 5,
+  "mastery": "sap",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

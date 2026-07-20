@@ -1,0 +1,44 @@
+{
+  "id": "chromatic-orb-phb",
+  "name": "Цветной шарик",
+  "nameEn": "Chromatic Orb",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "алмаз стоимостью 50+ зм"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы кидаете сферу энергии в цель в пределах дистанции. Выберите один из типов: кислотный, холодный, огненный, электрический, ядовитый или звуковой для создаваемой вами сферы, затем совершите дальнобойную атаку заклинанием против цели. При попадании цель получает 3к8 урона выбранного типа.\nЕсли вы выбросили одинаковое число на 2 или более к8, то сфера перескакивает на другую цель по вашему выбору в пределах 30 футов от исходной цели. Выполните атаку против новой цели и бросьте урон заново. Сфера не может перескочить ещё раз, если вы не наложили это заклинание, используя ячейку заклинания 2 уровня или выше.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 1. Сфера может перескочить максимальное количество раз, равное уровню использованной ячейки, и каждое существо может быть целью только 1 раз при каждом наложении этого заклинания.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "3к8",
+      "type": "choice",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

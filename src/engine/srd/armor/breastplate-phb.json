@@ -1,0 +1,22 @@
+{
+  "id": "breastplate-phb",
+  "name": "Нагрудник",
+  "nameEn": "Breastplate",
+  "description": "Этот доспех состоит из подогнанной металлической пластины, закрывающей грудь, и гибких кожаных деталей, защищающих остальное тело.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 20,
+  "cost": "400 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "breastplate",
+  "baseArmorAC": 14,
+  "maxDexBonus": 2,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "medium",
+  "typeLabel": "Снаряжение"
+}

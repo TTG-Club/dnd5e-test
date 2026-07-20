@@ -1,0 +1,153 @@
+{
+  "id": "minotaur-of-baphomet-mm",
+  "name": "Минотавр Бафомета",
+  "nameEn": "Minotaur of Baphomet",
+  "type": "creature",
+  "isSRD": true,
+  "isReadOnly": true,
+  "header": "Большое чудовище, хаотично-злое",
+  "description": "Минотавр Бафомета — существо из D&D 2024 года, лучше отражающее связь с демоническим лордом Бафометом.",
+  "token": {
+    "frameUrl": "assets/token-frames/0.png",
+    "showName": true,
+    "disposition": "hostile",
+    "scale": 2,
+    "vision": {
+      "range": 0,
+      "darkvision": 60,
+      "angle": 360,
+      "enabled": true
+    }
+  },
+  "system": {
+    "size": "large",
+    "type": "monstrosity",
+    "subtype": "",
+    "alignment": "chaotic evil",
+    "armorClass": {
+      "value": 14,
+      "calculation": "natural",
+      "formula": "",
+      "flat": 14
+    },
+    "hitPoints": {
+      "average": 85,
+      "formula": "10к10 + 30",
+      "text": "",
+      "current": 85,
+      "max": 85,
+      "hitDie": 10,
+      "hitDiceCount": 10,
+      "bonus": 30
+    },
+    "movement": {
+      "walk": 40,
+      "swim": 0,
+      "fly": 0,
+      "climb": 0,
+      "burrow": 0,
+      "hover": false,
+      "units": "ft"
+    },
+    "abilities": {
+      "strength": 18,
+      "dexterity": 11,
+      "constitution": 16,
+      "intelligence": 6,
+      "wisdom": 16,
+      "charisma": 9
+    },
+    "challengeRating": "3",
+    "proficiencyBonus": 2,
+    "savingThrows": [
+      "strength",
+      "constitution",
+      "wisdom"
+    ],
+    "skills": {
+      "perception": "proficient",
+      "survival": "proficient"
+    },
+    "defenses": {
+      "vulnerabilities": [],
+      "resistances": [],
+      "immunities": [],
+      "conditionImmunities": []
+    },
+    "senses": "тёмное зрение 60 фт., пассивная Внимательность 17",
+    "languages": [
+      "abyssal"
+    ],
+    "environments": [
+      "underdark"
+    ],
+    "customEnvironments": "Лабиринты Бафомета",
+    "traits": [],
+    "actions": [
+      {
+        "name": "Глефа Бездны",
+        "nameEn": "Abyssal Glaive",
+        "description": [
+          "Рукопашная атака оружием: +6 к попаданию, досягаемость 10 фт., одна цель. Попадание: 10 (1к12 + 4) рубящего урона плюс 10 (3к6) некротического урона."
+        ],
+        "attackBonus": 6,
+        "damageParts": [
+          {
+            "formula": "1к12 + 4",
+            "type": "slashing"
+          },
+          {
+            "formula": "3к6",
+            "type": "necrotic"
+          }
+        ],
+        "reach": 10,
+        "rangeType": "melee",
+        "distanceUnit": "ft"
+      },
+      {
+        "name": "Бодание (перезарядка 5–6)",
+        "nameEn": "Gore (Recharge 5–6)",
+        "description": [
+          "Рукопашная атака оружием: +6 к попаданию, досягаемость 5 фт., одна цель. Попадание: 18 (4к6 + 4) колющего урона. Если цель — существо размера Большой или меньше, и минотавр переместился как минимум на 10 футов прямо к ней непосредственно перед ударом, цель получает дополнительные 10 (3к6) колющего урона и сбивается с ног."
+        ],
+        "attackBonus": 6,
+        "damageParts": [
+          {
+            "formula": "4к6 + 4",
+            "type": "piercing"
+          }
+        ],
+        "reach": 5,
+        "rangeType": "melee",
+        "distanceUnit": "ft",
+        "activeEffects": [
+          {
+            "id": "prone",
+            "name": "Сбитый с ног",
+            "description": "Существо сбито с ног.",
+            "icon": "tabler:walk",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": [
+              "attack.disadvantage"
+            ]
+          }
+        ]
+      }
+    ],
+    "bonusActions": [],
+    "reactions": [],
+    "legendary": {
+      "count": 0,
+      "actions": []
+    }
+  },
+  "sourceKey": "mm"
+}

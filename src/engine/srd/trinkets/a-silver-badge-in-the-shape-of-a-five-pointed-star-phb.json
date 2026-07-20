@@ -1,0 +1,23 @@
+{
+  "id": "a-silver-badge-in-the-shape-of-a-five-pointed-star-phb",
+  "name": "Серебряный значок в форме пятиконечной звезды",
+  "nameEn": "A silver badge in the shape of a five-pointed star",
+  "description": "Начищенный серебряный значок в форме пятиконечной звезды, возможно, принадлежавший офицеру стражи или рыцарю.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

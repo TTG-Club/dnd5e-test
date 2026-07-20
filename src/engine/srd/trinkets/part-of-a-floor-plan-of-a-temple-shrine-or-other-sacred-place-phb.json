@@ -1,0 +1,23 @@
+{
+  "id": "part-of-a-floor-plan-of-a-temple-shrine-or-other-sacred-place-phb",
+  "name": "Часть плана пола храма, святилища или другого священного места",
+  "nameEn": "Part of a floor plan of a temple, shrine, or other sacred place",
+  "description": "Обрывок чертежа, на котором изображена часть поэтажного плана какого-то храма или святилища. Остальные части утеряны.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

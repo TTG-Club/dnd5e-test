@@ -1,0 +1,41 @@
+{
+  "id": "heal-phb",
+  "name": "Исцеление",
+  "nameEn": "Heal",
+  "level": 6,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Выберите существо, которое вы видите в пределах дистанции. Положительная энергия омывает цель, восстанавливая 70 хитов. Это заклинание также снимает состояния ослеплённый, оглохший и отравленный с цели.",
+  "higherLevelDescription": "Лечение увеличивается на 10 за каждый уровень ячейки выше 6.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "70@heal",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "10"
+  }
+}

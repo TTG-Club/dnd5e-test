@@ -1,0 +1,43 @@
+{
+  "id": "incendiary-cloud-phb",
+  "name": "Воспламеняющаяся туча",
+  "nameEn": "Incendiary Cloud",
+  "level": 8,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вихревое облако искр и дыма заполняет сферу радиусом 20 фт. с центром в точке в пределах дистанции. Область тучи является сильно заслонённой местностью. Оно существует на протяжении длительности заклинания или пока сильный ветер (например, вызванный заклинанием Порыв ветра [Gust of Wind]) не рассеет его.\nКогда туча появляется, каждое существо в её пределах должно совершить спасбросок Ловкости, получая 10к8 урона огнём при провале или половину этого урона при успехе. Существо также должно совершить этот спасбросок, когда сфера перемещается в его пространство, а также когда оно входит в сферу или заканчивает там свой ход. Существо совершает этот спасбросок только 1 раз за ход.\nТуча перемещается на 10 фт. от вас в выбранном вами направлении в начале каждого вашего хода.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 20,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "10к8@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

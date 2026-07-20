@@ -1,0 +1,23 @@
+{
+  "id": "a-bundle-of-rolled-up-flags-bearing-the-symbols-of-an-unknown-legion-phb",
+  "name": "Связка свёрнутых флагов с символами неизвестного легиона",
+  "nameEn": "A bundle of rolled-up flags bearing the symbols of an unknown legion",
+  "description": "Несколько маленьких свёрнутых флагов, каждый с уникальным символом. Ни один из них не принадлежит ни одному известному легиону.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

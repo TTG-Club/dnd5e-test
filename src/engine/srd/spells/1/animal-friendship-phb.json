@@ -1,0 +1,53 @@
+{
+  "id": "animal-friendship-phb",
+  "name": "Дружба с животными",
+  "nameEn": "Animal Friendship",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек пищи"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 24,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Целью заклинания становится существо с типом зверь, которое вы видите в пределах дистанции. Цель должна преуспеть в спасброске Мудрости, иначе она будет находиться под действием состояния очарованный на продолжительность действия заклинания. Если вы или один из ваших союзников наносит урон цели, то заклинание заканчивается.",
+  "higherLevelDescription": "Вы можете выбрать одну дополнительную цель (зверя) за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid",
+    "ranger"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "animal-friendship-charmed",
+      "name": "Очарованный",
+      "description": "Состояние: Очарованный; на 24 часа.",
+      "icon": "tabler:heart",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "charmed",
+      "duration": {
+        "type": "hours",
+        "value": 24
+      },
+      "changes": [],
+      "flags": []
+    }
+  ]
+}

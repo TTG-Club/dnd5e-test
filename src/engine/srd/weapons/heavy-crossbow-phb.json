@@ -1,0 +1,38 @@
+{
+  "id": "heavy-crossbow-phb",
+  "name": "Тяжёлый арбалет",
+  "nameEn": "Heavy crossbow",
+  "description": "Тяжёлый арбалет — воинское тяжёлое дальнобойное оружие. Двуручное, с перезарядкой.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 18,
+  "cost": "50 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "heavy-crossbow",
+  "weaponCategory": "martial",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к10",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition",
+    "heavy",
+    "loading",
+    "two-handed"
+  ],
+  "ammunitionType": "bolts",
+  "range": {
+    "normal": 100,
+    "long": 400
+  },
+  "mastery": "push",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

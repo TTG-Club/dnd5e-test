@@ -1,0 +1,36 @@
+{
+  "id": "shortbow-phb",
+  "name": "Короткий лук",
+  "nameEn": "Shortbow",
+  "description": "Короткий лук — простое оружие дальнего боя. Требует боеприпасы (стрелы) и использование двух рук.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "25 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "shortbow",
+  "weaponCategory": "simple",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition",
+    "two-handed"
+  ],
+  "ammunitionType": "arrows",
+  "range": {
+    "normal": 80,
+    "long": 320
+  },
+  "mastery": "vex",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "dispel-magic-phb",
+  "name": "Рассеивание магии",
+  "nameEn": "Dispel Magic",
+  "level": 3,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Выберите одно существо, объект или магический эффект в пределах дистанции. Любое текущее заклинание 3 уровня или ниже на цели прекращается. Для каждого текущего заклинания 4 уровня или выше на цели совершите проверку характеристики, используя вашу заклинательную характеристику (Сл. 10 + уровень этого заклинания). При успешной проверке заклинание прекращается.",
+  "higherLevelDescription": "Вы автоматически прекращаете действие заклинания на цели, если уровень заклинания равен или меньше уровня ячейки заклинания, которую вы используете.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "paladin",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

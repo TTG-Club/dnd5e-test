@@ -1,0 +1,23 @@
+{
+  "id": "a-crystal-knob-from-a-cane-phb",
+  "name": "Хрустальный набалдашник от трости",
+  "nameEn": "A crystal knob from a cane",
+  "description": "Изящный хрустальный набалдашник, некогда венчавший элегантную трость. Огранка кристалла говорит о мастерстве дварфов.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "detect-evil-and-good-phb",
+  "name": "Обнаружение добра и зла",
+  "nameEn": "Detect Evil and Good",
+  "level": 1,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "На время действия заклинания вы ощущаете местоположение любой аберрации, небожителя, элементаля, феи, исчадия или нежити в радиусе 30 фт. от себя. Вы также ощущаете, действует ли в этом месте заклинание Святилище [Hallow], и если да — то где именно.\nЗаклинание блокируется 1 футом камня, земли или дерева; 1 дюймом металла или тонким листом свинца.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,30 @@
+{
+  "id": "divine-word-phb",
+  "name": "Божественное слово",
+  "nameEn": "Divine Word",
+  "level": 7,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "charisma",
+  "description": "Вы произносите слово, наполненное силой Верхних планов. Каждое выбранное вами существо в пределах дистанции совершает спасбросок Харизмы. При провале цель, имеющая 50 или меньше хитов, подвергается воздействию в зависимости от её текущих хитов, как указано в таблице «Эффекты божественного слова». Независимо от количества хитов, небожитель, элементаль, фея или исчадие, провалившее спасбросок, возвращается на свой родной план (если оно уже не там) и не может вернуться на текущий план в течение 24 часов любыми способами, кроме Желание [Wish].",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell"
+}

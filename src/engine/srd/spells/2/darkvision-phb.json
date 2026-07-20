@@ -1,0 +1,35 @@
+{
+  "id": "darkvision-phb",
+  "name": "Тёмное зрение",
+  "nameEn": "Darkvision",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "сушёная морковь"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "На время действия заклинания согласное существо, которого вы коснулись, получает тёмное зрение в досягаемости 150 футов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

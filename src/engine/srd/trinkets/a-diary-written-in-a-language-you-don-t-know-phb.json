@@ -1,0 +1,23 @@
+{
+  "id": "a-diary-written-in-a-language-you-don-t-know-phb",
+  "name": "Дневник, написанный на неизвестном языке",
+  "nameEn": "A diary written in a language you don't know",
+  "description": "Потрёпанный дневник, заполненный аккуратным почерком на языке, который вы не можете прочитать.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

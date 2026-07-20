@@ -1,0 +1,23 @@
+{
+  "id": "a-glass-orb-with-a-swirling-wisp-of-smoke-inside-phb",
+  "name": "Стеклянный шарик с вращающимся внутри клубком дыма",
+  "nameEn": "A glass orb with a swirling wisp of smoke inside",
+  "description": "Прозрачный стеклянный шарик, внутри которого лениво вращается клуб разноцветного дыма. Кажется, дым никогда не рассеивается.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

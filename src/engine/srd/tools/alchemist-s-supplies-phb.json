@@ -1,0 +1,20 @@
+{
+  "id": "alchemist-s-supplies-phb",
+  "name": "Инструменты алхимика",
+  "nameEn": "Alchemist's Supplies",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "alchemists-supplies",
+  "rarity": "common",
+  "weight": 8,
+  "cost": {
+    "value": 50,
+    "currency": "gp"
+  },
+  "description": "Эти инструменты позволяют создавать алхимические смеси и вещества.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

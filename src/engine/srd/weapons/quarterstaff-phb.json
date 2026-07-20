@@ -1,0 +1,32 @@
+{
+  "id": "quarterstaff-phb",
+  "name": "Боевой посох",
+  "nameEn": "Quarterstaff",
+  "description": "Боевой посох — простое универсальное рукопашное оружие. Может использоваться одной или двумя руками. Также служит магической фокусировкой.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "2 см",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "quarterstaff",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "bludgeoning",
+      "versatileFormula": "1к8"
+    }
+  ],
+  "weaponProperties": [
+    "versatile"
+  ],
+  "reach": 5,
+  "mastery": "topple",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

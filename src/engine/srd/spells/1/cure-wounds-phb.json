@@ -1,0 +1,44 @@
+{
+  "id": "cure-wounds-phb",
+  "name": "Лечение ран",
+  "nameEn": "Cure Wounds",
+  "level": 1,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Существо, которого вы касаетесь, восстанавливает количество хитов, равное 2к8 + ваш модификатор заклинательной характеристики.",
+  "higherLevelDescription": "Лечение увеличивается на 2к8 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к8@heal+@mod.spell",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "2к8"
+  }
+}

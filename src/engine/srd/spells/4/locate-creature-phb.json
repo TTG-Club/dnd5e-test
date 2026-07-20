@@ -1,0 +1,36 @@
+{
+  "id": "locate-creature-phb",
+  "name": "Поиск существа",
+  "nameEn": "Locate Creature",
+  "level": 4,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "мех ищейки"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Опишите или назовите существо, которое вам знакомо. Вы чувствуете направление к местоположению существа, если оно находится в пределах 1000 футов от вас. Если существо движется, то вы знаете направление его движения.\nЗаклинание может обнаружить конкретное известное вам существо или ближайшее существо определенного вида (например, человека или единорога), если вы видели такое существо вблизи (на расстоянии не более 30 футов) хотя бы 1 раз. Если описанное или названное вами существо находится в другой форме, например, под воздействием заклинания Окаменение [Flesh to Stone] или Полиморф [Polymorph], то это заклинание не может обнаружить существо.\nЭто заклинание не может обнаружить существо, если слой свинца любой толщины блокирует прямой путь между вами и существом.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger",
+    "wizard"
+  ],
+  "type": "spell"
+}

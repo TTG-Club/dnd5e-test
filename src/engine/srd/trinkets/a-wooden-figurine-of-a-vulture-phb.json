@@ -1,0 +1,23 @@
+{
+  "id": "a-wooden-figurine-of-a-vulture-phb",
+  "name": "Деревянная фигурка грифа",
+  "nameEn": "A wooden figurine of a vulture",
+  "description": "Миниатюрная деревянная фигурка грифа, вырезанная с детальной проработкой перьев и когтей.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

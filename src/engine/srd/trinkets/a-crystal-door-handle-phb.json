@@ -1,0 +1,23 @@
+{
+  "id": "a-crystal-door-handle-phb",
+  "name": "Кристаллическая ручка для двери",
+  "nameEn": "A crystal door handle",
+  "description": "Круглая дверная ручка из чистого кристалла. Она красиво преломляет свет и холодна на ощупь.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

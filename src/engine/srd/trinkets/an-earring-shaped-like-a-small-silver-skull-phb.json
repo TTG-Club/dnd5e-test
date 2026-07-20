@@ -1,0 +1,23 @@
+{
+  "id": "an-earring-shaped-like-a-small-silver-skull-phb",
+  "name": "Серёжка в форме маленького серебряного черепа",
+  "nameEn": "An earring shaped like a small silver skull",
+  "description": "Крошечная серёжка в форме черепа, выполненная из серебра с высокой детализацией.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "greatclub-phb",
+  "name": "Палица",
+  "nameEn": "Greatclub",
+  "description": "Палица — простое двуручное рукопашное оружие. Требует использования обеих рук для совершения атаки.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 10,
+  "cost": "2 см",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "greatclub",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "bludgeoning"
+    }
+  ],
+  "weaponProperties": [
+    "two-handed"
+  ],
+  "reach": 5,
+  "mastery": "push",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

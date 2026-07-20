@@ -1,0 +1,61 @@
+{
+  "id": "stinking-cloud-phb",
+  "name": "Зловонное облако",
+  "nameEn": "Stinking Cloud",
+  "level": 3,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "тухлое яйцо"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Вы создаёте 20-футовую сферу жёлтого, тошнотворного газа с центром в точке в пределах дистанции. Облако является сильно заслонённой местностью. Оно остаётся в воздухе на всё время действия или до тех пор, пока сильный ветер (например, созданный заклинанием Порыв ветра [Gust of Wind]) не разгонит его.\nКаждое существо, которое начинает свой ход в этой сфере, должно преуспеть в спасброске Телосложения или получить состояние отравленный до конца текущего хода. Пока существо отравлено таким образом, оно не может совершать действие или бонусное действие.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "stinking-cloud-poisoned",
+      "name": "Отравленный",
+      "description": "Помеха на все атаки; Помеха на ВСЕ проверки характеристик; Состояние: Отравленный; на 1 раунд.",
+      "icon": "tabler:droplet",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "poisoned",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "abilityCheck.disadvantage"
+      ]
+    }
+  ],
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 20,
+    "unit": "ft"
+  }
+}

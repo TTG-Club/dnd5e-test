@@ -1,0 +1,23 @@
+{
+  "id": "a-wooden-figurine-carved-in-your-likeness-phb",
+  "name": "Деревянная фигурка, вырезанная по вашему подобию",
+  "nameEn": "A wooden figurine carved in your likeness",
+  "description": "Маленькая деревянная фигурка, вырезанная с удивительным мастерством. Она изображает кого-то, похожего на вас.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

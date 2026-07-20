@@ -1,0 +1,30 @@
+{
+  "id": "aura-of-life-phb",
+  "name": "Аура жизни",
+  "nameEn": "Aura of Life",
+  "level": 4,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "От вас исходит аура эмананацией на 30 футов во время длительности заклинания. Пока вы и ваши союзники находитесь в пределах ауры, то получаете к сопротивление урону некротической энергией и максимальное количество ваших хитов не может быть уменьшено. Если союзник с 0 хитами начинает свой ход в пределах ауры, то он восстанавливает 1 хит.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "paladin"
+  ],
+  "type": "spell"
+}

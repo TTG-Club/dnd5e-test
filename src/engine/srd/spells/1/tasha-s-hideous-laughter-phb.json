@@ -1,0 +1,84 @@
+{
+  "id": "tasha-s-hideous-laughter-phb",
+  "name": "Жуткий смех Таши",
+  "nameEn": "Tasha's Hideous Laughter",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "пирог и перо"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Одно существо на ваш выбор, которое вы видите в пределах дистанции, должно совершить спасбросок Мудрости. В случае провала оно получает состояния лежащий ничком и недееспособный на всё время действия заклинания. В этот период оно безудержно смеётся, если способно смеяться, и не может избавиться от состояния лежащий ничком.\nВ конце каждого своего хода и каждый раз, когда оно получает урон, цель совершает новый спасбросок Мудрости. Цель получает преимущество на этот спасбросок, если он вызван получением урона. В случае успешного спасброска заклинание заканчивается.",
+  "higherLevelDescription": "Вы можете выбрать оно дополнительное существо за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "tasha-s-hideous-laughter-prone",
+      "name": "Лежащий ничком",
+      "description": "Помеха на все атаки; Состояние: Лежащий ничком; повторный спасбросок (Мудрость, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:download",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "prone",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage"
+      ],
+      "recurringSave": {
+        "ability": "wisdom",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    },
+    {
+      "id": "tasha-s-hideous-laughter-incapacitated",
+      "name": "Недееспособный",
+      "description": "Недееспособен (Не может совершать действия/реакции); Помеха на бросок инициативы; Состояние: Недееспособный; повторный спасбросок (Мудрость, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:ban",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "incapacitated",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "initiative.disadvantage"
+      ],
+      "recurringSave": {
+        "ability": "wisdom",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ],
+  "classKeys": [
+    "bard",
+    "wizard"
+  ]
+}

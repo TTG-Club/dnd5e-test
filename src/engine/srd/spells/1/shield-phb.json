@@ -1,0 +1,59 @@
+{
+  "id": "shield-phb",
+  "name": "Щит",
+  "nameEn": "Shield",
+  "level": 1,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "reaction",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "special",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Незаметный барьер из магической силы защищает вас. До начала вашего следующего хода у вас есть бонус +5 к КД, в том числе против атаки, которая спровоцировала эту реакцию, и вы не получаете урон от заклинания Волшебная стрела [Magic Missile].",
+  "activeEffects": [
+    {
+      "id": "shield-ac-bonus",
+      "name": "Щит (+5 КД)",
+      "description": "Класс доспеха (AC) +5; на 1 раунд.",
+      "icon": "tabler:shield",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 1,
+        "remaining": 1
+      },
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "5",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "self"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

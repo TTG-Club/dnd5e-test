@@ -1,0 +1,22 @@
+{
+  "id": "half-plate-phb",
+  "name": "Полулатный доспех",
+  "nameEn": "Half Plate",
+  "description": "Полулатный доспех состоит из формованных металлических пластин, закрывающих большую часть тела носителя. Не включает защиту ног, кроме простых поножей, крепящихся кожаными ремнями. Создаёт помеху при использовании Скрытности.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 40,
+  "cost": "750 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "half-plate",
+  "baseArmorAC": 15,
+  "maxDexBonus": 2,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "medium",
+  "typeLabel": "Снаряжение"
+}

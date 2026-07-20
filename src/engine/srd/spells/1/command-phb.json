@@ -1,0 +1,33 @@
+{
+  "id": "command-phb",
+  "name": "Приказ",
+  "nameEn": "Command",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы произносите команду из одного слова существу, которое видите в пределах дистанции. Цель должна преуспеть в спасброске Мудрости, иначе в свой следующий ход будет исполнять эту команду. Выберите команду из этих опций:",
+  "higherLevelDescription": "Вы можете воздействовать на одно дополнительное существо за каждый уровень ячейки заклинания выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "vicious-mockery-phb",
+  "name": "Злая насмешка",
+  "nameEn": "Vicious Mockery",
+  "level": 0,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы извергаете поток оскорблений, пропитанных тонкой магией очарования, в сторону одного существа, которое видите или слышите в пределах дистанции. Цель должна совершить спасбросок Мудрости, иначе получит 1к6 урона психической энергией и помеху на следующий бросок атаки, который совершит до конца своего следующего хода.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "vicious-mockery-attack-disadvantage",
+      "name": "Помеха на следующую атаку",
+      "description": "Помеха на следующий бросок атаки до конца следующего хода цели.",
+      "icon": "tabler:mood-sad",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "consumeOn": "carrierAttack",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage"
+      ]
+    }
+  ],
+  "damageParts": [
+    {
+      "formula": "1к6@dmg.psychic",
+      "target": "selected"
+    }
+  ],
+  "cantripScalingTiers": [
+    {
+      "level": 5,
+      "parts": [
+        {
+          "formula": "2к6@dmg.psychic",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "parts": [
+        {
+          "formula": "3к6@dmg.psychic",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "parts": [
+        {
+          "formula": "4к6@dmg.psychic",
+          "target": "selected"
+        }
+      ]
+    }
+  ],
+  "higherLevelDescription": "Урон увеличивается на 1к6, когда вы достигаете 5 уровня (2к6), 11 уровня (3к6) и 17 уровня (4к6).",
+  "saveEffect": "none"
+}

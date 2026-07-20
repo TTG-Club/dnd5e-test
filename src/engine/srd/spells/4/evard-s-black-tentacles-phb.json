@@ -1,0 +1,66 @@
+{
+  "id": "evard-s-black-tentacles-phb",
+  "name": "Эвардовы чёрные щупальца",
+  "nameEn": "Evard's Black Tentacles",
+  "level": 4,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щупальце)"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "strength",
+  "description": "Чёрные извивающиеся щупальца заполняют квадрат на полу с длиной стороны 20 футов, который вы видите в пределах дистанции. Во время длительности заклинания эти щупальца делают местность труднопроходимой.\nКаждое существо в квадрате совершает спасбросок Силы, получая 3к6 дробящего урона и состояние опутанный до окончания длительности заклинания при неудачном спасброске. Существо также должно совершить этот спасбросок, когда перемещается в область квадрата или завершает свой ход в нём. Существо совершает этот спасбросок только один раз за ход.\nОпутанное щупальцами существо может действием совершить проверку Силы (Атлетика) против Сл. ваших заклинаний, заканчивая состояние опутанный на себе при успехе.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "evard-s-black-tentacles-restrained",
+      "name": "Опутанный",
+      "description": "Скорость равна нулю; Помеха на все атаки; Преимущество атак по этому существу; Состояние: Опутанный; на 10 раундов.",
+      "icon": "tabler:link",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "restrained",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "speed.zero",
+        "attack.disadvantage",
+        "attacksAgainst.advantage"
+      ]
+    }
+  ],
+  "classKeys": [
+    "wizard"
+  ],
+  "areaOfEffect": {
+    "shape": "rect",
+    "size": 20,
+    "unit": "ft"
+  },
+  "saveEffect": "none",
+  "damageParts": [
+    {
+      "formula": "3к6@dmg.bludgeoning",
+      "target": "selected"
+    }
+  ]
+}

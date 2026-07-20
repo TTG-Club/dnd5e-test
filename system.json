@@ -1,0 +1,29 @@
+{
+  "id": "dnd5e-test",
+  "name": "D&D 5e (внешняя тестовая)",
+  "version": "1.0.0",
+  "description": "Тестовая копия системы D&D 5e, собираемая и поставляемая ВНЕ приложения VTTG — проверка доставки систем по ссылке на манифест",
+  "authors": [
+    {
+      "name": "TTG Club",
+      "url": "https://ttg.club"
+    }
+  ],
+  "compatibility": {
+    "minimum": "0.9.266",
+    "verified": "0.9.266"
+  },
+  "url": "https://github.com/ttg-club/vttg-system-dnd5e-test",
+  "manifest": "https://raw.githubusercontent.com/ttg-club/vttg-system-dnd5e-test/main/system.json",
+  "download": "https://github.com/ttg-club/vttg-system-dnd5e-test/releases/download/v1.0.0/dnd5e-test.zip",
+  "license": "https://github.com/ttg-club/vttg-system-dnd5e-test/blob/main/LICENSE",
+  "readme": "https://github.com/ttg-club/vttg-system-dnd5e-test/blob/main/README.md",
+  "bugs": "https://github.com/ttg-club/vttg-system-dnd5e-test/issues",
+  "changelog": "https://github.com/ttg-club/vttg-system-dnd5e-test/blob/main/CHANGELOG.md",
+  "defaultDistanceUnit": "ft",
+  "dataPath": "./data",
+  "client": {
+    "entry": "client.js",
+    "styles": ["client.css"]
+  }
+}

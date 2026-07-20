@@ -1,0 +1,32 @@
+{
+  "id": "whip-phb",
+  "name": "Кнут",
+  "nameEn": "Whip",
+  "description": "Кнут — воинское рукопашное оружие с увеличенной досягаемостью. Фехтовальное — позволяет использовать Ловкость вместо Силы.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 3,
+  "cost": "2 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "whip",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к4",
+      "type": "slashing"
+    }
+  ],
+  "weaponProperties": [
+    "finesse",
+    "reach"
+  ],
+  "reach": 10,
+  "mastery": "slow",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

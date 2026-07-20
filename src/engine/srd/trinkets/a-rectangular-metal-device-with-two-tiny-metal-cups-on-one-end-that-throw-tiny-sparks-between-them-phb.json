@@ -1,0 +1,23 @@
+{
+  "id": "a-rectangular-metal-device-with-two-tiny-metal-cups-on-one-end-that-throw-tiny-sparks-between-them-phb",
+  "name": "Прямоугольное металлическое устройство с двумя крошечными металлическими чашками на одном конце, которые микроскопическими искрами перебрасываются между собой",
+  "nameEn": "A rectangular metal device with two tiny metal cups on one end that throw tiny sparks between them",
+  "description": "Загадочное металлическое устройство прямоугольной формы. На одном конце две крошечные металлические чашечки, между которыми периодически проскакивают микроскопические искры.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

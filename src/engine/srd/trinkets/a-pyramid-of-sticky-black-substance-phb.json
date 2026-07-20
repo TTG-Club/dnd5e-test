@@ -1,0 +1,23 @@
+{
+  "id": "a-pyramid-of-sticky-black-substance-phb",
+  "name": "Пирамидка из липкой чёрной субстанции",
+  "nameEn": "A pyramid of sticky black substance",
+  "description": "Маленькая пирамидка, сделанная из странной чёрной субстанции, липкой на ощупь. Она не меняет формы, но ощущается живой.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

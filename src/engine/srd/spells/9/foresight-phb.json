@@ -1,0 +1,57 @@
+{
+  "id": "foresight-phb",
+  "name": "Предвидение",
+  "nameEn": "Foresight",
+  "level": 9,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "перо колибри"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа и наделяете его ограниченной способностью заглядывать в ближайшее будущее. На время действия заклинания цель получает преимущество на Тест к20, а другие существа получают помеху на броски атаки против неё. Заклинание заканчивается досрочно, если вы наложите его снова.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "effect_1782194334773_2mnmmw5",
+      "name": "Предвидение",
+      "description": "Преимущество на все атаки; Преимущество на ВСЕ проверки характеристик; Преимущество на ВСЕ спасброски; Помеха атак по этому существу; на 8 часов.",
+      "icon": "tabler:eye-bolt",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 8
+      },
+      "changes": [],
+      "flags": [
+        "attack.advantage",
+        "abilityCheck.advantage",
+        "save.advantage",
+        "attacksAgainst.disadvantage"
+      ],
+      "effectTarget": "target"
+    }
+  ]
+}

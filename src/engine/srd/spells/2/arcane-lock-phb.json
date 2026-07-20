@@ -1,0 +1,31 @@
+{
+  "id": "arcane-lock-phb",
+  "name": "Волшебный замок",
+  "nameEn": "Arcane Lock",
+  "level": 2,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "золотая пыль стоимостью 25+ зм, расходуемая заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "special",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь закрытой двери, окна, ворот, контейнера или люка и магически запираете его на время действия заклинания. Этот замок нельзя открыть немагическими способами. Вы и любые существа, которых вы выбираете при наложении заклинания, можете открывать и закрывать объект, несмотря на замок.\nВы также можете установить пароль, который, будучи произнесён в пределах 5 футов от объекта, откроет его на 1 минуту.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "wizard"
+  ],
+  "type": "spell"
+}

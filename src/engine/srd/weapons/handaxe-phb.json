@@ -1,0 +1,36 @@
+{
+  "id": "handaxe-phb",
+  "name": "Ручной топор",
+  "nameEn": "Handaxe",
+  "description": "Ручной топор — простое рукопашное оружие. Лёгкое и метательное, может быть брошено на дистанцию 20/60 футов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "5 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "handaxe",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "slashing"
+    }
+  ],
+  "weaponProperties": [
+    "light",
+    "thrown"
+  ],
+  "range": {
+    "normal": 20,
+    "long": 60
+  },
+  "reach": 5,
+  "mastery": "vex",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

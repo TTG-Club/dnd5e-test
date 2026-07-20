@@ -1,0 +1,34 @@
+{
+  "id": "lesser-restoration-phb",
+  "name": "Малое восстановление",
+  "nameEn": "Lesser Restoration",
+  "level": 2,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь существа и снимаете с него 1 из состояний: ослеплённый, оглохший, парализованный или отравленный.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger"
+  ],
+  "type": "spell"
+}

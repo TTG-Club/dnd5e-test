@@ -1,0 +1,23 @@
+{
+  "id": "a-shard-of-colored-glass-phb",
+  "name": "Осколок цветного стекла",
+  "nameEn": "A shard of colored glass",
+  "description": "Гладкий осколок стекла яркого цвета, отполированный временем или водой.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

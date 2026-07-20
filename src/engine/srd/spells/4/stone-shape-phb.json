@@ -1,0 +1,33 @@
+{
+  "id": "stone-shape-phb",
+  "name": "Изменение формы камня",
+  "nameEn": "Stone Shape",
+  "level": 4,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "мягкая глина"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь каменного объекта среднего размера или меньше, либо участка камня не более 5 футов в любом измерении и придаете ему любую форму по своему желанию. Например, вы можете придать большому камню форму оружия, статуи или ларца, либо создать небольшой проход через стену толщиной до 5 футов. Также можно изменить форму каменной двери или её рамы, чтобы запечатать дверь. Объект, который вы создаёте, может содержать до 2 петель и щеколду, но более сложные механические детали невозможны.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "wizard"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "dwarven-plate-phb",
+  "name": "Дварфские латы",
+  "nameEn": "Dwarven Plate",
+  "description": "Пока вы носите этот доспех, вы получаете бонус +2 к КД. Кроме того, перемещение против вашей воли уменьшается на 10 футов.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 65,
+  "cost": "-",
+  "rarity": "very-rare",
+  "equipped": false,
+  "baseType": "plate",
+  "baseArmorAC": 18,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 15,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "none",
+  "activeEffects": [
+    {
+      "id": "effect_dwarven_plate",
+      "name": "Дварфская ковка",
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "sourceId": "dwarven-plate-phb",
+      "transfer": true,
+      "description": "",
+      "disabled": false,
+      "origin": "item",
+      "duration": {
+        "type": "permanent"
+      },
+      "flags": []
+    }
+  ],
+  "equipmentCategory": "heavy",
+  "typeLabel": "Снаряжение"
+}

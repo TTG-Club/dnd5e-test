@@ -1,0 +1,20 @@
+{
+  "id": "disguise-kit-phb",
+  "name": "Набор для маскировки",
+  "nameEn": "Disguise Kit",
+  "type": "tool",
+  "toolCategory": "other",
+  "baseToolType": "disguise-kit",
+  "rarity": "common",
+  "weight": 3,
+  "cost": {
+    "value": 25,
+    "currency": "gp"
+  },
+  "description": "В этом мешочке находится косметика, краска для волос и пара небольших элементов одежды для создания маскировки.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

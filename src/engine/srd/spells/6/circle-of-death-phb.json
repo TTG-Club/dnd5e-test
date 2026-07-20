@@ -1,0 +1,49 @@
+{
+  "id": "circle-of-death-phb",
+  "name": "Круг смерти",
+  "nameEn": "Circle of Death",
+  "level": 6,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "порошок растолчённой чёрной жемчужины стоимостью 500+ зм"
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Рябь негативной энергии распространяется в радиусе 60 футов от точки, которую вы выбираете в пределах дистанции. Каждое существо в этой области совершает спасбросок Телосложения. В случае провала оно получает 8к8 урона некротической энергией, а при успешном спасброске — половину этого урона.",
+  "higherLevelDescription": "Урон увеличивается на 2к8 за каждую ячейку выше 6.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 60,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "8к8@dmg.necrotic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "2к8"
+  }
+}

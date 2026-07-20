@@ -1,0 +1,36 @@
+{
+  "id": "true-seeing-phb",
+  "name": "Истинное зрение",
+  "nameEn": "True Seeing",
+  "level": 6,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "грибной порошок стоимостью 25+ зм, расходуемый заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь согласное существо и на длительность заклинания оно получает истинное зрение с дистанцией 120 футов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell"
+}

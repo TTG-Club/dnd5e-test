@@ -1,0 +1,37 @@
+{
+  "id": "bane-phb",
+  "name": "Порча",
+  "nameEn": "Bane",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "капля крови"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "До 3 существ в пределах дистанции, которых вы видите, должны совершить спасброски Харизмы. Пока заклинание активно, каждый раз, когда цель, провалившая этот спасбросок, совершает бросок атаки или спасбросок, она должна бросать к4 и вычитать выпавший результат из броска атаки или спасброска.",
+  "higherLevelDescription": "Вы можете сделать целью 1 дополнительное существо за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric"
+  ],
+  "type": "spell",
+  "targetCount": 3,
+  "scaling": {
+    "additionalTargets": 1
+  }
+}

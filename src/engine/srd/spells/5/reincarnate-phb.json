@@ -1,0 +1,31 @@
+{
+  "id": "reincarnate-phb",
+  "name": "Реинкарнация",
+  "nameEn": "Reincarnate",
+  "level": 5,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "hour",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "редкие масла стоимостью 1 000+ зм, расходуемые заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь мёртвого гуманоида или его части. Если существо мертво не более 10 дней, то заклинание создаёт для него новое тело и призывает душу войти в это тело. Бросьте 1к10 и воспользуйтесь таблицей ниже, чтобы определить вид тела, или Мастер выбирает другой доступный вид.\nПерерождённое существо делает любые выборы, которые предлагает описание его вида, и помнит свою прежнюю жизнь. Оно сохраняет способности, которые имело в своей первоначальной форме, за исключением того, что оно теряет особенности своего предыдущего вида и приобретает особенности нового.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid"
+  ],
+  "type": "spell"
+}

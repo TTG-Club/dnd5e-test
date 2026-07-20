@@ -1,0 +1,20 @@
+{
+  "id": "weaver-s-tools-phb",
+  "name": "Инструменты ткача",
+  "nameEn": "Weaver's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "weavers-tools",
+  "rarity": "common",
+  "weight": 5,
+  "cost": {
+    "value": 1,
+    "currency": "gp"
+  },
+  "description": "Предметы, необходимые для прядения нитей или создания тканей.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

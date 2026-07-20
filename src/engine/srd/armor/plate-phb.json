@@ -1,0 +1,22 @@
+{
+  "id": "plate-phb",
+  "name": "Латный доспех",
+  "nameEn": "Plate",
+  "description": "Латный доспех состоит из формованных металлических пластин, покрывающих всё тело. В комплект входят: перчатки, тяжёлые кожаные сапоги, шлем с забралом и толстые слои подкладки под доспехом. Пряжки и ремни распределяют вес по всему телу. Создаёт помеху при использовании Скрытности.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 65,
+  "cost": "1500 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "plate",
+  "baseArmorAC": 18,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 15,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "heavy",
+  "typeLabel": "Снаряжение"
+}

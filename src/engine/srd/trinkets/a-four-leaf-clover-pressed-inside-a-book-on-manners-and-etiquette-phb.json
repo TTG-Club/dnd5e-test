@@ -1,0 +1,23 @@
+{
+  "id": "a-four-leaf-clover-pressed-inside-a-book-on-manners-and-etiquette-phb",
+  "name": "Четырёхлистный клевер, спрессованный внутри книги о манерах и этикете",
+  "nameEn": "A four-leaf clover pressed inside a book on manners and etiquette",
+  "description": "Засушенный четырёхлистный клевер, аккуратно вложенный между страницами толстой книги о правилах этикета.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

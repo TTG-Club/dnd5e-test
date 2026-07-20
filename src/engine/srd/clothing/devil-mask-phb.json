@@ -1,0 +1,23 @@
+{
+  "id": "devil-mask-phb",
+  "name": "Дьявольская маска",
+  "nameEn": "Devil Mask",
+  "description": "Маска, скрывающая лицо и затрудняющая определение вашей личности. Пока вы носите эту маску, другие существа совершают с помехой проверки Интеллекта (Расследование) и Мудрости (Проницательность), чтобы определить вашу личность или намерения.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "25 зм",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "clothing",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

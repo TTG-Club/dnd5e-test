@@ -1,0 +1,23 @@
+{
+  "id": "a-blanket-sewn-from-patches-phb",
+  "name": "Одеяло, сшитое из лоскутков",
+  "nameEn": "A blanket sewn from patches",
+  "description": "Лоскутное одеяло, собранное из десятков разноцветных кусочков ткани. Каждый лоскут, кажется, хранит свою историю.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

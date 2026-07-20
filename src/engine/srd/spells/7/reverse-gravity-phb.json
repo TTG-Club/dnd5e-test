@@ -1,0 +1,38 @@
+{
+  "id": "reverse-gravity-phb",
+  "name": "Изменение тяготения",
+  "nameEn": "Reverse Gravity",
+  "level": 7,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "магнит и железные опилки"
+  },
+  "range": 100,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Это заклинание обращает гравитацию в цилиндре с радиусом 50 футов и высотой 100 футов с центром в точке в пределах дистанции. Все существа и объекты в этой области, не закреплённые на земле, падают вверх и достигают вершины цилиндра. Существо может совершить спасбросок Ловкости, чтобы схватиться за неподвижный объект, до которого оно может дотянуться, и таким образом избежать падения вверх. \nЕсли на пути этого подъёма вверх встречается потолок или закреплённый объект, то существа и объекты сталкиваются с ним, как если бы они падали вниз. Если затронутое существо или объект достигает вершины цилиндра, не ударившись ни обо что, то оно зависает там на время длительности заклинания. Когда заклинание заканчивается, затронутые объекты и существа падают вниз.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 50,
+    "unit": "ft"
+  }
+}

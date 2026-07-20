@@ -1,0 +1,23 @@
+{
+  "id": "a-white-glove-that-fits-you-phb",
+  "name": "Белая перчатка, подходящая по размеру",
+  "nameEn": "A white glove that fits you",
+  "description": "Белая шёлковая перчатка идеально подходящего размера. Ткань удивительно чистая, словно её никогда не носили.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

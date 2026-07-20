@@ -1,0 +1,33 @@
+{
+  "id": "nondetection-phb",
+  "name": "Необнаружимость",
+  "nameEn": "Nondetection",
+  "level": 3,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка алмазной пыли стоимостью 25+ зм, расходуемая заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "На время действия вы скрываете цель, которой касаетесь, от заклинаний школы прорицания. Целью может быть согласное существо, место или предмет размером не более 10 футов в любом измерении. Цель не может быть целью любых заклинаний школы прорицания и не может быть воспринята с помощью магических чувств.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "ranger",
+    "wizard"
+  ],
+  "type": "spell"
+}

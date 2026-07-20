@@ -1,0 +1,23 @@
+{
+  "id": "a-tiny-mechanical-crab-or-spider-that-moves-when-it-isn-t-being-observed-phb",
+  "name": "Крошечный механический краб или паук, который двигается, когда за ним не наблюдают",
+  "nameEn": "A tiny mechanical crab or spider that moves when it isn't being observed",
+  "description": "Миниатюрный механический краб (или паук) из латуни и меди. Каждый раз, когда вы отводите от него взгляд, он оказывается в другом месте.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

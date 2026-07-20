@@ -1,0 +1,20 @@
+{
+  "id": "thieves-tools-phb",
+  "name": "Воровские инструменты",
+  "nameEn": "Thieves' Tools",
+  "type": "tool",
+  "toolCategory": "other",
+  "baseToolType": "thieves-tools",
+  "rarity": "common",
+  "weight": 1,
+  "cost": {
+    "value": 25,
+    "currency": "gp"
+  },
+  "description": "Этот набор отмычек содержит небольшой напильник, набор отмычек, небольшое зеркало на длинной металлической ручке, ножницы и пару щипчиков.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

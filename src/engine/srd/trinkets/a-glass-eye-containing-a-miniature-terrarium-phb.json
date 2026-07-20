@@ -1,0 +1,23 @@
+{
+  "id": "a-glass-eye-containing-a-miniature-terrarium-phb",
+  "name": "Стеклянный глазок, содержащий миниатюрный террариум",
+  "nameEn": "A glass eye containing a miniature terrarium",
+  "description": "Стеклянный шар размером с глазное яблоко. Внутри — крошечный мирок с деревьями, ручьём и холмом.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

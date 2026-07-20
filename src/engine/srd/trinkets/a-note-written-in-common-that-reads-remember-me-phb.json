@@ -1,0 +1,23 @@
+{
+  "id": "a-note-written-in-common-that-reads-remember-me-phb",
+  "name": "Записка, написанная на Общем, гласящая «Помни обо мне»",
+  "nameEn": "A note written in Common that reads \"Remember me\"",
+  "description": "Небольшая записка на пожелтевшем пергаменте. На ней аккуратным почерком написано на Общем: «Помни обо мне».",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

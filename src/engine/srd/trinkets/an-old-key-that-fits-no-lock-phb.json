@@ -1,0 +1,23 @@
+{
+  "id": "an-old-key-that-fits-no-lock-phb",
+  "name": "Старый ключ, который не подходит ни к одному замку",
+  "nameEn": "An old key that fits no lock",
+  "description": "Железный ключ причудливой формы, покрытый патиной времени. Вы так и не нашли замок, к которому он подходит.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

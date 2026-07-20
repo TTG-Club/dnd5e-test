@@ -1,0 +1,21 @@
+{
+  "id": "ability-score-improvement-phb",
+  "name": "Улучшение характеристик",
+  "nameEn": "Ability Score Improvement",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": true,
+  "description": "Увеличьте 1 показатель характеристики по вашему выбору на 2 или увеличьте 2 показателя характеристики по вашему выбору на 1. Вы не можете увеличить показатель характеристики выше 20 с помощью этой черты.\n\n**Повторяемая.** Вы можете выбирать эту черту больше 1 раза.",
+  "typeLabel": "Черты",
+  "featData": {
+    "type": "feat",
+    "abilityScoreIncrease": {
+      "choice": {
+        "amount": 1,
+        "count": 2
+      }
+    }
+  }
+}

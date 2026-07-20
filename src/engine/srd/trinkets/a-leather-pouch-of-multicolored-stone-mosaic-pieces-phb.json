@@ -1,0 +1,23 @@
+{
+  "id": "a-leather-pouch-of-multicolored-stone-mosaic-pieces-phb",
+  "name": "Кожаный мешочек с мультицветной каменной мозаикой",
+  "nameEn": "A leather pouch of multicolored stone mosaic pieces",
+  "description": "Мешочек из мягкой кожи, наполненный разноцветными кусочками камня, которые складываются в красивую мозаику.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

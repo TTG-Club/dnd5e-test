@@ -1,0 +1,37 @@
+{
+  "id": "hand-crossbow-phb",
+  "name": "Ручной арбалет",
+  "nameEn": "Hand crossbow",
+  "description": "Ручной арбалет — воинское дальнобойное оружие. Лёгкое, с перезарядкой.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 3,
+  "cost": "75 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "hand-crossbow",
+  "weaponCategory": "martial",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition",
+    "light",
+    "loading"
+  ],
+  "ammunitionType": "bolts",
+  "range": {
+    "normal": 30,
+    "long": 120
+  },
+  "mastery": "vex",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

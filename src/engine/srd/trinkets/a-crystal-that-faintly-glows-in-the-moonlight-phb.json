@@ -1,0 +1,23 @@
+{
+  "id": "a-crystal-that-faintly-glows-in-the-moonlight-phb",
+  "name": "Кристалл, слабо светящийся в лунном свете",
+  "nameEn": "A crystal that faintly glows in the moonlight",
+  "description": "Небольшой кристалл, который начинает источать бледное свечение, когда на него падает лунный свет.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "flame-strike-phb",
+  "name": "Небесный огонь",
+  "nameEn": "Flame Strike",
+  "level": 5,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка серы"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вертикальный столб ослепительного огня с ревом нисходит сверху. Каждое существо в цилиндре с центром в пределах дистанции с 10-футовым радиусом и 40-футовой высотой совершает спасбросок Ловкости. При провале спасброска существо получает 5к6 урона огнём и 5к6 урона излучением или половину этого урона при успешном спасброске.",
+  "higherLevelDescription": "Урон огнём и урон излучением увеличиваются на 1к6 за каждую ячейку выше 5.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "cylinder",
+    "size": 10,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "5к6@dmg.fire",
+      "target": "selected"
+    },
+    {
+      "formula": "5к6@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}

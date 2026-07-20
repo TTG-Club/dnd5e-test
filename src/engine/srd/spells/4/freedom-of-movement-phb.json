@@ -1,0 +1,57 @@
+{
+  "id": "freedom-of-movement-phb",
+  "name": "Свобода перемещения",
+  "nameEn": "Freedom of Movement",
+  "level": 4,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кожаный ремешок"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа. На время действия заклинания передвижение цели не зависит от труднопроходимой местности, а заклинания и другие магические эффекты не могут уменьшить скорость цели или наложить на неё состояние парализованный или опутанный. Цель также получает скорость плавания, равную её обычной скорости.\nКроме того, цель может потратить 5 футов перемещения, чтобы автоматически освободиться от немагических оков, такие как кандалы или состояние схваченный от другого существа.",
+  "higherLevelDescription": "Вы можете выбрать 1 дополнительное существо за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "ranger"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "effect_1782194334767_wf3f7e1",
+      "name": "Свобода перемещения",
+      "description": "Иммунитет к состояниям: Парализованный, Опутанный; на 1 час.",
+      "icon": "tabler:run",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [],
+      "effectTarget": "target",
+      "conditionImmunities": [
+        "paralyzed",
+        "restrained"
+      ]
+    }
+  ]
+}

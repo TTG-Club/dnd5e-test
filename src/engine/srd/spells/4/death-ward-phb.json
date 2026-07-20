@@ -1,0 +1,31 @@
+{
+  "id": "death-ward-phb",
+  "name": "Защита от смерти",
+  "nameEn": "Death Ward",
+  "level": 4,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь существа и наделяете его некоторой защитой от смерти. В первый раз, когда хиты цели опускаются до 0 до окончания действия заклинания, то хиты цели вместо этого опускаются до 1 и заклинание заканчивается. Если заклинание ещё действует, а цель попадает под действие эффекта, убивающего её мгновенно, не причиняя урона, то этот эффект игнорируется, и заклинание заканчивается",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell"
+}

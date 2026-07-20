@@ -1,0 +1,23 @@
+{
+  "id": "a-rag-doll-stuffed-with-wood-shavings-with-buttons-for-eyes-phb",
+  "name": "Тряпичная кукла, набитая стружкой, с пуговицами вместо глаз",
+  "nameEn": "A rag doll stuffed with wood shavings, with buttons for eyes",
+  "description": "Простая тряпичная кукла ручной работы, набитая деревянной стружкой. Вместо глаз — две разные пуговицы.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

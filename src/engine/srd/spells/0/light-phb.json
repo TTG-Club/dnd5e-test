@@ -1,0 +1,36 @@
+{
+  "id": "light-phb",
+  "name": "Свет",
+  "nameEn": "Light",
+  "level": 0,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": true,
+    "materialDescription": "светлячок или фосфоресцирующий мох"
+  },
+  "range": 0,
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь 1 объекта размера большой или меньше, который не носит и не несёт кто-то другой. До окончания заклинания объект излучает яркий свет в радиусе 20 футов и тусклый свет ещё на 20 футов. Свет может быть любого цвета по вашему выбору. Закрытие объекта чем-то непрозрачным блокирует свет. Заклинание прекращается, если вы наложите его снова.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell",
+  "rangeUnit": "ft"
+}

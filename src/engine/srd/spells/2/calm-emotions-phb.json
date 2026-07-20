@@ -1,0 +1,31 @@
+{
+  "id": "calm-emotions-phb",
+  "name": "Умиротворение",
+  "nameEn": "Calm Emotions",
+  "level": 2,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "charisma",
+  "description": "Все гуманоиды в сфере с 20-футовым радиусом с центром в точке, выбранной в пределах дистанции, должны преуспеть в спасброске Харизмы или будут подвержены одному из следующих эффектов (выберите для каждого существа):",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric"
+  ],
+  "type": "spell"
+}

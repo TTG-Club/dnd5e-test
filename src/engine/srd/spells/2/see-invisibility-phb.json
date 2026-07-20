@@ -1,0 +1,34 @@
+{
+  "id": "see-invisibility-phb",
+  "name": "Видение невидимого",
+  "nameEn": "See Invisibility",
+  "level": 2,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка талька"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "special",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "На время действия заклинания вы видите существ и объекты, обладающие состоянием невидимый, как если бы они были видимы, и можете видеть на Эфирный план. Существа и объекты на Эфирном плане кажутся призрачными.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

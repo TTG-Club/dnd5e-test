@@ -1,0 +1,49 @@
+{
+  "id": "fireball-phb",
+  "name": "Огненный шар",
+  "nameEn": "Fireball",
+  "level": 3,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "шарик из гуано летучей мыши и серы"
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Яркая вспышка вырывается от вас к выбранной вами точке в пределах дистанции, а затем с гулким рёвом разрастается в огненный взрыв. Каждое существо в пределах сферы с радиусом 20 фт., с центром в этой точке, должно совершить спасбросок Ловкости. Существо получает 8к6 урона огнём при неудачном спасброске или половину этого урона при успехе.\nЛегковоспламеняющиеся предметы в области, которые никто не носит и не несёт, начинают гореть.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 3.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 20,
+    "unit": "ft"
+  },
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "8к6@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к6"
+  },
+  "saveEffect": "half"
+}

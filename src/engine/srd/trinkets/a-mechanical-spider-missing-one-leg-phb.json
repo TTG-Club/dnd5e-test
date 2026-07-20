@@ -1,0 +1,23 @@
+{
+  "id": "a-mechanical-spider-missing-one-leg-phb",
+  "name": "Механический паук, у которого не хватает одной ноги",
+  "nameEn": "A mechanical spider missing one leg",
+  "description": "Крошечный механический паук из латуни и стали. Одна из восьми ног отсутствует, но механизм всё ещё пытается двигаться.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

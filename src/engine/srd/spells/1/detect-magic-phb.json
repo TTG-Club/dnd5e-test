@@ -1,0 +1,36 @@
+{
+  "id": "detect-magic-phb",
+  "name": "Обнаружение магии",
+  "nameEn": "Detect Magic",
+  "level": 1,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "На протяжении действия заклинания вы чувствуете присутствие магических эффектов в пределах 30 футов от вас. Если вы ощущаете такие эффекты, то вы можете выполнить действие магия, чтобы увидеть слабое свечение вокруг любого видимого существа или предмета в этой области, на которые наложена магия, и если эффект был создан заклинанием, то вы узнаёте школу магии этого заклинания. \nЗаклинание блокируется 1 футом камня, земли или дерева; 1 дюймом металла или тонким листом свинца.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger",
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell"
+}

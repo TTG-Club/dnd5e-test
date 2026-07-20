@@ -1,0 +1,23 @@
+{
+  "id": "clothes-fine-phb",
+  "name": "Прекрасная одежда",
+  "nameEn": "Clothes, Fine",
+  "description": "Высококачественная одежда из дорогих тканей, украшенная изысканной вышивкой и тонкой отделкой. Некоторые мероприятия и заведения могут требовать подобный наряд для допуска.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 6,
+  "cost": "15 зм",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "clothing",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

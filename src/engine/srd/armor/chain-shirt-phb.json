@@ -1,0 +1,22 @@
+{
+  "id": "chain-shirt-phb",
+  "name": "Кольчужная рубаха",
+  "nameEn": "Chain Shirt",
+  "description": "Кольчужная рубаха — средняя броня, сделанная из переплетённых металлических колец, носимая между слоями одежды или кожи. Она защищает верхнюю часть тела носителя.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 20,
+  "cost": "50 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "chain-shirt",
+  "baseArmorAC": 13,
+  "maxDexBonus": 2,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "medium",
+  "typeLabel": "Снаряжение"
+}

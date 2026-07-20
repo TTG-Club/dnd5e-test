@@ -1,0 +1,23 @@
+{
+  "id": "a-tiny-fragment-of-an-unknown-creature-s-skull-phb",
+  "name": "Крошечный фрагмент черепа неизвестного существа",
+  "nameEn": "A tiny fragment of an unknown creature's skull",
+  "description": "Маленький осколок черепа, принадлежавшего неизвестному существу. Кость необычно гладкая и чёрная.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

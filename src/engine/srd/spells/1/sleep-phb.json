@@ -1,0 +1,84 @@
+{
+  "id": "sleep-phb",
+  "name": "Усыпление",
+  "nameEn": "Sleep",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка песка или лепестки розы"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Каждое выбранное вами существо в радиусе 5 фт. от точки в пределах дистанции должно преуспеть в спасброске Мудрости, иначе получит состояние недееспособный до конца своего следующего хода, после чего оно должно повторить спасбросок. Если цель не преуспевает во втором спасброске, то она становится бессознательной на время действия заклинания.\nЗаклинание прекращается для цели, если она получает урон или если кто-то в пределах 5 фт. от неё использует действие, чтобы вывести её из-под воздействия заклинания. Существа, которые не спят (например, эльфы), или имеющие иммунитет к состоянию истощённый, автоматически преуспевают в спасбросках против этого заклинания.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "wizard",
+    "rogue"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "sleep-incapacitated",
+      "name": "Недееспособный",
+      "description": "Недееспособен (Не может совершать действия/реакции); Помеха на бросок инициативы; Состояние: Недееспособный; повторный спасбросок (Мудрость, Сл заклинателя) в конце хода снимает эффект; на 1 раунд.",
+      "icon": "tabler:ban",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "incapacitated",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "initiative.disadvantage"
+      ],
+      "recurringSave": {
+        "ability": "wisdom",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    },
+    {
+      "id": "sleep-unconscious",
+      "name": "Бессознательный",
+      "description": "Недееспособен (Не может совершать действия/реакции); Скорость равна нулю; Автопровал спасбросков: Сила; Автопровал спасбросков: Ловкость; Преимущество атак по этому существу; Состояние: Бессознательный; на 10 раундов.",
+      "icon": "tabler:zzz",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "unconscious",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "speed.zero",
+        "save.autoFail.strength",
+        "save.autoFail.dexterity",
+        "attacksAgainst.advantage"
+      ]
+    }
+  ]
+}

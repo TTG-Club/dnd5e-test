@@ -1,0 +1,23 @@
+{
+  "id": "a-charcoal-drawing-of-an-idealized-portrait-of-you-phb",
+  "name": "Рисунок углём, изображающий ваш идеальный портрет",
+  "nameEn": "A charcoal drawing of an idealized portrait of you",
+  "description": "Рисунок углём на пожелтевшем пергаменте, изображающий вас в поразительном сходстве, хотя вы никогда не позировали для него.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

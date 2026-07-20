@@ -1,0 +1,54 @@
+{
+  "id": "charm-monster-phb",
+  "name": "Очарование монстра",
+  "nameEn": "Charm Monster",
+  "level": 4,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "1 существо, которое вы видите в пределах дистанции, совершает спасбросок Мудрости. Оно делает это с преимуществом, если вы или ваши союзники сражаетесь с ним. В случае провала спасброска цель получает состояние очарованный до окончания действия заклинания или до тех пор, пока вы или ваши союзники не нанесёте ей урон. Очарованное существо становится дружественным по отношению к вам. Когда заклинание заканчивается, то цель осознаёт, что была очарована вами.",
+  "higherLevelDescription": "Вы можете выбрать 1 дополнительное существо за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "charm-monster-charmed",
+      "name": "Очарованный",
+      "description": "Состояние: Очарованный; на 1 час.",
+      "icon": "tabler:heart",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "charmed",
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [],
+      "flags": []
+    }
+  ],
+  "classKeys": [
+    "bard",
+    "druid",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ]
+}

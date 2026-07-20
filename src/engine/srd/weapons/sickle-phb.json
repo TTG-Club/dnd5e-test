@@ -1,0 +1,31 @@
+{
+  "id": "sickle-phb",
+  "name": "Серп",
+  "nameEn": "Sickle",
+  "description": "Серп — простое лёгкое рукопашное оружие.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "1 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "sickle",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к4",
+      "type": "slashing"
+    }
+  ],
+  "weaponProperties": [
+    "light"
+  ],
+  "reach": 5,
+  "mastery": "nick",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

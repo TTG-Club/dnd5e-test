@@ -1,0 +1,35 @@
+{
+  "id": "javelin-phb",
+  "name": "Метательное копьё",
+  "nameEn": "Javelin",
+  "description": "Метательное копьё — простое рукопашное оружие. Может быть метнуто на дистанцию 30/120 футов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "5 см",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "javelin",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "thrown"
+  ],
+  "range": {
+    "normal": 30,
+    "long": 120
+  },
+  "reach": 5,
+  "mastery": "slow",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

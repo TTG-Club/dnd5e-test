@@ -1,0 +1,23 @@
+{
+  "id": "costume-phb",
+  "name": "Костюм",
+  "nameEn": "Costume",
+  "description": "Набор одежды и аксессуаров, позволяющий выглядеть как определённый человек или тип людей. Пока вы носите костюм, вы совершаете с преимуществом проверки характеристик, связанные с выдаванием себя за того, кого костюм изображает.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "5 зм",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "clothing",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

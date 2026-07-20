@@ -1,0 +1,32 @@
+{
+  "id": "identify-phb",
+  "name": "Опознание",
+  "nameEn": "Identify",
+  "level": 1,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "жемчужина стоимостью 100+ зм"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь объекта на протяжении всего времени накладывания заклинания. Если объект является магическим предметом или иным магическим объектом, то вы узнаёте его свойства, как его использовать, требуется ли настройка и сколько у него зарядов, если таковые имеются. Вы узнаёте, есть ли на предмете наложенные заклинания и какие именно. Если предмет был создан при помощи заклинания, то вы узнаёте название этого заклинания. \nЕсли вместо этого вы касаетесь существа на протяжении времени наложения заклинания, то вы узнаёте, какие наложенные заклинания, если таковые есть, действуют на него в данный момент.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "wizard"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "creatures",
+  "name": "Существа",
+  "icon": "tabler:alien",
+  "dataKind": "creature",
+  "view": {
+    "layout": "filtered",
+    "groupBy": {
+      "path": "system.challengeRating",
+      "format": "challengeRating"
+    },
+    "filters": [
+      {
+        "id": "cr",
+        "label": "ПО",
+        "type": "enum",
+        "path": "system.challengeRating",
+        "format": "challengeRating",
+        "style": "badges"
+      },
+      {
+        "id": "type",
+        "label": "Тип",
+        "type": "enum",
+        "path": "system.type",
+        "format": "creatureType",
+        "style": "list"
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a-two-inch-piece-of-stained-glass-phb",
+  "name": "Двухдюймовый витражный кусочек стекла",
+  "nameEn": "A two-inch piece of stained glass",
+  "description": "Небольшой кусочек витражного стекла с замысловатым узором. Он красиво играет на свету, отбрасывая разноцветные блики.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

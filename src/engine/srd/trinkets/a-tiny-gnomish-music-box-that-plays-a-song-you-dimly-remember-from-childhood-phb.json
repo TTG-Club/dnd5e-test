@@ -1,0 +1,23 @@
+{
+  "id": "a-tiny-gnomish-music-box-that-plays-a-song-you-dimly-remember-from-childhood-phb",
+  "name": "Крошечный гномий музыкальный механизм, играющий песню, которую вы смутно помните из детства",
+  "nameEn": "A tiny gnomish music box that plays a song you dimly remember from childhood",
+  "description": "Миниатюрная музыкальная шкатулка гномьей работы, которая играет мелодию, вызывающую в вас ностальгию по далёкому детству.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "entangle-phb",
+  "name": "Опутывание",
+  "nameEn": "Entangle",
+  "level": 1,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "strength",
+  "description": "Из земли в пределах дистанции на площади квадрата с длиной стороны в 20 футов вырастают хваткие растения. На время действия заклинания эти растения превращают землю в труднопроходимую местность в указанной области. Они исчезают, когда действие заклинания заканчивается.\nКаждое существо (кроме вас) в указанной области при наложении заклинания должно успешно совершить спасбросок Силы, иначе оно получает состояние опутанный до окончания действия заклинания. Опутанное существо может совершить действие, чтобы выполнить проверку Силы (Атлетика) против Сл. спасброска вашего заклинания. В случае успеха оно освобождается от хватки растений и больше не находится под состоянием опутанный.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "entangle-restrained",
+      "name": "Опутанный",
+      "description": "Скорость равна нулю; Помеха на все атаки; Преимущество атак по этому существу; Состояние: Опутанный; на 10 раундов.",
+      "icon": "tabler:link",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "restrained",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "speed.zero",
+        "attack.disadvantage",
+        "attacksAgainst.advantage"
+      ]
+    }
+  ]
+}

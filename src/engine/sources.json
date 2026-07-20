@@ -1,0 +1,26 @@
+[
+  {
+    "key": "phb",
+    "name": "Книга игрока",
+    "nameEn": "Player's Handbook",
+    "abbreviation": "PHB"
+  },
+  {
+    "key": "dmg",
+    "name": "Руководство мастера подземелий",
+    "nameEn": "Dungeon Master's Guide",
+    "abbreviation": "DMG"
+  },
+  {
+    "key": "mm",
+    "name": "Бестиарий",
+    "nameEn": "Monster Manual",
+    "abbreviation": "MM"
+  },
+  {
+    "key": "hb",
+    "name": "Авторский контент",
+    "nameEn": "Homebrew",
+    "abbreviation": "HB"
+  }
+]

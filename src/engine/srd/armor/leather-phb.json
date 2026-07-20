@@ -1,0 +1,22 @@
+{
+  "id": "leather-phb",
+  "name": "Кожаный доспех",
+  "nameEn": "Leather",
+  "description": "Нагрудник и наплечники этого доспеха сделаны из кожи, упрочнённой варкой в масле. Остальные части доспеха изготовлены из более мягких и гибких материалов.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 10,
+  "cost": "10 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "leather",
+  "baseArmorAC": 11,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "light",
+  "typeLabel": "Снаряжение"
+}

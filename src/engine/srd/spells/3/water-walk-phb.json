@@ -1,0 +1,35 @@
+{
+  "id": "water-walk-phb",
+  "name": "Хождение по воде",
+  "nameEn": "Water Walk",
+  "level": 3,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек пробки"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Это заклинание даёт возможность перемещаться по любой жидкой поверхности (такой как вода, кислота, грязь, снег, зыбучие пески или лава) так, как если бы она была твёрдой и безопасной землёй (существам, пересекающим расплавленную лаву, всё равно может быть нанесён урон от жара). До десяти согласных существ по вашему выбору в пределах дистанции получают эту способность на длительность заклинания. Затронутая цель должна использовать бонусное действие, чтобы перейти с поверхности жидкости в саму жидкость и обратно, но если цель упадёт в жидкость, то она пройдёт под поверхность жидкости.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "ranger",
+    "sorcerer"
+  ],
+  "type": "spell",
+  "targetCount": 10
+}

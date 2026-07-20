@@ -1,0 +1,43 @@
+{
+  "id": "heat-metal-phb",
+  "name": "Раскалённый металл",
+  "nameEn": "Heat Metal",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек железа и пламя"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "object",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Вы выбираете рукотворный металлический объект, такой как металлическое оружие либо тяжелые или средние металлические доспехи, который видите в пределах дистанции. Вы заставляете предмет раскалиться докрасна. Любое существо, находящееся в физическом контакте с предметом, получает 2к8 урона огнём, когда вы накладываете заклинание. До окончания действия заклинания вы можете бонусным действием на каждом из своих последующих ходов наносить этот урон снова, если предмет находится в пределах дистанции. \nЕсли существо держит или несёт предмет и получает урон от него, то оно должно преуспеть в спасброске Телосложения или уронить предмет, если может. Если существо не роняет предмет, то оно получает помеху на броски атаки и проверки характеристик до начала вашего следующего хода.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к8@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "special",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

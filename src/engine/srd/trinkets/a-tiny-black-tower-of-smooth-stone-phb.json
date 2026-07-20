@@ -1,0 +1,23 @@
+{
+  "id": "a-tiny-black-tower-of-smooth-stone-phb",
+  "name": "Крошечная чёрная башенка из гладкого камня",
+  "nameEn": "A tiny black tower of smooth stone",
+  "description": "Маленькая башенка, высеченная из гладкого чёрного камня. Она удивительно тяжёлая для своего размера.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

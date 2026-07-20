@@ -1,0 +1,64 @@
+name: Релиз системы
+
+# Запускается по пушу тега вида v1.0.0 — тег и есть номер версии системы.
+on:
+  push:
+    tags:
+      - 'v*'
+
+# Нужно право создавать релиз и прикладывать к нему файлы.
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Забрать исходники
+        uses: actions/checkout@v4
+
+      - name: Поставить Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Установить зависимости
+        run: npm ci
+
+      # ВАЖНО: до сборки — она копирует манифест в dist/, и в архив должен
+      # попасть уже проштампованный.
+      - name: Проставить версию и ссылки в манифест
+        run: node scripts/stamp-manifest.mjs "${{ github.ref_name }}" "${{ github.repository }}"
+
+      - name: Собрать систему
+        run: npm run build
+
+      - name: Проверить, что собралось главное
+        run: |
+          test -f dist/system.json
+          test -f dist/client.js
+          test -f dist/index.js
+          test -d dist/data
+
+      # Архивируем СОДЕРЖИМОЕ dist (system.json в корне архива — этого ждёт
+      # установщик VTTG).
+      - name: Упаковать в архив
+        run: |
+          ARCHIVE="$(node -p "require('./system.json').id").zip"
+          echo "ARCHIVE=$ARCHIVE" >> "$GITHUB_ENV"
+          cd dist && zip -r "../$ARCHIVE" .
+
+      # К релизу прикладываем ДВА файла: архив и отдельный system.json — второй
+      # нужен, чтобы работала постоянная ссылка releases/latest/download/system.json,
+      # по которой VTTG проверяет обновления.
+      - name: Создать релиз
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release create "${{ github.ref_name }}" \
+            "$ARCHIVE" \
+            dist/system.json \
+            --title "${{ github.ref_name }}" \
+            --generate-notes

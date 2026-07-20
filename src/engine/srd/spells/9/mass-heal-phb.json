@@ -1,0 +1,36 @@
+{
+  "id": "mass-heal-phb",
+  "name": "Множественное исцеление",
+  "nameEn": "Mass Heal",
+  "level": 9,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Поток исцеляющей энергии исходит от вас к существам вокруг вас. Вы восстанавливаете до 700 хитов, распределяя их по вашему выбору среди любого числа существ, которых вы видите в пределах дистанции. У существ, исцелённых этим заклинанием, также снимаются состояния ослеплённый, оглохший и отравленный.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "700@heal",
+      "target": "selected"
+    }
+  ]
+}

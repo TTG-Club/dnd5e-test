@@ -1,0 +1,66 @@
+{
+  "id": "hold-monster-phb",
+  "name": "Удержание чудовища",
+  "nameEn": "Hold Monster",
+  "level": 5,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "прямой кусок железа"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Выберите существо, которое вы видите в пределах дистанции. Цель должна совершить спасбросок Мудрости или получить состояние парализованный на длительность заклинания. В конце каждого своего хода цель повторяет спасбросок, при успехе заклинание прекращается.",
+  "higherLevelDescription": "Вы можете выбрать 1 дополнительное существо за каждый уровень ячейки выше 5.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "hold-monster-paralyzed",
+      "name": "Парализованный",
+      "description": "Недееспособен (Не может совершать действия/реакции); Скорость равна нулю; Автопровал спасбросков: Сила; Автопровал спасбросков: Ловкость; Преимущество атак по этому существу; Состояние: Парализованный; повторный спасбросок (Мудрость, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:user-minus",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "paralyzed",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "speed.zero",
+        "save.autoFail.strength",
+        "save.autoFail.dexterity",
+        "attacksAgainst.advantage"
+      ],
+      "recurringSave": {
+        "ability": "wisdom",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ]
+}

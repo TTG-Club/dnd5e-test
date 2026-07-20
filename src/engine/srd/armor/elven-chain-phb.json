@@ -1,0 +1,47 @@
+{
+  "id": "elven-chain-phb",
+  "name": "Эльфийская кольчуга",
+  "nameEn": "Elven Chain",
+  "description": "Считается, что вы владеете этим доспехом, даже если не владеете средними доспехами. Пока вы носите его, вы получаете бонус +1 к КД.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 20,
+  "cost": "-",
+  "rarity": "rare",
+  "equipped": false,
+  "baseType": "chain-shirt",
+  "baseArmorAC": 13,
+  "maxDexBonus": 2,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "none",
+  "activeEffects": [
+    {
+      "id": "effect_elven_chain",
+      "name": "Бонус эльфийской магии",
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "sourceId": "elven-chain-phb",
+      "transfer": true,
+      "description": "",
+      "disabled": false,
+      "origin": "item",
+      "duration": {
+        "type": "permanent"
+      },
+      "flags": []
+    }
+  ],
+  "equipmentCategory": "medium",
+  "typeLabel": "Снаряжение"
+}

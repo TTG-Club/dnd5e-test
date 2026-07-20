@@ -1,0 +1,22 @@
+{
+  "id": "ring-mail-phb",
+  "name": "Колечный доспех",
+  "nameEn": "Ring Mail",
+  "description": "Это кожаный доспех с нашитыми на него тяжёлыми кольцами. Кольца помогают укрепить доспех от ударов мечей и топоров. Колечный доспех хуже кольчуги и обычно носится теми, кто не может позволить себе лучшую броню. Создаёт помеху при использовании Скрытности.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 40,
+  "cost": "30 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "ring-mail",
+  "baseArmorAC": 14,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "heavy",
+  "typeLabel": "Снаряжение"
+}

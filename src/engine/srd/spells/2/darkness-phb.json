@@ -1,0 +1,39 @@
+{
+  "id": "darkness-phb",
+  "name": "Тьма",
+  "nameEn": "Darkness",
+  "level": 2,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "мех летучей мыши и кусочек угля"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "На время действия сфера с 15-футовым радиусом с центром в точке, выбранной вами в пределах дистанции, заполняется тьмой. Тёмное зрение не может видеть сквозь эту тьму и немагический свет не может её осветить. \nВ качестве альтернативы, вы можете наложить заклинание на объект, который не носится и не удерживается, заставляя тьму заполнить 15-футовую эманацию, исходящую от этого объекта. Покрытие этого предмета чем-то непрозрачным, таким как чаша или шлем, блокирует тьму. \nЕсли область действия этого заклинания пересекается с областью яркого или тусклого света, созданного заклинанием 2 уровня или ниже, то заклинание со светом рассеивается.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 15,
+    "unit": "ft"
+  }
+}

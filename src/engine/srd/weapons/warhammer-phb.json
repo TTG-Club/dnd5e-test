@@ -1,0 +1,32 @@
+{
+  "id": "warhammer-phb",
+  "name": "Боевой молот",
+  "nameEn": "Warhammer",
+  "description": "Боевой молот — воинское рукопашное оружие. Может использоваться одной или двумя руками.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 5,
+  "cost": "15 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "warhammer",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "bludgeoning",
+      "versatileFormula": "1к10"
+    }
+  ],
+  "weaponProperties": [
+    "versatile"
+  ],
+  "reach": 5,
+  "mastery": "push",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

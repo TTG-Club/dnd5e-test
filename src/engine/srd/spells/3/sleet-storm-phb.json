@@ -1,0 +1,59 @@
+{
+  "id": "sleet-storm-phb",
+  "name": "Метель",
+  "nameEn": "Sleet Storm",
+  "level": 3,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "миниатюрный зонт"
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "До окончания заклинания ледяной дождь падает в цилиндре высотой 40 футов и радиусом 20 футов с центром в точке по вашему выбору в пределах дистанции. Область сильно заслонена и каждое открытое пламя в области гаснет.\nЗемля в пределах цилиндра становится труднопроходимой местностью. Когда существо впервые за ход входит в цилиндр или начинает ход в его пределах, то оно должно преуспеть в спасброске Ловкости или получить состояние лежащий ничком и потерять концентрацию.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "sleet-storm-prone",
+      "name": "Лежащий ничком",
+      "description": "Помеха на все атаки; Состояние: Лежащий ничком.",
+      "icon": "tabler:download",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "prone",
+      "duration": {
+        "type": "special"
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage"
+      ]
+    }
+  ],
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 40,
+    "unit": "ft"
+  }
+}

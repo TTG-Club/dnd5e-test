@@ -1,0 +1,29 @@
+{
+  "id": "mace-phb",
+  "name": "Булава",
+  "nameEn": "Mace",
+  "description": "Булава — простое рукопашное оружие без особых свойств.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "5 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "mace",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "bludgeoning"
+    }
+  ],
+  "weaponProperties": [],
+  "reach": 5,
+  "mastery": "sap",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

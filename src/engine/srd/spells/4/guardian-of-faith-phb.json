@@ -1,0 +1,43 @@
+{
+  "id": "guardian-of-faith-phb",
+  "name": "Страж веры",
+  "nameEn": "Guardian of Faith",
+  "level": 4,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Большой призрачный страж появляется и парит на протяжении действия заклинания в незанятом пространстве, которое вы видите в пределах дистанции. Страж занимает это пространство и является неуязвимым, принимая форму, соответствующую вашему божеству или пантеону.\nЛюбой враг, который впервые перемещается в пространство в пределах 10 футов от стража за ход или начинает свой ход там, совершает спасбросок Ловкости, получая 20 урона излучением при провале или половину этого урона при успехе. Страж исчезает, когда нанесёт в общей сложности 60 урона.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "ray",
+    "size": 20,
+    "width": 5,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "20@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

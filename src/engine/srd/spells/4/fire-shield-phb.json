@@ -1,0 +1,32 @@
+{
+  "id": "fire-shield-phb",
+  "name": "Огненный щит",
+  "nameEn": "Fire Shield",
+  "level": 4,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек фосфора или светлячок"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Призрачное пламя окутывает ваше тело на время действия заклинания, излучая яркий свет в радиусе 10 футов и тусклый свет ещё на 10 футов.\nПламя может быть тёплым или холодным щитом по вашему выбору. Тёплый щит даёт вам сопротивление к урону холодом, а холодный щит даёт вам сопротивление к урону огнём.\nКроме того, всякий раз, когда существо в пределах 5 футов от вас попадает по вам рукопашной атакой, щит взрывается пламенем. Нападающий получает 2к8 урона огнём от тёплого щита или 2к8 урона холодом от холодного щита.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "navigator-s-tools-phb",
+  "name": "Инструменты навигатора",
+  "nameEn": "Navigator's Tools",
+  "type": "tool",
+  "toolCategory": "other",
+  "baseToolType": "navigators-tools",
+  "rarity": "common",
+  "weight": 2,
+  "cost": {
+    "value": 25,
+    "currency": "gp"
+  },
+  "description": "Этот набор инструментов используется для навигации в море. Прокладывание курса требует этого набора.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

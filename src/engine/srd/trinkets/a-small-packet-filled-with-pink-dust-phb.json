@@ -1,0 +1,23 @@
+{
+  "id": "a-small-packet-filled-with-pink-dust-phb",
+  "name": "Небольшой пакет, наполненный розовой пылью",
+  "nameEn": "A small packet filled with pink dust",
+  "description": "Бумажный пакетик, наполненный мелкой розовой пылью. Пыль слегка мерцает и приятно пахнет.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

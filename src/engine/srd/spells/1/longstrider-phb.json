@@ -1,0 +1,61 @@
+{
+  "id": "longstrider-phb",
+  "name": "Скороход",
+  "nameEn": "Longstrider",
+  "level": 1,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка земли"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Вы касаетесь существа. Скорость цели увеличивается на 10 футов до окончания длительности заклинания.",
+  "activeEffects": [
+    {
+      "id": "longstrider-speed",
+      "name": "Скороход (+10 фт скорости)",
+      "description": "Скорость (Ходьба) +10 фт; на 1 час.",
+      "icon": "tabler:run",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [
+        {
+          "key": "movement.walk",
+          "mode": "add",
+          "value": "10",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "target"
+    }
+  ],
+  "higherLevelDescription": "Вы можете выбрать одну дополнительную цель за каждый уровень ячейки заклинаний выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid",
+    "ranger",
+    "wizard"
+  ],
+  "type": "spell"
+}

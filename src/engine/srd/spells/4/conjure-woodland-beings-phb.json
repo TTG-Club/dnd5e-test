@@ -1,0 +1,47 @@
+{
+  "id": "conjure-woodland-beings-phb",
+  "name": "Вызов лесных обитателей",
+  "nameEn": "Conjure Woodland Beings",
+  "level": 4,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "wisdom",
+  "description": "Вы призываете духов природы, которые порхают вокруг вас в пределах 10-футовой эманации на всё время действия заклинания. Каждый раз, когда эманация попадает в область существа, которое вы можете видеть, и каждый раз, когда существо, которое вы видите, входит в область эманации или заканчивает там свой ход, вы можете заставить это существо совершить спасбросок Мудрости. Существо получает 5к8 урона силовым полем при провале или половину этого урона при успешном. Существо совершает этот спасбросок только 1 раз за ход.\nКроме того, вы можете совершить действие отход бонусным действием на время действия заклинания.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 4.\nизменено Эрратой",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 10,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "5к8@dmg.force",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

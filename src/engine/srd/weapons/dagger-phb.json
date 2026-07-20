@@ -1,0 +1,37 @@
+{
+  "id": "dagger-phb",
+  "name": "Кинжал",
+  "nameEn": "Dagger",
+  "description": "Кинжал — простое рукопашное оружие ближнего и дальнего боя. Позволяет использовать Ловкость вместо Силы для бросков атаки и урона. Может быть метнут на дистанцию 20/60 футов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 1,
+  "cost": "2 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "dagger",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к4",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "finesse",
+    "light",
+    "thrown"
+  ],
+  "range": {
+    "normal": 20,
+    "long": 60
+  },
+  "reach": 5,
+  "mastery": "nick",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

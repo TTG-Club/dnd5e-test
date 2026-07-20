@@ -1,0 +1,37 @@
+{
+  "id": "zone-of-truth-phb",
+  "name": "Область истины",
+  "nameEn": "Zone of Truth",
+  "level": 2,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "charisma",
+  "description": "Вы создаёте магическую зону, защищающую от обмана, в виде 15-футовой сферы с центром в точке в пределах дистанции. Пока заклинание действует, существо, которое впервые за ход входит в область действия заклинания или начинает там свой ход, должно совершить спасбросок Харизмы. При провале существо не может говорить преднамеренную ложь, находясь в этой сфере. Вы знаете, успешно ли существо прошло спасбросок. \nЗатронутое заклинанием существо осознаёт его эффект и может избегать ответов на вопросы, на которые оно обычно ответило бы ложью. Такое существо может уклоняться от ответа, но должно говорить правду",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 15,
+    "unit": "ft"
+  }
+}

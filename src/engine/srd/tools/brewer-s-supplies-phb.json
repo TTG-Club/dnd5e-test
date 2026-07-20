@@ -1,0 +1,20 @@
+{
+  "id": "brewer-s-supplies-phb",
+  "name": "Инструменты пивовара",
+  "nameEn": "Brewer's Supplies",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "brewers-supplies",
+  "rarity": "common",
+  "weight": 9,
+  "cost": {
+    "value": 20,
+    "currency": "gp"
+  },
+  "description": "Это стеклянные бутыли, хмель, трубки и всё прочее, что необходимо для создания эля и других алкогольных напитков.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

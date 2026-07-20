@@ -1,0 +1,41 @@
+{
+  "id": "befuddlement-phb",
+  "name": "Замешательство",
+  "nameEn": "Befuddlement",
+  "level": 8,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кольцо для ключей без ключей"
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "intelligence",
+  "description": "Вы поражаете разум существа, которое видите в пределах дистанции. Цель совершает спасбросок Интеллекта. При провале цель получает 10к12 урона психической энергией и не может накладывать заклинания или совершать действие магия. В конце каждых 30 дней цель повторяет спасбросок, завершив эффект при успехе. Эффект также может быть снят с помощью заклинаний Высшее восстановление [Greater Restoration], Исцеление [Heal] или Желание [Wish].\nПри успешном спасброске цель получает только половину урона.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "bard",
+    "druid",
+    "warlock",
+    "wizard"
+  ],
+  "damageParts": [
+    {
+      "formula": "10к12@dmg.psychic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

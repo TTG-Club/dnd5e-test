@@ -1,0 +1,23 @@
+{
+  "id": "a-scrap-of-cloth-from-an-old-banner-phb",
+  "name": "Кусочек ткани от старого знамени",
+  "nameEn": "A scrap of cloth from an old banner",
+  "description": "Обрывок ткани от знамени, некогда реявшего над полем битвы. Цвета выцвели, но вышивка ещё различима.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

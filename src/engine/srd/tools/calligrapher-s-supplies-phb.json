@@ -1,0 +1,20 @@
+{
+  "id": "calligrapher-s-supplies-phb",
+  "name": "Инструменты каллиграфа",
+  "nameEn": "Calligrapher's Supplies",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "calligraphers-supplies",
+  "rarity": "common",
+  "weight": 5,
+  "cost": {
+    "value": 10,
+    "currency": "gp"
+  },
+  "description": "Чернила, перья и пергамент позволяют создавать прекрасные рукописи и документы.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

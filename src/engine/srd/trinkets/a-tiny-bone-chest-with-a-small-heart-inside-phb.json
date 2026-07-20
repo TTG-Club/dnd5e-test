@@ -1,0 +1,23 @@
+{
+  "id": "a-tiny-bone-chest-with-a-small-heart-inside-phb",
+  "name": "Крошечный сундучок, вырезанный из кости с маленьким сердцем внутри",
+  "nameEn": "A tiny bone chest with a small heart inside",
+  "description": "Миниатюрный сундучок, искусно вырезанный из кости. Внутри лежит крошечное красное каменное сердце.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

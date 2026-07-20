@@ -1,0 +1,61 @@
+{
+  "id": "guiding-bolt-phb",
+  "name": "Направляющий снаряд",
+  "nameEn": "Guiding Bolt",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "special",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы метаете снаряд из света в существо в пределах дистанции. Совершите дальнобойную атаку заклинанием против цели. При попадании цель получает 4к6 урона излучением и следующий бросок атаки по ней до конца вашего следующего хода совершается с преимуществом",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "4к6@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к6"
+  },
+  "activeEffects": [
+    {
+      "id": "effect_1782194334765_m1uf2ka",
+      "name": "Направляющий снаряд (подсветка)",
+      "description": "Преимущество на следующий бросок атаки по цели до конца вашего следующего хода.",
+      "icon": "tabler:sun-high",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "consumeOn": "attackOnCarrier",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attacksAgainst.advantage"
+      ],
+      "effectTarget": "target"
+    }
+  ]
+}

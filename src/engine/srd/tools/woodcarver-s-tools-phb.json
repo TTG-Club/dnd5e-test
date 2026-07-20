@@ -1,0 +1,20 @@
+{
+  "id": "woodcarver-s-tools-phb",
+  "name": "Инструменты резчика по дереву",
+  "nameEn": "Woodcarver's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "woodcarvers-tools",
+  "rarity": "common",
+  "weight": 5,
+  "cost": {
+    "value": 1,
+    "currency": "gp"
+  },
+  "description": "Набор стамесок, ножей и резцов для вырезания деревянных изделий.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

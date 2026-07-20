@@ -1,0 +1,23 @@
+{
+  "id": "a-small-idol-depicting-a-nightmarish-creature-phb",
+  "name": "Маленький идол, изображающий кошмарное существо",
+  "nameEn": "A small idol depicting a nightmarish creature",
+  "description": "Крошечная статуэтка, вырезанная в виде ужасающего существа с множеством щупалец и глаз. От неё веет неуютом.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

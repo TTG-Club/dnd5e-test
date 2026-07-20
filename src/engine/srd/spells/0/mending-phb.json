@@ -1,0 +1,36 @@
+{
+  "id": "mending-phb",
+  "name": "Починка",
+  "nameEn": "Mending",
+  "level": 0,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "2 магнитных камня"
+  },
+  "range": 0,
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Это заклинание чинит одно повреждение или сломанный участок предмета, которого вы касаетесь, например, сломанную цепочку, 2 половинки сломанного ключа, порванный плащ или протекающий бурдюк. Если разрыв или слом не превышает 1 фута в любом измерении, то вы чините его, не оставляя следов от предыдущего повреждения.\nЭто заклинание может физически починить магический предмет, но не может вернуть ему утраченные магические свойства.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell",
+  "rangeUnit": "ft"
+}

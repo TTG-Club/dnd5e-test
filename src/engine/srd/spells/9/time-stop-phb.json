@@ -1,0 +1,31 @@
+{
+  "id": "time-stop-phb",
+  "name": "Остановка времени",
+  "nameEn": "Time Stop",
+  "level": 9,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы кратковременно останавливаете течение времени для всех, кроме себя. Для других существ время не проходит, в то время как вы совершаете 1к4 + 1 хода подряд, в течение которых вы можете использовать действия и перемещаться как обычно. \nЭто заклинание заканчивается, если 1 из действий, которые вы совершаете в этот период, или любой эффект, созданный вами, влияет на любое существо, кроме вас, или на объект, который носит или держит кто-то другой. Кроме того, заклинание заканчивается, если вы перемещаетесь дальше, чем на 1000 футов от места, где вы его наложили.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell"
+}

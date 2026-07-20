@@ -1,0 +1,23 @@
+{
+  "id": "an-arrow-shaft-blank-made-from-bone-phb",
+  "name": "Заготовка для стрелы, сделанная из кости",
+  "nameEn": "An arrow-shaft blank made from bone",
+  "description": "Незаконченная стрела с древком из отбелённой кости. Наконечник отсутствует, но древко идеально прямое.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

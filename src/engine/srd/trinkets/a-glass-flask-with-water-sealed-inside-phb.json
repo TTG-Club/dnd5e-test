@@ -1,0 +1,23 @@
+{
+  "id": "a-glass-flask-with-water-sealed-inside-phb",
+  "name": "Стеклянная фляга с замурованной внутри водой",
+  "nameEn": "A glass flask with water sealed inside",
+  "description": "Запечатанная стеклянная фляга, наполненная чистейшей водой. Пробки нет — стекло цельное вокруг воды.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

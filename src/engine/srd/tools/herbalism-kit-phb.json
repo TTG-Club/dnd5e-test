@@ -1,0 +1,20 @@
+{
+  "id": "herbalism-kit-phb",
+  "name": "Набор травника",
+  "nameEn": "Herbalism Kit",
+  "type": "tool",
+  "toolCategory": "other",
+  "baseToolType": "herbalism-kit",
+  "rarity": "common",
+  "weight": 3,
+  "cost": {
+    "value": 5,
+    "currency": "gp"
+  },
+  "description": "Этот набор содержит всевозможные инструменты: сумки, ступки и пестики для сбора и обработки целебных растений, а также стеклянные ампулы для их хранения.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

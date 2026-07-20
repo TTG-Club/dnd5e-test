@@ -1,0 +1,61 @@
+{
+  "id": "fly-phb",
+  "name": "Полёт",
+  "nameEn": "Fly",
+  "level": 3,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "перо"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа. На время действия заклинания цель получает скорость полёта  60 футов и может парить в воздухе. Когда действие заклинания заканчивается, цель падает, если она всё ещё находится в воздухе, если только она не может остановить падение.",
+  "activeEffects": [
+    {
+      "id": "fly-speed",
+      "name": "Полёт (скорость 60 фт)",
+      "description": "Скорость (Полет) повысить до 60 фт; на 10 минут.",
+      "icon": "tabler:feather",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "minutes",
+        "value": 10
+      },
+      "changes": [
+        {
+          "key": "movement.fly",
+          "mode": "upgrade",
+          "value": "60",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "target"
+    }
+  ],
+  "higherLevelDescription": "Вы можете выбрать одну дополнительную цель за каждый уровень ячейки заклинания выше 3.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

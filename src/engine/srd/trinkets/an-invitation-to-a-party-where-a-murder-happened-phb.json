@@ -1,0 +1,23 @@
+{
+  "id": "an-invitation-to-a-party-where-a-murder-happened-phb",
+  "name": "Приглашение на вечеринку, на которой произошло убийство",
+  "nameEn": "An invitation to a party where a murder happened",
+  "description": "Элегантное приглашение на бал, состоявшийся много лет назад. Согласно слухам, на том балу произошло ужасное убийство.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

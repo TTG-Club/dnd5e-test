@@ -1,0 +1,69 @@
+{
+  "id": "fire-bolt-phb",
+  "name": "Огненный снаряд",
+  "nameEn": "Fire Bolt",
+  "level": 0,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы метаете частицу огня в существо или объект в пределах дистанции. Совершите Бросок дальнобойной атаки заклинанием против цели. В случае попадания цель получает 1к10 урона огнём. Легковоспламеняющийся объект, поражённый этим заклинанием, начинает гореть, если он не надет и не несётся.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "1к10@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "cantripScalingTiers": [
+    {
+      "level": 5,
+      "parts": [
+        {
+          "formula": "2к10@dmg.fire",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "parts": [
+        {
+          "formula": "3к10@dmg.fire",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "parts": [
+        {
+          "formula": "4к10@dmg.fire",
+          "target": "selected"
+        }
+      ]
+    }
+  ],
+  "higherLevelDescription": "Урон увеличивается на 1к10, когда вы достигаете 5 уровня (2к10), 11 уровня (3к10) и 17 уровня (4к10)."
+}

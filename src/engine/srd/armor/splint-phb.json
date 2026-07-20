@@ -1,0 +1,22 @@
+{
+  "id": "splint-phb",
+  "name": "Наборный доспех",
+  "nameEn": "Splint",
+  "description": "Этот доспех сделан из узких вертикальных металлических полос, прикреплённых заклёпками к кожаной подкладке, которая надевается поверх стёганой одежды. Для защиты суставов используется гибкая кольчуга. Создаёт помеху при использовании Скрытности.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 60,
+  "cost": "200 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "splint",
+  "baseArmorAC": 17,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 15,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "heavy",
+  "typeLabel": "Снаряжение"
+}

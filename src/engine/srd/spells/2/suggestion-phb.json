@@ -1,0 +1,54 @@
+{
+  "id": "suggestion-phb",
+  "name": "Внушение",
+  "nameEn": "Suggestion",
+  "level": 2,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "капля мёда"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы внушаете последовательность действий (описанный не более чем в 25 словах) одному существу, которого видите в пределах дистанции, которое вы видите в пределах дистанции и которые могут слышать и понимать вас. Внушение должно звучать как достижимое и не включать ничего, что явно причинит урон цели или её союзникам. Например, вы можете сказать: «Принеси ключ от сокровищницы культа и отдай его мне». Или: «Прекрати драться, покинь эту библиотеку мирно и не возвращайся».\nЦель должна преуспеть в спасброске Мудрости, иначе она получает состояние очарованный на время действия заклинания или пока вы или ваши союзники не нанесёте урон цели. Очарованная цель следует внушению в меру своих способностей. Внушённая деятельность может продолжаться в течение всей длительности, но если внушённая деятельность может быть завершена за более короткое время, то заклинание заканчивается для цели по её завершении.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "rogue"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "suggestion-charmed",
+      "name": "Очарованный",
+      "description": "Состояние: Очарованный; на 8 часов.",
+      "icon": "tabler:heart",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "charmed",
+      "duration": {
+        "type": "hours",
+        "value": 8
+      },
+      "changes": [],
+      "flags": []
+    }
+  ]
+}

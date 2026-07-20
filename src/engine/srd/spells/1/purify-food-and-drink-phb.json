@@ -1,0 +1,37 @@
+{
+  "id": "purify-food-and-drink-phb",
+  "name": "Очищение пищи и питья",
+  "nameEn": "Purify Food and Drink",
+  "level": 1,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 10,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы очищаете немагическую пищу и питьё в сфере с радиусом 5 футов с центром в пределах дистанции от яда и гнили.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "paladin"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 5,
+    "unit": "ft"
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "rapier-phb",
+  "name": "Рапира",
+  "nameEn": "Rapier",
+  "description": "Рапира — воинское рукопашное оружие. Фехтовальное — позволяет использовать Ловкость вместо Силы.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "25 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "rapier",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "finesse"
+  ],
+  "reach": 5,
+  "mastery": "vex",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

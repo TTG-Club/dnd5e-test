@@ -1,0 +1,30 @@
+{
+  "id": "divine-favor-phb",
+  "name": "Божественное благоволение",
+  "nameEn": "Divine Favor",
+  "level": 1,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "До окончания действия заклинания ваши атаки оружием наносят дополнительные 1к4 урона излучением при попадании.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "paladin"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "ensnaring-strike-phb",
+  "name": "Опутывающий удар",
+  "nameEn": "Ensnaring Strike",
+  "level": 1,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "strength",
+  "description": "Когда вы попадаете по цели, то на ней появляются цепкие лозы и она совершает спасбросок Силы. Существо размера большой или больше получает преимущество на этот спасбросок. При провале на цель накладывается состояние опутанный до окончания действия заклинания. При успешном спасброске лозы увядают, и заклинание заканчивается. \nПока цель в состоянии опутанный, она получает 1к6 колющего урона в начале каждого своего хода. Цель или существо, находящееся в пределах досягаемости, могут совершить действие, чтобы выполнить проверку Силы (Атлетика) против Сл. вашего заклинания. При успехе заклинание заканчивается.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "ranger"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "ensnaring-strike-restrained",
+      "name": "Опутанный",
+      "description": "Скорость равна нулю; Помеха на все атаки; Преимущество атак по этому существу; Состояние: Опутанный; урон каждый ход (в начале хода): 1к6 колющий; на 10 раундов.",
+      "icon": "tabler:link",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "restrained",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "speed.zero",
+        "attack.disadvantage",
+        "attacksAgainst.advantage"
+      ],
+      "recurringDamage": {
+        "damageParts": [
+          {
+            "formula": "1к6@dmg.piercing"
+          }
+        ],
+        "timing": "startOfTurn"
+      }
+    }
+  ]
+}

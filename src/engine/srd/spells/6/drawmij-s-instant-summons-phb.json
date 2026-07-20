@@ -1,0 +1,31 @@
+{
+  "id": "drawmij-s-instant-summons-phb",
+  "name": "Дромиджево появление",
+  "nameEn": "Drawmij's Instant Summons",
+  "level": 6,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "сапфир стоимостью 1 000+ зм"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "special",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь сапфира, используемого при наложении заклинания, и объекта весом не более 10 фунтов, длина которого не превышает 6 футов. Заклинание оставляет невидимую метку на этом объекте и невидимое название предмета на сапфире. Каждый раз, когда вы накладываете это заклинание, вы должны использовать другой сапфир. \nПосле этого вы можете совершить действие магия, чтобы произнести имя объекта и раздавить сапфир. Объект мгновенно появляется у вас в руке, вне зависимости от расстояния и разделяющих планов, и заклинание прекращает действовать. \nЕсли другое существо держит или несет объект, то раздавливание сапфира не переносит его, но вместо этого вы узнаете, кто это существо и где оно сейчас находится.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "wizard"
+  ]
+}

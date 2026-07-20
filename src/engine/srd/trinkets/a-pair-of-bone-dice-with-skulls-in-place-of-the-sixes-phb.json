@@ -1,0 +1,23 @@
+{
+  "id": "a-pair-of-bone-dice-with-skulls-in-place-of-the-sixes-phb",
+  "name": "Пара костяных игральных костей с черепами вместо шестёрок",
+  "nameEn": "A pair of bone dice with skulls in place of the sixes",
+  "description": "Пара игральных костей из кости, на каждой из которых вместо стороны с шестью точками изображён маленький череп.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

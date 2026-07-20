@@ -1,0 +1,37 @@
+{
+  "id": "harm-phb",
+  "name": "Поражение",
+  "nameEn": "Harm",
+  "level": 6,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Вы насылаете опасную магию на существо, которое вы можете видеть в пределах дистанции. Цель совершает спасбросок Телосложения. При провале спасброска она получает 14к6 урона некротической энергией, а её максимальный запас хитов уменьшается на величину, равную полученному урону некротической энергии. При успешном спасброске она получает только половину этого урона. Это заклинание не может уменьшить максимум хитов цели ниже 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "14к6@dmg.necrotic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

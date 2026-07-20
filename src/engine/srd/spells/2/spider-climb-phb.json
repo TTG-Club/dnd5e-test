@@ -1,0 +1,60 @@
+{
+  "id": "spider-climb-phb",
+  "name": "Паук",
+  "nameEn": "Spider Climb",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "капля битума и паук"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь 1 согласное существо и до окончания длительности заклинания оно получает способность перемещаться вверх, вниз и вдоль вертикальных поверхностей, а также по потолкам, оставаясь при этом со свободными руками. Цель также получает скорость лазания, равную её обычной скорости.",
+  "higherLevelDescription": "Вы можете выбрать 1 дополнительное существо за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "effect_1782194334767_u8oox9c",
+      "name": "Паук (скорость лазания)",
+      "description": "Скорость (Лазание) повысить до 30 фт; на 1 час.",
+      "icon": "tabler:spider",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [
+        {
+          "key": "movement.climb",
+          "mode": "upgrade",
+          "value": "30",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "target"
+    }
+  ]
+}

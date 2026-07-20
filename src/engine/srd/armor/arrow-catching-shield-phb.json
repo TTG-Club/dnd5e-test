@@ -1,0 +1,48 @@
+{
+  "id": "arrow-catching-shield-phb",
+  "name": "Щит ловли стрел",
+  "nameEn": "Arrow-Catching Shield",
+  "description": "Вы получаете бонус +2 к КД от дальнобойных атак. Вы можете притягивать летящие стрелы к себе.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 6,
+  "cost": "-",
+  "rarity": "rare",
+  "equipped": false,
+  "baseType": "shield",
+  "baseArmorAC": 2,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "required",
+  "equipmentCategory": "shield",
+  "activeEffects": [
+    {
+      "id": "effect_arrow_catching_shield",
+      "name": "Ловля стрел (+2 КД от дальнобойных)",
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "2",
+          "priority": 20,
+          "condition": "incoming.attackType === \"ranged\""
+        }
+      ],
+      "sourceId": "arrow-catching-shield-phb",
+      "transfer": true,
+      "description": "Вы получаете бонус +2 к КД от дальнобойных атак.",
+      "disabled": false,
+      "origin": "item",
+      "duration": {
+        "type": "permanent"
+      },
+      "flags": []
+    }
+  ],
+  "typeLabel": "Снаряжение"
+}

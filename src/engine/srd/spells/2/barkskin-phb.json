@@ -1,0 +1,58 @@
+{
+  "id": "barkskin-phb",
+  "name": "Дубовая кожа",
+  "nameEn": "Barkskin",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "пригоршня коры"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа. До окончания закнинания кожа цели становится грубой и похожей внешне на кору дуба, и цель имеет 17 КД, если её КД был ниже.",
+  "activeEffects": [
+    {
+      "id": "barkskin-ac",
+      "name": "Дубовая кожа (КД 17)",
+      "description": "Класс доспеха (AC) повысить до 17; на 1 час.",
+      "icon": "tabler:tree",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "upgrade",
+          "value": "17",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "target"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger"
+  ],
+  "type": "spell"
+}

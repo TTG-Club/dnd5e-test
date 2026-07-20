@@ -1,0 +1,61 @@
+{
+  "id": "power-word-stun-phb",
+  "name": "Слово силы: Ошеломление",
+  "nameEn": "Power Word Stun",
+  "level": 8,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Вы подавляете разум одного существа, которое видите в пределах дистанции. Если у цели 150 или меньше хитов, то она получает состояние ошеломлённый. В противном случае её скорость становится 0 до начала вашего следующего хода. \nОшеломленная цель делает спасбросок Телосложения в конце каждого своего хода, заканчивая это состояние при успехе.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "power-word-stun-stunned",
+      "name": "Ошеломлённый",
+      "description": "Недееспособен (Не может совершать действия/реакции); Автопровал спасбросков: Сила; Автопровал спасбросков: Ловкость; Преимущество атак по этому существу; Состояние: Ошеломлённый; повторный спасбросок (Телосложение, Сл заклинателя) в конце хода снимает эффект.",
+      "icon": "tabler:bolt",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "stunned",
+      "duration": {
+        "type": "special"
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "save.autoFail.strength",
+        "save.autoFail.dexterity",
+        "attacksAgainst.advantage"
+      ],
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ]
+}

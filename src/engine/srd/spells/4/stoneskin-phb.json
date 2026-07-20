@@ -1,0 +1,58 @@
+{
+  "id": "stoneskin-phb",
+  "name": "Каменная кожа",
+  "nameEn": "Stoneskin",
+  "level": 4,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "алмазная пыль стоимостью 100+ зм, расходуемая заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Вы касаетесь одного согласного существа и до окончания заклинания оно получает сопротивление к дробящему, колющему и рубящему урону.",
+  "activeEffects": [
+    {
+      "id": "stoneskin-resistance",
+      "name": "Каменная кожа",
+      "description": "Сопротивление: Дробящий урон; Сопротивление: Колющий урон; Сопротивление: Рубящий урон; на 1 час.",
+      "icon": "tabler:wall",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "resistance.bludgeoning",
+        "resistance.piercing",
+        "resistance.slashing"
+      ],
+      "effectTarget": "target"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

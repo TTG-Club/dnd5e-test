@@ -1,0 +1,23 @@
+{
+  "id": "a-small-wooden-figurine-of-a-warlike-human-phb",
+  "name": "Маленькая деревянная фигурка, изображающая воинственного человека",
+  "nameEn": "A small wooden figurine of a warlike human",
+  "description": "Маленькая деревянная фигурка воина в полных доспехах с крошечным мечом в руке. Вырезана с поразительной детализацией.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

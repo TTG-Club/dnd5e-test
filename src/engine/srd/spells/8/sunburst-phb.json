@@ -1,0 +1,73 @@
+{
+  "id": "sunburst-phb",
+  "name": "Солнечный ожог",
+  "nameEn": "Sunburst",
+  "level": 8,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек солнечного камня"
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Ослепительный солнечный свет вспыхивает в сфере радиусом 60 футов с центром в точке, выбранной вами в пределах дистанции. Каждое существо в сфере должно совершить спасбросок Телосложения. При провале существо получает 12к6 урона излучением и получает состояние ослеплённый на 1 минуту. При успешном спасброске оно получает половину урона. \nСущество, ослеплённое этим заклинанием, может совершать повторный спасбросок Телосложения в конце каждого своего хода, и при успехе состояние ослеплённый прекращается. \nЭто заклинание рассеивает тьму, созданную любым заклинанием, в своей области действия.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 60,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "12к6@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "activeEffects": [
+    {
+      "id": "sunburst-blinded",
+      "name": "Ослеплённый",
+      "description": "Помеха на все атаки; Преимущество атак по этому существу; Ослеплен (Ничего не видит, автопровал проверок зрения); Состояние: Ослеплённый; повторный спасбросок (Телосложение, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:eye-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "blinded",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "attacksAgainst.advantage",
+        "vision.blinded"
+      ],
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ]
+}

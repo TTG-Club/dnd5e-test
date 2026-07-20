@@ -1,0 +1,32 @@
+{
+  "id": "heroes-feast-phb",
+  "name": "Пир героев",
+  "nameEn": "Heroes' Feast",
+  "level": 6,
+  "school": "conjuration",
+  "castingTimeValue": 10,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "чаша, инкрустированная драгоценными камнями, стоимостью 1 000+ зм, расходуемая заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы создаёте пир, который появляется на поверхности в незанятом кубе с длиной ребра 10 футов рядом с вами. Пир занимает 1 час и исчезает по истечении этого времени, а его благотворные эффекты вступают в силу только после окончания этого часа. В пире могут участвовать до 12 существ. \nСущество, принявшее участие в пире, получает несколько эффектов, которые действуют в течение 24 часов. Существо получает сопротивление урону ядом, иммунитет к состояниям испуганный и отравленный. Его максимальное количество хитов также увеличивается на 2к10, и оно получает столько же хитов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid"
+  ],
+  "type": "spell"
+}

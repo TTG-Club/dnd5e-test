@@ -1,0 +1,47 @@
+{
+  "id": "demon-armor-phb",
+  "name": "Демонический доспех",
+  "nameEn": "Demon Armor",
+  "description": "Пока вы носите этот доспех, вы получаете бонус +1 к КД. Вы понимаете Бездну. Проклятый доспех: демоны получают преимущество на атаки по вам.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 65,
+  "cost": "-",
+  "rarity": "very-rare",
+  "equipped": false,
+  "baseType": "plate",
+  "baseArmorAC": 18,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 15,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "required",
+  "activeEffects": [
+    {
+      "id": "effect_demon_armor",
+      "name": "Демоническая защита",
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "sourceId": "demon-armor-phb",
+      "transfer": true,
+      "description": "",
+      "disabled": false,
+      "origin": "item",
+      "duration": {
+        "type": "permanent"
+      },
+      "flags": []
+    }
+  ],
+  "equipmentCategory": "heavy",
+  "typeLabel": "Снаряжение"
+}

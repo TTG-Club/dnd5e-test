@@ -1,0 +1,39 @@
+{
+  "id": "power-word-kill-phb",
+  "name": "Слово силы: Смерть",
+  "nameEn": "Power Word Kill",
+  "level": 9,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы заставляете 1 существо, которое вы видите в пределах дистанции, умереть. Если у цели 100 хитов или меньше, то она умирает. В противном случае она получает 12к12 урона психической энергией.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "12к12@dmg.psychic",
+      "target": "selected"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "prayer-of-healing-phb",
+  "name": "Молебен лечения",
+  "nameEn": "Prayer of Healing",
+  "level": 2,
+  "school": "abjuration",
+  "castingTimeValue": 10,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "До 5 существ на ваш выбор, которые находятся в пределах дистанции на всё время накладывания заклинания, получают эффект завершения короткого отдыха и восстанавливают 2к8 хитов. Существо не может быть повторно подвержено этому заклинанию до тех пор, пока не завершит продолжительный отдых.",
+  "higherLevelDescription": "Лечение увеличивается на 1к8 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к8@heal",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к8"
+  },
+  "projectiles": {
+    "count": 5,
+    "targetDistribution": "distinct"
+  }
+}

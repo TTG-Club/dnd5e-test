@@ -1,0 +1,33 @@
+{
+  "id": "create-or-destroy-water-phb",
+  "name": "Сотворение или уничтожение воды",
+  "nameEn": "Create or Destroy Water",
+  "level": 1,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "смесь воды и песка"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы выбираете одно из следующего:",
+  "higherLevelDescription": "Вы создаёте или уничтожаете дополнительные 10 галлонов воды или размер куба увеличивается на 5 футов за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid"
+  ],
+  "type": "spell"
+}

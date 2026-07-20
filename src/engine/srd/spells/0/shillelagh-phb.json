@@ -1,0 +1,67 @@
+{
+  "id": "shillelagh-phb",
+  "name": "Дубинка",
+  "nameEn": "Shillelagh",
+  "level": 0,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "омела"
+  },
+  "range": 0,
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Дубинка или боевой посох, который вы держите, наполняется природной силой. На время действия заклинания вы можете использовать свою заклинательную характеристику вместо Силы для атаки и бросков урона рукопашными атаками с использованием этого оружия, а также кость урона оружия становится к8.\nЕсли атака наносит урон, то это может быть урон силовым полем или обычным типом урона оружия (по вашему выбору). Заклинание заканчивается досрочно, если вы наложите его снова или отпустите оружие.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "1к8@dmg.force",
+      "target": "selected"
+    }
+  ],
+  "rangeUnit": "ft",
+  "higherLevelDescription": "Кость урона изменяется на уровнях 5 (к10), 11 (к12) и 17 (2к6).",
+  "cantripScalingTiers": [
+    {
+      "level": 5,
+      "parts": [
+        {
+          "formula": "1к10@dmg.force",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "parts": [
+        {
+          "formula": "1к12@dmg.force",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "parts": [
+        {
+          "formula": "2к6@dmg.force",
+          "target": "selected"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "hide-phb",
+  "name": "Шкурный доспех",
+  "nameEn": "Hide",
+  "description": "Этот грубый доспех состоит из толстых мехов и шкур. Обычно используется варварскими племенами, злыми гуманоидами и другими народами, которым недоступны инструменты и материалы для создания более качественной брони.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 12,
+  "cost": "10 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "hide",
+  "baseArmorAC": 12,
+  "maxDexBonus": 2,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "medium",
+  "typeLabel": "Снаряжение"
+}

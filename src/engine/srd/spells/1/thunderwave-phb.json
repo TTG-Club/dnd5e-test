@@ -1,0 +1,50 @@
+{
+  "id": "thunderwave-phb",
+  "name": "Волна грома",
+  "nameEn": "Thunderwave",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "constitution",
+  "description": "Вы выпускаете волну громовой энергии. Каждое существо в кубе с ребром 15 футов, исходящем от вас, совершает спасбросок Телосложения. При провале существо получает 2к8 урона звуком и отбрасывается на 10 футов от вас. При успешном спасброске существо получает половину урона и не отбрасывается. \nКроме того, не закреплённые объекты, находящиеся полностью в пределах куба, отбрасываются на 10 футов от вас, а громовой раскат слышен на расстоянии 300 футов.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки заклинания выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "rect",
+    "size": 15,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "2к8@dmg.thunder",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

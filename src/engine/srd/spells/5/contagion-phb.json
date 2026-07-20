@@ -1,0 +1,64 @@
+{
+  "id": "contagion-phb",
+  "name": "Заражение",
+  "nameEn": "Contagion",
+  "level": 5,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 7,
+  "durationUnit": "day",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "constitution",
+  "description": "Ваше касание накладывает магическое заражение. Цель должна преуспеть в спасброске Телосложения или получить 11к8 урона некротической энергией и состояние отравленный. Также выберите одну характеристику при накладывании заклинания. Пока цель отравлена, она имеет помехой на спасброски, связанные с выбранной характеристикой. \nЦель должна повторять спасбросок в конце каждого своего хода до тех пор, пока не наберёт 3 успеха или 3 провала. Если цель преуспела в 3 спасбросках, то заклинание заканчивается на ней. Если цель провалила 3 раза, то заклинание действует на неё в течение 7 дней. \nКаждый раз, когда отравленная цель получает эффект, который должен снять состояние отравленный, цель должна преуспеть в спасброске Телосложения, иначе состояние отравленного не заканчивается.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "contagion-poisoned",
+      "name": "Отравленный",
+      "description": "Помеха на все атаки; Помеха на ВСЕ проверки характеристик; Состояние: Отравленный; повторный спасбросок (Телосложение, Сл заклинателя) в конце хода снимает эффект.",
+      "icon": "tabler:droplet",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "poisoned",
+      "duration": {
+        "type": "special"
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "abilityCheck.disadvantage"
+      ],
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ],
+  "damageParts": [
+    {
+      "formula": "11к8@dmg.necrotic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "none"
+}

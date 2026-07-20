@@ -1,0 +1,23 @@
+{
+  "id": "a-glass-vial-filled-with-nail-clippings-phb",
+  "name": "Стеклянная фляга, наполненная обрезками ногтей",
+  "nameEn": "A glass vial filled with nail clippings",
+  "description": "Маленькая стеклянная фляга с пробковой крышкой, до половины заполненная чьими-то состриженными ногтями.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

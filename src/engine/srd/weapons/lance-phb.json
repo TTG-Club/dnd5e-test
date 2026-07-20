@@ -1,0 +1,34 @@
+{
+  "id": "lance-phb",
+  "name": "Длинное копьё",
+  "nameEn": "Lance",
+  "description": "Длинное копьё — воинское оружие с увеличенной досягаемостью. Вы совершаете атаку с помехой, если цель в пределах 5 футов от вас. Требует обе руки, если вы не верхом.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 6,
+  "cost": "10 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "lance",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к10",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "heavy",
+    "reach",
+    "special"
+  ],
+  "special": "Вы совершаете атаку с помехой, если цель в пределах 5 футов от вас. Также это оружие требует обе руки, если вы не верхом.",
+  "reach": 10,
+  "mastery": "topple",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

@@ -1,0 +1,72 @@
+{
+  "id": "searing-smite-phb",
+  "name": "Палящая кара",
+  "nameEn": "Searing Smite",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "constitution",
+  "description": "Когда вы попадаете по цели, то она получает от этой атаки дополнительные 1к6 урона огнём. В начале каждого своего хода до окончания действия заклинания цель получает 1к6 урона огнём и затем совершает спасбросок Телосложения.\nПри провале заклинание продолжается. При успехе действие заклинания заканчивается.",
+  "higherLevelDescription": "Каждый урон увеличивается на 1к6 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "paladin"
+  ],
+  "activeEffects": [
+    {
+      "id": "searing-smite-burning",
+      "name": "Палящая кара (горение)",
+      "description": "Урон каждый ход (в начале хода): 1к6 огненный; повторный спасбросок (Телосложение, Сл заклинателя) в начале хода снимает эффект; на 1 минуту.",
+      "icon": "tabler:flame",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "duration": {
+        "type": "minutes",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [],
+      "recurringDamage": {
+        "damageParts": [
+          {
+            "formula": "1к6@dmg.fire"
+          }
+        ],
+        "timing": "startOfTurn"
+      },
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "startOfTurn"
+      }
+    }
+  ],
+  "damageParts": [
+    {
+      "formula": "1к6@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "special",
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}

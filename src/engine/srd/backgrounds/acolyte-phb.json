@@ -1,0 +1,42 @@
+{
+  "key": "acolyte",
+  "name": "Послушник",
+  "nameEn": "Acolyte",
+  "description": "**Послушник** — вы посвятили себя служению в городском храме или в уединённой священной роще. Там вы совершали священные обряды в честь бога или пантеона. Вы служили у священника и изучали религию. Благодаря наставлениям вашего священника и вашей собственной преданности вы также научились направлять толику божественной силы на служение вашему месту поклонения и людям, которые там молились.",
+  "isSRD": true,
+  "abilityGrant": {
+    "abilities": [
+      "intelligence",
+      "wisdom",
+      "charisma"
+    ]
+  },
+  "skillGrant": {
+    "skills": [
+      "insight",
+      "religion"
+    ]
+  },
+  "toolGrant": {
+    "items": [
+      "calligraphers-supplies"
+    ]
+  },
+  "featGrant": {
+    "featId": "magic-initiate-phb",
+    "featName": "Посвящённый в магию",
+    "featNameEn": "Magic Initiate"
+  },
+  "equipmentOptions": [
+    {
+      "description": "Инструменты каллиграфа, Книга (молитвенник), Священный символ, Пергамент (10 листов), Роба, 8 зм"
+    },
+    {
+      "description": "50 зм",
+      "goldAlternative": 50
+    }
+  ],
+  "type": "background",
+  "id": "acolyte-phb",
+  "sourceKey": "phb"
+}

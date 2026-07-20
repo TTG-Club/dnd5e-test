@@ -1,0 +1,23 @@
+{
+  "id": "an-empty-perfume-bottle-with-an-unusual-scent-phb",
+  "name": "Пустая бутылочка от духов с необычным запахом",
+  "nameEn": "An empty perfume bottle with an unusual scent",
+  "description": "Маленькая стеклянная бутылочка, которая когда-то содержала духи. Хотя она и пуста, от неё всё ещё исходит неуловимый приятный аромат.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

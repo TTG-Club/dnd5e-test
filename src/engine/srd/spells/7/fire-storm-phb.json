@@ -1,0 +1,44 @@
+{
+  "id": "fire-storm-phb",
+  "name": "Огненная буря",
+  "nameEn": "Fire Storm",
+  "level": 7,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "В пределах дистанции начинается огненная буря. Область бури состоит из 10 10-футовых кубов, которые вы можете расположить по своему усмотрению. Каждый куб должен соприкасаться хотя бы с одним другим кубом. Каждое существо в этой области совершает спасбросок Ловкости, получая 7к10 урона огнём при провале или половину этого урона при успехе. \nЛегковоспламеняющиеся предметы в этой области, которые не носят и не держат, начинают гореть.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "sorcerer"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "rect",
+    "size": 10,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "7к10@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

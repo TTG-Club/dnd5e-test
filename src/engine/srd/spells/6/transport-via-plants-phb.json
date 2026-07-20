@@ -1,0 +1,30 @@
+{
+  "id": "transport-via-plants-phb",
+  "name": "Путешествие через растения",
+  "nameEn": "Transport via Plants",
+  "level": 6,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 10,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Это заклинание создаёт магическую связь между неподвижным растением размера большой или больше в пределах дистанции и другим растением на любом расстоянии, находящимся на том же плане. Вы должны хотя бы раз видеть или касаться растения, выбранного в качестве пункта назначения. На время действия заклинания любое существо может шагнуть в целевое растение и выйти из растения в пункте назначения, используя 5 футов перемещения.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,616 @@
+{
+  "id": "archmage-mm",
+  "name": "Архимаг",
+  "nameEn": "Archmage",
+  "type": "creature",
+  "isSRD": true,
+  "isReadOnly": true,
+  "header": "Средний гуманоид (волшебник), нейтральный",
+  "description": "Архимаги — могущественнейшие из волшебников, посвятившие жизнь изучению тайн магии. Они служат советниками правителей или преследуют собственные загадочные цели, окружённые охранными заклинаниями и фамильярами.",
+  "token": {
+    "frameUrl": "assets/token-frames/0.png",
+    "showName": true,
+    "disposition": "hostile",
+    "vision": {
+      "range": 0,
+      "darkvision": 0,
+      "angle": 360,
+      "enabled": true
+    }
+  },
+  "system": {
+    "size": "medium",
+    "type": "humanoid",
+    "subtype": "волшебник",
+    "alignment": "neutral",
+    "armorClass": {
+      "value": 17,
+      "calculation": "flat",
+      "formula": "",
+      "flat": 17
+    },
+    "hitPoints": {
+      "average": 170,
+      "formula": "31к8 + 31",
+      "text": "",
+      "current": 170,
+      "max": 170,
+      "hitDie": 8,
+      "hitDiceCount": 31,
+      "bonus": 31
+    },
+    "movement": {
+      "walk": 30,
+      "swim": 0,
+      "fly": 0,
+      "climb": 0,
+      "burrow": 0,
+      "hover": false,
+      "units": "ft"
+    },
+    "abilities": {
+      "strength": 10,
+      "dexterity": 14,
+      "constitution": 12,
+      "intelligence": 20,
+      "wisdom": 15,
+      "charisma": 16
+    },
+    "challengeRating": "12",
+    "proficiencyBonus": 4,
+    "savingThrows": [
+      "intelligence",
+      "wisdom"
+    ],
+    "skills": {
+      "arcana": "expertise",
+      "history": "proficient",
+      "perception": "proficient"
+    },
+    "defenses": {
+      "vulnerabilities": [],
+      "resistances": [],
+      "immunities": [
+        "psychic"
+      ],
+      "conditionImmunities": [
+        "charmed"
+      ]
+    },
+    "senses": "пассивная Внимательность 16",
+    "languages": [
+      "common",
+      "draconic",
+      "elvish",
+      "dwarvish",
+      "giant",
+      "abyssal"
+    ],
+    "environments": [
+      "urban"
+    ],
+    "customEnvironments": "",
+    "spellcasting": {
+      "ability": "intelligence",
+      "saveDC": 17,
+      "attackBonus": 9
+    },
+    "traits": [
+      {
+        "name": "Сопротивление магии",
+        "nameEn": "Magic Resistance",
+        "description": [
+          "Архимаг совершает с преимуществом спасброски против заклинаний и прочих магических эффектов."
+        ]
+      },
+      {
+        "name": "Использование заклинаний",
+        "nameEn": "Spellcasting",
+        "description": [
+          "Заклинательная характеристика — Интеллект (Сл спасброска 17, +9 к попаданию атаками заклинаниями). По желанию — заговоры и «Обнаружение магии», «Доспехи мага»; 2 раза в день каждое — «Огненный шар», «Невидимость»; 1 раз в день каждое — «Полёт», «Молния», «Конус холода», «Остановка времени»; 3 раза в день — «Туманный шаг» (бонусным действием)."
+        ]
+      },
+      {
+        "name": "Защитная магия (3/день)",
+        "nameEn": "Protective Magic (3/Day)",
+        "description": [
+          "Реакцией архимаг сотворяет «Контрзаклинание» или «Щит» в ответ на соответствующий триггер (до 3 раз за день)."
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "Мультиатака",
+        "nameEn": "Multiattack",
+        "description": [
+          "Архимаг совершает три атаки «Арканный взрыв»."
+        ]
+      },
+      {
+        "name": "Арканный взрыв",
+        "nameEn": "Arcane Burst",
+        "description": [
+          "Рукопашная или дальнобойная атака заклинанием: +9 к попаданию, досягаемость 5 фт. или дальность 120 фт., одна цель. Попадание: 27 (4к10 + 5) урона силовым полем."
+        ],
+        "attackBonus": 9,
+        "damageParts": [
+          {
+            "formula": "4к10 + 5",
+            "type": "force"
+          }
+        ],
+        "reach": 5,
+        "range": {
+          "normal": 120
+        },
+        "rangeType": "ranged",
+        "distanceUnit": "ft"
+      }
+    ],
+    "bonusActions": [],
+    "reactions": [],
+    "legendary": {
+      "count": 0,
+      "actions": []
+    }
+  },
+  "spells": [
+    {
+      "id": "detect-magic",
+      "name": "Обнаружение магии",
+      "nameEn": "Detect Magic",
+      "level": 1,
+      "school": "divination",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": false
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 10,
+      "durationUnit": "minute",
+      "concentration": true,
+      "ritual": false,
+      "targetType": "self",
+      "deliveryType": "self",
+      "saveType": "none",
+      "description": "На протяжении действия заклинания вы чувствуете присутствие магических эффектов в пределах 30 футов от вас. Если вы ощущаете такие эффекты, то вы можете выполнить действие магия, чтобы увидеть слабое свечение вокруг любого видимого существа или предмета в этой области, на которые наложена магия, и если эффект был создан заклинанием, то вы узнаёте школу магии этого заклинания. \nЗаклинание блокируется 1 футом камня, земли или дерева; 1 дюймом металла или тонким листом свинца.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "bard",
+        "cleric",
+        "druid",
+        "paladin",
+        "ranger",
+        "sorcerer",
+        "wizard"
+      ],
+      "type": "spell"
+    },
+    {
+      "id": "mage-armor",
+      "name": "Доспехи мага",
+      "nameEn": "Mage Armor",
+      "level": 1,
+      "school": "abjuration",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "кусок выделанной кожи"
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 8,
+      "durationUnit": "hour",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "creature",
+      "deliveryType": "touch",
+      "saveType": "none",
+      "description": "Вы касаетесь согласного существа, не носящего доспехи. Пока заклинание активно, базовый КД цели становится 13 + модификатор Ловкости цели. Заклинание оканчивается, если цель надевает доспехи.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "sorcerer",
+        "wizard",
+        "fighter"
+      ],
+      "type": "spell"
+    },
+    {
+      "id": "mage-hand",
+      "name": "Волшебная рука",
+      "nameEn": "Mage Hand",
+      "level": 0,
+      "school": "conjuration",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": false
+      },
+      "range": 30,
+      "rangeUnit": "ft",
+      "durationValue": 1,
+      "durationUnit": "minute",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "creature",
+      "deliveryType": "ranged",
+      "saveType": "none",
+      "description": "Призрачная парящая рука появляется в точке, которую вы выбираете в пределах дистанции, и существует на протяжении всей длительности заклинания. Она исчезает, если окажется дальше 30 футов от вас или если вы снова наложите это заклинание.\nПри накладывании заклинания вы можете использовать руку для манипуляции объектами: открывать незапертые двери или контейнеры, убирать или извлекать предметы из открытых контейнеров, а также выливать содержимое из склянок.\nВ дальнейшем, используя действие магия, вы можете снова управлять рукой, перемещая её на расстояние до 30 футов. Рука не может атаковать, активировать магические предметы или переносить более 10 фунтов.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard",
+        "fighter",
+        "rogue"
+      ],
+      "type": "spell"
+    },
+    {
+      "id": "prestidigitation",
+      "name": "Фокусы",
+      "nameEn": "Prestidigitation",
+      "level": 0,
+      "school": "transmutation",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": false
+      },
+      "range": 10,
+      "rangeUnit": "ft",
+      "durationValue": 1,
+      "durationUnit": "hour",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "creature",
+      "deliveryType": "ranged",
+      "saveType": "none",
+      "description": "Вы создаёте магический эффект в пределах дистанции. Выберите эффект из приведённых ниже вариантов. Если вы накладываете это заклинание несколько раз, то вы можете иметь до 3 его не мгновенных эффектов одновременно.\nСенсорный эффект. Вы создаете мгновенный безвредный сенсорный эффект, такой как искры, дуновение ветра, слабые музыкальные ноты или странный запах.\nОгонь. Вы мгновенно зажигаете или гасите свечу, факел или небольшой костёр.\nГрязь. Вы мгновенно очищаете или загрязняете объект размером не более 1 кубического фута.\nЛёгкое воздействие. Вы охлаждаете, нагреваете или придаёте вкус до 1 кубическому футу неживого материала на 1 час.\nМагическая метка. Вы создаете небольшой знак, символ или меняете цвет на объекте или поверхности на 1 час.\nМалое создание. Вы создаёте не магическую безделушку или иллюзорное изображение, которое помещается в вашей руке. Оно существует до конца вашего следующего хода. Безделушка не может наносить урон и не имеет материальной ценности.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "sorcerer",
+        "warlock",
+        "wizard",
+        "fighter",
+        "rogue"
+      ],
+      "type": "spell"
+    },
+    {
+      "id": "fireball",
+      "name": "Огненный шар",
+      "nameEn": "Fireball",
+      "level": 3,
+      "school": "evocation",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "шарик из гуано летучей мыши и серы"
+      },
+      "range": 150,
+      "rangeUnit": "ft",
+      "durationValue": 0,
+      "durationUnit": "instantaneous",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "area",
+      "deliveryType": "ranged",
+      "saveType": "dexterity",
+      "description": "Яркая вспышка вырывается от вас к выбранной вами точке в пределах дистанции, а затем с гулким рёвом разрастается в огненный взрыв. Каждое существо в пределах сферы с радиусом 20 фт., с центром в этой точке, должно совершить спасбросок Ловкости. Существо получает 8к6 урона огнём при неудачном спасброске или половину этого урона при успехе.\nЛегковоспламеняющиеся предметы в области, которые никто не носит и не несёт, начинают гореть.",
+      "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 3.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "areaOfEffect": {
+        "shape": "circle",
+        "size": 20,
+        "unit": "ft"
+      },
+      "classKeys": [
+        "sorcerer",
+        "wizard",
+        "fighter"
+      ],
+      "type": "spell",
+      "damageParts": [
+        {
+          "formula": "8к6@dmg.fire",
+          "target": "selected"
+        }
+      ],
+      "scaling": {
+        "additionalDice": "1к6"
+      },
+      "saveEffect": "half",
+      "uses": {
+        "max": 2,
+        "current": 2,
+        "recovery": "longRest"
+      }
+    },
+    {
+      "id": "invisibility",
+      "name": "Невидимость",
+      "nameEn": "Invisibility",
+      "level": 2,
+      "school": "illusion",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "ресничка в смоле"
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 1,
+      "durationUnit": "hour",
+      "concentration": true,
+      "ritual": false,
+      "targetType": "creature",
+      "deliveryType": "touch",
+      "saveType": "none",
+      "description": "Существо, которого вы касаетесь, получает состояние невидимый до окончания действия заклинания. Заклинание прекращается досрочно сразу после того, как цель совершит атаку, нанесёт урон или наложит заклинание.",
+      "higherLevelDescription": "Вы можете выбрать 1 дополнительную цель за каждый уровень ячейки выше 2.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "bard",
+        "sorcerer",
+        "warlock",
+        "wizard",
+        "fighter",
+        "rogue"
+      ],
+      "type": "spell",
+      "uses": {
+        "max": 2,
+        "current": 2,
+        "recovery": "longRest"
+      }
+    },
+    {
+      "id": "fly",
+      "name": "Полёт",
+      "nameEn": "Fly",
+      "level": 3,
+      "school": "transmutation",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "перо"
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 10,
+      "durationUnit": "minute",
+      "concentration": true,
+      "ritual": false,
+      "targetType": "creature",
+      "deliveryType": "touch",
+      "saveType": "none",
+      "description": "Вы касаетесь согласного существа. На время действия заклинания цель получает скорость полёта  60 футов и может парить в воздухе. Когда действие заклинания заканчивается, цель падает, если она всё ещё находится в воздухе, если только она не может остановить падение.",
+      "higherLevelDescription": "Вы можете выбрать одну дополнительную цель за каждый уровень ячейки заклинания выше 3.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "sorcerer",
+        "warlock",
+        "wizard",
+        "fighter"
+      ],
+      "type": "spell",
+      "uses": {
+        "max": 1,
+        "current": 1,
+        "recovery": "longRest"
+      }
+    },
+    {
+      "id": "lightning-bolt",
+      "name": "Молния",
+      "nameEn": "Lightning Bolt",
+      "level": 3,
+      "school": "evocation",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "кусочек меха и кристаллический жезл"
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 0,
+      "durationUnit": "instantaneous",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "area",
+      "deliveryType": "self",
+      "saveType": "dexterity",
+      "description": "Удар молнии, формирующий линию длиной 100 футов и шириной 5 футов, вырывается от вас в выбранном направлении. Каждое существо в линии должно совершить спасбросок Ловкости. При провале оно получает 8к6 урона электричеством, при успехе — половину этого урона.",
+      "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 3.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "sorcerer",
+        "wizard",
+        "fighter"
+      ],
+      "type": "spell",
+      "areaOfEffect": {
+        "shape": "ray",
+        "size": 100,
+        "width": 5,
+        "unit": "ft"
+      },
+      "damageParts": [
+        {
+          "formula": "8к6@dmg.lightning",
+          "target": "selected"
+        }
+      ],
+      "saveEffect": "half",
+      "scaling": {
+        "additionalDice": "1к6"
+      },
+      "uses": {
+        "max": 1,
+        "current": 1,
+        "recovery": "longRest"
+      }
+    },
+    {
+      "id": "cone-of-cold",
+      "name": "Конус холода",
+      "nameEn": "Cone of Cold",
+      "level": 5,
+      "school": "evocation",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": true,
+        "material": true,
+        "materialDescription": "небольшой кристаллический или стеклянный конус"
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 0,
+      "durationUnit": "instantaneous",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "area",
+      "deliveryType": "self",
+      "saveType": "constitution",
+      "description": "Вы испускаете поток холодного воздуха. Каждое существо в конусе 60 футов, исходящем от вас, должно совершить спасбросок Телосложения, получая 8к8 урона холодом при провале спасброска или половину этого урона при успешном спасброске. Существо, убитое этим заклинанием, становится замороженной статуей до тех пор, пока не растает.",
+      "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 5",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "areaOfEffect": {
+        "shape": "cone",
+        "size": 60,
+        "unit": "ft"
+      },
+      "classKeys": [
+        "sorcerer",
+        "wizard"
+      ],
+      "type": "spell",
+      "damageParts": [
+        {
+          "formula": "8к8@dmg.cold",
+          "target": "selected"
+        }
+      ],
+      "scaling": {
+        "additionalDice": "1к8"
+      },
+      "saveEffect": "half",
+      "uses": {
+        "max": 1,
+        "current": 1,
+        "recovery": "longRest"
+      }
+    },
+    {
+      "id": "time-stop",
+      "name": "Остановка времени",
+      "nameEn": "Time Stop",
+      "level": 9,
+      "school": "transmutation",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "action",
+      "components": {
+        "verbal": true,
+        "somatic": false,
+        "material": false
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 0,
+      "durationUnit": "instantaneous",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "self",
+      "deliveryType": "self",
+      "saveType": "none",
+      "description": "Вы кратковременно останавливаете течение времени для всех, кроме себя. Для других существ время не проходит, в то время как вы совершаете 1к4 + 1 хода подряд, в течение которых вы можете использовать действия и перемещаться как обычно. \nЭто заклинание заканчивается, если 1 из действий, которые вы совершаете в этот период, или любой эффект, созданный вами, влияет на любое существо, кроме вас, или на объект, который носит или держит кто-то другой. Кроме того, заклинание заканчивается, если вы перемещаетесь дальше, чем на 1000 футов от места, где вы его наложили.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "sorcerer",
+        "wizard"
+      ],
+      "type": "spell",
+      "uses": {
+        "max": 1,
+        "current": 1,
+        "recovery": "longRest"
+      }
+    },
+    {
+      "id": "misty-step",
+      "name": "Туманный шаг",
+      "nameEn": "Misty Step",
+      "level": 2,
+      "school": "conjuration",
+      "castingTimeValue": 1,
+      "castingTimeUnit": "bonus",
+      "components": {
+        "verbal": true,
+        "somatic": false,
+        "material": false
+      },
+      "range": 0,
+      "rangeUnit": "ft",
+      "durationValue": 0,
+      "durationUnit": "instantaneous",
+      "concentration": false,
+      "ritual": false,
+      "targetType": "self",
+      "deliveryType": "self",
+      "saveType": "none",
+      "description": "Вас на мгновение окружает серебристый туман и вы телепортируетесь на расстояние до 30 футов в незанятое пространство, которое видите.",
+      "sourceKey": "phb",
+      "isSRD": true,
+      "classKeys": [
+        "sorcerer",
+        "warlock",
+        "wizard",
+        "fighter"
+      ],
+      "type": "spell",
+      "uses": {
+        "max": 3,
+        "current": 3,
+        "recovery": "longRest"
+      }
+    }
+  ],
+  "sourceKey": "mm"
+}

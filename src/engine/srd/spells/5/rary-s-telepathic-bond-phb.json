@@ -1,0 +1,32 @@
+{
+  "id": "rary-s-telepathic-bond-phb",
+  "name": "Ментальная связь Рэри",
+  "nameEn": "Rary’s Telepathic Bond ",
+  "level": 5,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "2 яйца"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы создаёте телепатическую связь между 8 согласными существами на ваш выбор в пределах досягаемости. Существа, которые не могут общаться ни на одном языке, не подпадают под действие этого заклинания. \nПока заклинание активно, цели могут телепатически общаться посредством этой связи, даже если у них нет общего языка. Общение возможно на любом расстоянии, но оно не может простираться на другие планы существования.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "wizard"
+  ],
+  "targetCount": 8
+}

@@ -1,0 +1,31 @@
+{
+  "id": "enthrall-phb",
+  "name": "Речь златоуста",
+  "nameEn": "Enthrall",
+  "level": 2,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы плетёте отвлекающую речь, заставляя выбранных существ, которых вы видите в пределах дистанции, совершить спасбросок Мудрости. Любое существо, с которым вы или ваши спутники сражаетесь, автоматически преуспевают в этом спасбросоке. В случае провала спасброска цель получает штраф -10 к проверкам Мудрости (Внимательность) и пассивной Внимательности до окончания действия заклинания.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "warlock"
+  ],
+  "type": "spell"
+}

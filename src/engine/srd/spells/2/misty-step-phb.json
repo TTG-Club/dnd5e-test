@@ -1,0 +1,33 @@
+{
+  "id": "misty-step-phb",
+  "name": "Туманный шаг",
+  "nameEn": "Misty Step",
+  "level": 2,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вас на мгновение окружает серебристый туман и вы телепортируетесь на расстояние до 30 футов в незанятое пространство, которое видите.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a-metal-disk-engraved-with-an-unfamiliar-coat-of-arms-phb",
+  "name": "Металлический диск с гравировкой незнакомого герба",
+  "nameEn": "A metal disk engraved with an unfamiliar coat of arms",
+  "description": "Плоский металлический диск с тщательно выгравированным гербом, который не принадлежит ни одному известному дому или гильдии.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "magic-circle-phb",
+  "name": "Магический круг",
+  "nameEn": "Magic Circle",
+  "level": 3,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "соль и серебряный порошок стоимостью 100+ зм, расходуемый заклинанием"
+  },
+  "range": 10,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы создаёте цилиндр магической энергии с радиусом 10 футов и высотой 20 футов с центром в точке на земле, которую вы видите в пределах дистанции. Светящиеся руны появляются там, где цилиндр пересекается с полом или другой поверхностью.\nВыберите 1 или несколько из следующих типов существ: небожители, элементали, феи, исчадия или нежить. Круг влияет на существо выбранного типа следующим образом:\nКаждый раз, когда вы накладываете это заклинание, вы можете заставить его магию работать в обратном направлении, предотвращая выход существа указанного типа из цилиндра и защищая цели вне его.",
+  "higherLevelDescription": "Длительность увеличивается на 1 час за каждый уровень ячейки выше 3.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell"
+}

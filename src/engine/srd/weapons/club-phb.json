@@ -1,0 +1,31 @@
+{
+  "id": "club-phb",
+  "name": "Дубинка",
+  "nameEn": "Club",
+  "description": "Дубинка — простое рукопашное оружие. Лёгкое свойство позволяет совершить дополнительную атаку бонусным действием при атаке другим лёгким оружием.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "1 см",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "club",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к4",
+      "type": "bludgeoning"
+    }
+  ],
+  "weaponProperties": [
+    "light"
+  ],
+  "reach": 5,
+  "mastery": "slow",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

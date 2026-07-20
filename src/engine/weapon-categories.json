@@ -1,0 +1,32 @@
+[
+  {
+    "key": "simple",
+    "name": "Простое оружие",
+    "nameEn": "Simple"
+  },
+  {
+    "key": "martial",
+    "name": "Воинское оружие",
+    "nameEn": "Martial"
+  },
+  {
+    "key": "improvised",
+    "name": "Импровизированное оружие",
+    "nameEn": "Improvised"
+  },
+  {
+    "key": "natural",
+    "name": "Природное оружие",
+    "nameEn": "Natural"
+  },
+  {
+    "key": "siege",
+    "name": "Осадное оружие",
+    "nameEn": "Siege"
+  },
+  {
+    "key": "firearm",
+    "name": "Огнестрельное оружие",
+    "nameEn": "Firearm"
+  }
+]

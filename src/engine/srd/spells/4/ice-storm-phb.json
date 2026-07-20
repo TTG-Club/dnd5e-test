@@ -1,0 +1,54 @@
+{
+  "id": "ice-storm-phb",
+  "name": "Град",
+  "nameEn": "Ice Storm",
+  "level": 4,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "варежка"
+  },
+  "range": 300,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Град падает в цилиндре радиусом 20 футов и высотой 40 футов, центрированном на точке в пределах дистанции. Каждое существо в цилиндре должно совершить спасбросок Ловкости. Существо получает 2к10 дробящего урона и 4к6 урона холодом при провале или половину этого урона при успехе.\nГрад превращает землю в цилиндре в труднопроходимую местность до конца вашего следующего хода.",
+  "higherLevelDescription": "Дробящий урон увеличивается на 1к10 за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 20,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "2к10@dmg.bludgeoning",
+      "target": "selected"
+    },
+    {
+      "formula": "4к6@dmg.cold",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к10"
+  },
+  "saveEffect": "half"
+}

@@ -1,0 +1,20 @@
+{
+  "id": "cook-s-utensils-phb",
+  "name": "Инструменты повара",
+  "nameEn": "Cook's Utensils",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "cooks-utensils",
+  "rarity": "common",
+  "weight": 8,
+  "cost": {
+    "value": 1,
+    "currency": "gp"
+  },
+  "description": "Котлы, ножи, половники и запас специй для приготовления вкусной еды.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

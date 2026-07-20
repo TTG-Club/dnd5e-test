@@ -1,0 +1,23 @@
+{
+  "id": "a-bronze-pentacle-with-a-rat-s-head-engraved-in-its-center-phb",
+  "name": "Бронзовая пентаграмма с выгравированной головой крысы в центре",
+  "nameEn": "A bronze pentacle with a rat's head engraved in its center",
+  "description": "Пентаграмма из потемневшей бронзы с тщательно выгравированной головой крысы в самом центре.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "find-traps-phb",
+  "name": "Поиск ловушек",
+  "nameEn": "Find Traps",
+  "level": 2,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы чувствуете любую ловушку в пределах видимой дистанции. Ловушка, определяемая этим заклинанием, включает любой объект или механизм, созданный для нанесения урона или другой опасности. Таким образом, заклинание обнаружит заклинание Сигнал тревоги [Alarm] или Охранные руны [Glyph of Warding], а также механическую яму-ловушку, но не выявит естественную ветхость пола, неустойчивый потолок или скрытую промоину в земле.\nЭто заклинание обнаруживает наличие ловушки, но не её расположение. Однако вы узнаете общий характер опасности, которую представляет обнаруженная ловушка.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "ranger"
+  ],
+  "type": "spell"
+}

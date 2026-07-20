@@ -1,0 +1,23 @@
+{
+  "id": "wand-of-binding-dmg",
+  "name": "Жезл оков",
+  "nameEn": "Wand of Binding",
+  "description": "Этот жезл содержит 7 зарядов и требует настройки заклинателем. Держа его, вы можете действием потратить некоторое количество зарядов для сотворения одного из следующих заклинаний (Сл спасброска 17): «Удержание чудовища» (5 зарядов) или «Удержание личности» (2 заряда).\n\nЖезл восстанавливает {@roll 1d6+1} потраченных зарядов ежедневно на заре. Если вы потратите последний заряд, бросьте {@roll 1d20}. Если выпадет 1, жезл рассыпается в прах и уничтожается.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 1,
+  "cost": "",
+  "rarity": "rare",
+  "equipped": false,
+  "equipmentCategory": "wand",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "dmg",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "required",
+  "typeLabel": "Снаряжение"
+}

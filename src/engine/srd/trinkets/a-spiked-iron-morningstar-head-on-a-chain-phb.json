@@ -1,0 +1,23 @@
+{
+  "id": "a-spiked-iron-morningstar-head-on-a-chain-phb",
+  "name": "Железный шипастый набалдашник от моргенштерна на цепи",
+  "nameEn": "A spiked iron morningstar head on a chain",
+  "description": "Тяжёлый железный набалдашник, утыканный шипами, на короткой цепочке. Некогда был частью моргенштерна.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

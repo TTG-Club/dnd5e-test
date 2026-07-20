@@ -1,0 +1,42 @@
+{
+  "id": "armor-of-resistance-fire-phb",
+  "name": "Доспех сопротивления (Огонь)",
+  "nameEn": "Armor of Resistance (Fire)",
+  "description": "Пока вы носите этот доспех, у вас есть сопротивление к огненному урону.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 65,
+  "cost": "-",
+  "rarity": "rare",
+  "equipped": false,
+  "baseType": "plate",
+  "baseArmorAC": 18,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 15,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "required",
+  "activeEffects": [
+    {
+      "id": "effect_armor_of_resistance_fire",
+      "name": "Сопротивление огню",
+      "changes": [],
+      "sourceId": "armor-of-resistance-fire-phb",
+      "transfer": true,
+      "description": "",
+      "disabled": false,
+      "origin": "item",
+      "duration": {
+        "type": "permanent"
+      },
+      "flags": [
+        "resistance.fire"
+      ]
+    }
+  ],
+  "equipmentCategory": "heavy",
+  "typeLabel": "Снаряжение"
+}

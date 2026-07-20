@@ -1,0 +1,193 @@
+{
+  "id": "giant-spider-mm",
+  "name": "Гигантский паук",
+  "nameEn": "Giant Spider",
+  "type": "creature",
+  "isSRD": true,
+  "isReadOnly": true,
+  "header": "Большой зверь, без мировоззрения",
+  "description": "Гигантский паук — хищник, обитающий в пещерах и подземельях. Плетёт липкую паутину для ловли жертв и нападает из засады.",
+  "token": {
+    "frameUrl": "assets/token-frames/0.png",
+    "showName": true,
+    "disposition": "hostile",
+    "scale": 2,
+    "vision": {
+      "range": 10,
+      "darkvision": 60,
+      "angle": 360,
+      "enabled": true
+    }
+  },
+  "system": {
+    "size": "large",
+    "type": "beast",
+    "subtype": "",
+    "alignment": "unaligned",
+    "armorClass": {
+      "value": 14,
+      "calculation": "natural",
+      "formula": "",
+      "flat": 14
+    },
+    "hitPoints": {
+      "average": 26,
+      "formula": "4к10 + 4",
+      "text": "",
+      "current": 26,
+      "max": 26,
+      "hitDie": 10,
+      "hitDiceCount": 4,
+      "bonus": 4
+    },
+    "movement": {
+      "walk": 30,
+      "swim": 0,
+      "fly": 0,
+      "climb": 30,
+      "burrow": 0,
+      "hover": false,
+      "units": "ft"
+    },
+    "abilities": {
+      "strength": 14,
+      "dexterity": 16,
+      "constitution": 12,
+      "intelligence": 2,
+      "wisdom": 11,
+      "charisma": 4
+    },
+    "challengeRating": "1",
+    "proficiencyBonus": 2,
+    "savingThrows": [],
+    "skills": {
+      "stealth": "expertise"
+    },
+    "defenses": {
+      "vulnerabilities": [],
+      "resistances": [],
+      "immunities": [],
+      "conditionImmunities": []
+    },
+    "senses": "слепое зрение 10 фт., тёмное зрение 60 фт., пассивная Внимательность 10",
+    "languages": [],
+    "environments": [
+      "underdark",
+      "forest"
+    ],
+    "customEnvironments": "",
+    "traits": [
+      {
+        "name": "Паучье лазание",
+        "nameEn": "Spider Climb",
+        "description": [
+          "Паук может лазать по сложным поверхностям, включая потолки, не совершая проверок характеристик."
+        ]
+      },
+      {
+        "name": "Паутинное чутьё",
+        "nameEn": "Web Sense",
+        "description": [
+          "Находясь в контакте с паутиной, паук знает точное местоположение всех других существ, контактирующих с той же паутиной."
+        ]
+      },
+      {
+        "name": "Хождение по паутине",
+        "nameEn": "Web Walker",
+        "description": [
+          "Паук игнорирует ограничения движения, вызванные паутиной."
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "Укус",
+        "nameEn": "Bite",
+        "description": [
+          "Рукопашная атака оружием: +5 к попаданию, досягаемость 5 фт., одна цель. Попадание: 7 (1к8 + 3) колющего урона, и цель должна пройти испытание Телосложения СЛ 11, получая 9 (2к8) урона ядом при провале или половину при успехе. Если урон ядом уменьшает хиты цели до 0, цель стабилизирована, но отравлена на 1 час, даже после восстановления хитов, и парализована, пока отравлена."
+        ],
+        "attackBonus": 5,
+        "damageParts": [
+          {
+            "formula": "1к8 + 3",
+            "type": "piercing"
+          }
+        ],
+        "reach": 5,
+        "rangeType": "melee",
+        "distanceUnit": "ft",
+        "activeEffects": [
+          {
+            "id": "spider-bite-poison",
+            "name": "Яд",
+            "description": "Урон ядом по испытанию Телосложения (половина при успехе). Если яд снижает хиты цели до 0 — цель стабилизирована, но отравлена на 1 час и парализована, пока отравлена (применяется вручную, см. описание действия).",
+            "icon": "tabler:biohazard",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "applySave": {
+              "ability": "constitution",
+              "dc": 11,
+              "onSuccess": "half"
+            },
+            "damageParts": [
+              {
+                "formula": "2к8",
+                "type": "poison"
+              }
+            ],
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": []
+          }
+        ]
+      },
+      {
+        "name": "Паутина (перезарядка 5–6)",
+        "nameEn": "Web (Recharge 5–6)",
+        "description": [
+          "Дальнобойная атака оружием: +5 к попаданию, дистанция 30/60 фт., одна цель. Попадание: цель опутана паутиной. Опутанная цель может действием совершить проверку Силы СЛ 12, освобождаясь при успехе. Паутину также можно атаковать и уничтожить (КД 10; хиты 5; уязвимость к огненному урону; иммунитет к дробящему, ядовитому и психическому урону)."
+        ],
+        "attackBonus": 5,
+        "reach": 5,
+        "rangeType": "ranged",
+        "distanceUnit": "ft",
+        "range": {
+          "normal": 30,
+          "long": 60
+        },
+        "activeEffects": [
+          {
+            "id": "restrained",
+            "name": "Опутанный",
+            "description": "Существо опутано паутиной. Скорость равна 0, атаки по нему совершаются с преимуществом, а его атаки — с помехой. Действием можно совершить проверку Силы СЛ 12 для освобождения.",
+            "icon": "tabler:link",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": [
+              "speed.zero",
+              "attack.disadvantage",
+              "attacksAgainst.advantage"
+            ]
+          }
+        ]
+      }
+    ],
+    "bonusActions": [],
+    "reactions": [],
+    "legendary": {
+      "count": 0,
+      "actions": []
+    }
+  },
+  "sourceKey": "mm"
+}

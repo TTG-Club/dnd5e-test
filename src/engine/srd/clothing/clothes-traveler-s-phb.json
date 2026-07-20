@@ -1,0 +1,23 @@
+{
+  "id": "clothes-traveler-s-phb",
+  "name": "Дорожная одежда",
+  "nameEn": "Clothes, Traveler's",
+  "description": "Прочная и практичная одежда, предназначенная для путешествий в различных климатических условиях. Выдерживает долгие переходы и непогоду.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "2 зм",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "clothing",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

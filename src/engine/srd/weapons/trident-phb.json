@@ -1,0 +1,37 @@
+{
+  "id": "trident-phb",
+  "name": "Трезубец",
+  "nameEn": "Trident",
+  "description": "Трезубец — воинское рукопашное оружие. Метательное и универсальное, может быть брошено на дистанцию 20/60 футов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "5 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "trident",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "piercing",
+      "versatileFormula": "1к10"
+    }
+  ],
+  "weaponProperties": [
+    "thrown",
+    "versatile"
+  ],
+  "range": {
+    "normal": 20,
+    "long": 60
+  },
+  "reach": 5,
+  "mastery": "topple",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "acid-splash-phb",
+  "name": "Брызги кислоты",
+  "nameEn": "Acid Splash",
+  "level": 0,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы бросаете кислотный шарик в точку в пределах дальности, где он взрывается сферой с радиусом 5 фт. Каждое существо в этой сфере должно преуспеть в спасброске Ловкости или получить 1к6 урона кислотой.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 5,
+    "unit": "ft"
+  },
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "1к6@dmg.acid",
+      "target": "selected"
+    }
+  ],
+  "cantripScalingTiers": [
+    {
+      "level": 5,
+      "parts": [
+        {
+          "formula": "2к6@dmg.acid",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "parts": [
+        {
+          "formula": "3к6@dmg.acid",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "parts": [
+        {
+          "formula": "4к6@dmg.acid",
+          "target": "selected"
+        }
+      ]
+    }
+  ],
+  "higherLevelDescription": "Урон увеличивается на 1к6, когда вы достигаете 5 уровня (2к6), 11 уровня (3к6) и 17 уровня (4к6).",
+  "saveEffect": "none"
+}

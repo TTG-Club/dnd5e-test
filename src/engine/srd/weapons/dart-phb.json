@@ -1,0 +1,35 @@
+{
+  "id": "dart-phb",
+  "name": "Дротик",
+  "nameEn": "Dart",
+  "description": "Дротик — простое дальнобойное оружие. Фехтовальное и метательное, позволяет использовать Ловкость вместо Силы для бросков атаки и урона.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 0.25,
+  "cost": "5 мм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "dart",
+  "weaponCategory": "simple",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к4",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "finesse",
+    "thrown"
+  ],
+  "range": {
+    "normal": 20,
+    "long": 60
+  },
+  "mastery": "vex",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

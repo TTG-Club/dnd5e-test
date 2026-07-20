@@ -1,0 +1,32 @@
+{
+  "id": "knock-phb",
+  "name": "Стук",
+  "nameEn": "Knock",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы выбираете объект, который видите в пределах дистанции. Этот объект может быть дверью, коробкой, сундуком, кандалами, замком или любым другим объектом, содержащим обычные или магические средства, предотвращающие доступ.\nЦель, закрытая на обычный замок, заклинившая или запертая, становится открытой, расклиненной или отпёртой. Если у объекта несколько замков, то открывается только 1 из них.\nЕсли цель закрыта с помощью заклинания Волшебный замок [Arcane Lock], то это заклинание подавляется на 10 минут, в течение которых объект можно открыть и закрыть.\nКогда вы накладываете это заклинание, то от цели раздаётся громкий стук, слышный на расстоянии до 300 футов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell"
+}

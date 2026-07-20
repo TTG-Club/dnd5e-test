@@ -1,0 +1,37 @@
+{
+  "id": "longbow-phb",
+  "name": "Длинный лук",
+  "nameEn": "Longbow",
+  "description": "Длинный лук — воинское тяжёлое дальнобойное оружие. Двуручное.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "50 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "longbow",
+  "weaponCategory": "martial",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition",
+    "heavy",
+    "two-handed"
+  ],
+  "ammunitionType": "arrows",
+  "range": {
+    "normal": 150,
+    "long": 600
+  },
+  "mastery": "slow",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

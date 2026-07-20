@@ -1,0 +1,21 @@
+{
+  "name": "vttg-system-dnd5e-test",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Игровая система D&D 5e для VTTG — собирается ВНЕ приложения (тестовый форк для отладки внешней доставки систем)",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:client": "vite build",
+    "build:server": "node scripts/build-server.mjs"
+  },
+  "devDependencies": {
+    "@nuxt/ui": "4.5.1",
+    "@vitejs/plugin-vue": "6.0.4",
+    "esbuild": "0.25.12",
+    "typescript": "5.9.3",
+    "vite": "7.3.1",
+    "vue": "3.5.29",
+    "zod": "^3.25.76"
+  }
+}

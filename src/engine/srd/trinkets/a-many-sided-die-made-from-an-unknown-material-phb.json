@@ -1,0 +1,23 @@
+{
+  "id": "a-many-sided-die-made-from-an-unknown-material-phb",
+  "name": "Многогранный кубик из неизвестного материала",
+  "nameEn": "A many-sided die made from an unknown material",
+  "description": "Кубик со множеством граней, сделанный из материала, который вы не можете определить. Его поверхность переливается разными цветами.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

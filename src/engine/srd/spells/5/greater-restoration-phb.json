@@ -1,0 +1,33 @@
+{
+  "id": "greater-restoration-phb",
+  "name": "Высшее восстановление",
+  "nameEn": "Greater Restoration",
+  "level": 5,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "алмазная пыль стоимостью не менее 100 зм, расходуемая заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь существа и магически снимаете с него 1 из следующих эффектов:",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid"
+  ],
+  "type": "spell"
+}

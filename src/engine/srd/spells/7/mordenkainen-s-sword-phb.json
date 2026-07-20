@@ -1,0 +1,38 @@
+{
+  "id": "mordenkainen-s-sword-phb",
+  "name": "Меч Морденкайнена",
+  "nameEn": "Mordenkainen's Sword",
+  "level": 7,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "миниатюрный меч стоимостью 250+ зм"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы создаёте призрачный меч, который парит в пределах дистанции. Он существует в течение длительности заклинания. \nКогда меч появляется, то вы совершаете рукопашную атаку заклинанием по цели в пределах 5 футов от меча. При попадании цель получает урон силовым полем, равный 4к12 + ваш модификатор заклинательной характеристики. \nВ последующих ходах вы можете бонусным действием переместить меч на 30 футов в видимое место и повторить атаку по той же цели или другой.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "bard",
+    "wizard"
+  ],
+  "damageParts": [
+    {
+      "formula": "4к12@dmg.force+@mod.spell",
+      "target": "selected"
+    }
+  ]
+}

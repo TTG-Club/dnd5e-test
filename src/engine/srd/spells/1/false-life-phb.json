@@ -1,0 +1,43 @@
+{
+  "id": "false-life-phb",
+  "name": "Псевдожизнь",
+  "nameEn": "False Life",
+  "level": 1,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "капля спирта"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы получаете 2к4 + 4 временных хита.",
+  "higherLevelDescription": "Вы получаете 5 дополнительных временных хитов за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к4@heal.temp + 4",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "5"
+  }
+}

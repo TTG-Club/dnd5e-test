@@ -1,0 +1,33 @@
+{
+  "id": "gentle-repose-phb",
+  "name": "Нетленные останки",
+  "nameEn": "Gentle Repose",
+  "level": 2,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "2 медные монеты, расходуемые заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "day",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы прикасаетесь к трупу или другим останкам. На время действия заклинания цель защищена от разложения и не может стать нежитью.\nЭто заклинание также увеличивает ограничение по времени, в течение которого труп можно возродить, так как дни, проведённые под воздействием этого заклинания, не учитываются при подсчёте времени со дня смерти для таких заклинаний как Низшее воскрешение [Revivify].",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin",
+    "wizard"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "faerie-fire-phb",
+  "name": "Огонь фей",
+  "nameEn": "Faerie Fire",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Объекты в пределах 20-футового куба в пределах дистанции выделяются синим, зелёным или фиолетовым светом (на ваш выбор). Каждое существо в кубе также выделяется, если не проходит спасбросок Ловкости. В течение длительности объекты и поражённые существа излучают тусклый свет в радиусе 10 футов и не могут воспользоваться состоянием невидимый. Броски атаки по затронутым существам или объектам совершаются с преимуществом, если атакующий может их видеть.",
+  "activeEffects": [
+    {
+      "id": "faerie-fire-outlined",
+      "name": "Огонь фей (подсвечен)",
+      "description": "Преимущество атак по этому существу; на 10 раундов.",
+      "icon": "tabler:sparkles",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10,
+        "remaining": 10
+      },
+      "changes": [],
+      "flags": [
+        "attacksAgainst.advantage"
+      ],
+      "effectTarget": "target"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "rect",
+    "size": 20,
+    "unit": "ft"
+  }
+}

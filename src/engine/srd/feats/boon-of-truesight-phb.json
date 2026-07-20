@@ -1,0 +1,21 @@
+{
+  "id": "boon-of-truesight-phb",
+  "name": "Дар истинного зрения",
+  "nameEn": "Boon of Truesight",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": false,
+  "description": "Вы получаете следующие эффекты:\n\n- **Повышение характеристики.** Увеличьте показатель 1 вашей характеристики по выбору на 1, максимум до 30.\n- **Истинное зрение.** Вы получаете истинное зрение с дистанцией 60 фт.",
+  "typeLabel": "Черты",
+  "featData": {
+    "type": "feat",
+    "abilityScoreIncrease": {
+      "choice": {
+        "amount": 1,
+        "count": 1
+      }
+    }
+  }
+}

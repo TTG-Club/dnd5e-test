@@ -1,0 +1,98 @@
+{
+  "id": "eyebite-phb",
+  "name": "Разящее око",
+  "nameEn": "Eyebite",
+  "level": 6,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "wisdom",
+  "description": "На время длительности заклинания ваши глаза становятся абсолютно черными. Одно существо по вашему выбору, находящееся в пределах 60 футов от вас и видимое вами, должно преуспеть в спасброске Мудрости, иначе оно будет подвержено одним из следующих эффектов по вашему выбору на длительность заклинания. \nВ каждый из ваших ходов до окончания действия заклинания вы можете действием магия нацелиться на другое существо, но не можете нацелиться на существо повторно, если оно преуспело в спасброске против этого наложенного заклинания. \nСон. Цель получает состояние бессознательный. Цель просыпается, если получает урон или если другое существо использует действие, чтобы разбудить её. \nПаника. Цель получает состояние испуганный. В каждый свой ход испуганная цель должна использовать действие рывок и двигаться от вас по самому безопасному и короткому доступному маршруту. Если цель перемещается на расстояние не менее 60 футов от вас и не видит вас, то этот эффект заканчивается. \nСлабость. Цель получает состояние отравленный.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "eyebite-unconscious",
+      "name": "Бессознательный",
+      "description": "Недееспособен (Не может совершать действия/реакции); Скорость равна нулю; Автопровал спасбросков: Сила; Автопровал спасбросков: Ловкость; Преимущество атак по этому существу; Состояние: Бессознательный; на 10 раундов.",
+      "icon": "tabler:zzz",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "unconscious",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "speed.zero",
+        "save.autoFail.strength",
+        "save.autoFail.dexterity",
+        "attacksAgainst.advantage"
+      ]
+    },
+    {
+      "id": "eyebite-frightened",
+      "name": "Испуганный",
+      "description": "Помеха на все атаки; Помеха на ВСЕ проверки характеристик; Состояние: Испуганный; на 10 раундов.",
+      "icon": "tabler:mood-sad",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "frightened",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "abilityCheck.disadvantage"
+      ]
+    },
+    {
+      "id": "eyebite-poisoned",
+      "name": "Отравленный",
+      "description": "Помеха на все атаки; Помеха на ВСЕ проверки характеристик; Состояние: Отравленный; на 10 раундов.",
+      "icon": "tabler:droplet",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "poisoned",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "abilityCheck.disadvantage"
+      ]
+    }
+  ]
+}

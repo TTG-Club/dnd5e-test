@@ -1,0 +1,47 @@
+{
+  "id": "spirit-guardians-phb",
+  "name": "Духовные стражи",
+  "nameEn": "Spirit Guardians",
+  "level": 3,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "свиток с молитвами"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "wisdom",
+  "description": "Защитные духи порхают вокруг вас в эманации с радиусом 15 футов на длительность заклинания. Если вы добрый или нейтральный, то их призрачная форма выглядит как ангелы или феи (по вашему выбору). Если вы злой, то они выглядят как исчадия. \nКогда вы накладываете это заклинание, вы можете выбрать существ, на которых оно не будет действовать. Скорость любых других существ в этой области уменьшается вдвое. Каждый раз, когда область заклинания входит в пространство существа, существо входит в область заклинания или существо заканчивает свой ход в ней, это существо должно совершить спасбросок Мудрости. В случае провала существо получает 3к8 урона излучением (если вы добрый или нейтральный) или 3к8 урона некротической энергией (если вы злой). В случае успеха существо получает половину этого урона. Существо совершает этот спасбросок только 1 раз за ход.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 3.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 15,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "3к8@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "id": "warding-bond-phb",
+  "name": "Охраняющая связь",
+  "nameEn": "Warding Bond",
+  "level": 2,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "пара платиновых колец стоимостью по 50+ зм каждое, которые вы и цель должны носить на протяжении всего действия заклинания"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь другого согласного существа и создаёте мистическую связь между вами и целью до окончания действия заклинания. Пока цель находится в пределах 60 футов от вас, она получает бонус +1 к КД и спасброскам, а также сопротивление ко всему урону. Кроме того, каждый раз, когда цель получает урон, вы получаете такое же количество урона. \nЗаклинание заканчивается, если ваши хиты упадут до 0 или если вы и цель окажетесь дальше 60 футов друг от друга. Также заклинание заканчивается, если оно будет снова наложено на одно из связанных существ.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell"
+}

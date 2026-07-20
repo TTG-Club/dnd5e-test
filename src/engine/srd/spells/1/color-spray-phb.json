@@ -1,0 +1,63 @@
+{
+  "id": "color-spray-phb",
+  "name": "Сверкающие брызги",
+  "nameEn": "Color Spray",
+  "level": 1,
+  "school": "illusion",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка разноцветного песка"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "constitution",
+  "description": "Вы запускаете ослепительное ассорти из мигающих разноцветных огоньков. Каждое существо в 15-футовом конусе, исходящем от вас, должно преуспеть в спасброске Телосложения или получить состояние ослеплённый до конца вашего следующего хода.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "color-spray-blinded",
+      "name": "Ослеплённый",
+      "description": "Помеха на все атаки; Преимущество атак по этому существу; Ослеплен (Ничего не видит, автопровал проверок зрения); Состояние: Ослеплённый; на 1 раунд.",
+      "icon": "tabler:eye-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "blinded",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "attacksAgainst.advantage",
+        "vision.blinded"
+      ]
+    }
+  ],
+  "areaOfEffect": {
+    "shape": "cone",
+    "size": 15,
+    "unit": "ft"
+  }
+}

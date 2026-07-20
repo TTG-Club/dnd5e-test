@@ -1,0 +1,36 @@
+{
+  "id": "plane-shift-phb",
+  "name": "Уход в иной план",
+  "nameEn": "Plane Shift",
+  "level": 7,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "раздвоенный металлический стержень стоимостью 250+ зм, настроенный на план существования"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы и до 8 согласных существ, которые держатся за руки в круге, перемещаетесь на другой план. Вы можете указать место назначения в общих чертах, например, Медный город на Плане огня или дворец Диспатера на 2 уровне Девяти преисподних, и вы появитесь в этом месте или рядом с ним, по усмотрению Мастера. \nКроме того, если вы знаете последовательность знаков телепортационного круга на другом плане бытия, то это заклинание может переместить вас в этот круг. Если телепортационный круг слишком мал, чтобы вместить всех существ, которых вы перемещаете, то они появляются в ближайшем свободном месте рядом с кругом.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "targetCount": 8
+}

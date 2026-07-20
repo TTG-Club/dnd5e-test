@@ -1,0 +1,35 @@
+{
+  "id": "antilife-shell-phb",
+  "name": "Преграда жизни",
+  "nameEn": "Antilife Shell",
+  "level": 5,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Аура распространяется от вас в пределах 10-футовой эманации на всю длительность заклинания. Аура не позволяет существам, кроме конструктов и нежити, проникнуть внутрь полностью или частично. Подвергшееся воздействию существо может использовать заклинания или совершать атаки дальнобойным оружием или оружием со свойством досягаемость через барьер. \nЕсли вы перемещаетесь так, что существо под воздействием заклинания вынуждено пройти сквозь барьер, то заклинание заканчивается.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 10,
+    "unit": "ft"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "key": "criminal",
+  "name": "Преступник",
+  "nameEn": "Criminal",
+  "description": "**Преступник** — вы научились зарабатывать деньги в тёмных переулках, подрезая кошельки или грабя магазины. Возможно, вы были частью небольшой банды преступников, которые присматривали друг за другом. Или, может быть, вы были одиноким волком, защищающимся от местной гильдии воров и более старых и грозных преступников.",
+  "isSRD": true,
+  "abilityGrant": {
+    "abilities": [
+      "dexterity",
+      "constitution",
+      "intelligence"
+    ]
+  },
+  "skillGrant": {
+    "skills": [
+      "stealth",
+      "sleightOfHand"
+    ]
+  },
+  "toolGrant": {
+    "items": [
+      "thieves-tools"
+    ]
+  },
+  "featGrant": {
+    "featId": "alert-phb",
+    "featName": "Бдительный",
+    "featNameEn": "Alert"
+  },
+  "equipmentOptions": [
+    {
+      "description": "2 кинжала, Воровские инструменты, Лом, 2 сумки, Одежда путешественника, 16 зм"
+    },
+    {
+      "description": "50 зм",
+      "goldAlternative": 50
+    }
+  ],
+  "type": "background",
+  "id": "criminal-phb",
+  "sourceKey": "phb"
+}

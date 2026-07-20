@@ -1,0 +1,78 @@
+{
+  "id": "ray-of-enfeeblement-phb",
+  "name": "Луч слабости",
+  "nameEn": "Ray of Enfeeblement",
+  "level": 2,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Луч изнуряющей энергии вырывается из вас в сторону существа в пределах дистанции. Цель должна совершить спасбросок Телосложения. При успешном спасброске цель получает помехой на следующий бросок атаки, который она совершит до начала вашего следующего хода. \nПри провале цель получает помехой на все Тесты к20, связанные с Силой, на время действия заклинания. В течение этого времени она также вычитает 1к8 из всех своих бросков урона. Цель повторяет спасбросок в конце каждого своего хода и заклинание заканчивается при успешном спасброске.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "ray-of-enfeeblement-success-disadvantage",
+      "name": "Помеха на следующую атаку",
+      "description": "Помеха на следующий бросок атаки до начала вашего следующего хода (при успешном спасброске).",
+      "icon": "tabler:sword-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "applyOnSuccessOnly": true,
+      "consumeOn": "carrierAttack",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage"
+      ]
+    },
+    {
+      "id": "ray-of-enfeeblement-weakness",
+      "name": "Слабость",
+      "description": "Помеха на проверки и спасброски Силы. Дополнительно по тексту: −1к8 ко всем броскам урона цели (применяйте вручную). Повторный спасбросок Телосложения в конце хода снимает эффект.",
+      "icon": "tabler:droplet-half-2-filled",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "duration": {
+        "type": "minutes",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "abilityCheck.disadvantage.strength",
+        "save.disadvantage.strength"
+      ],
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ]
+}

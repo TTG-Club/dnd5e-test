@@ -1,0 +1,33 @@
+{
+  "id": "counterspell-phb",
+  "name": "Контрзаклинание",
+  "nameEn": "Counterspell",
+  "level": 3,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "reaction",
+  "components": {
+    "verbal": false,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Вы пытаетесь прервать существо в процессе наложения заклинания. Существо совершает спасбросок Телосложения. В случае провала заклинание рассеется без какого-либо эффекта и действие, бонусное действие или реакция, использованные для его наложения, будут потрачены впустую. Если это заклинание было наложено с использованием ячейки заклинания, то ячейка не расходуется.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

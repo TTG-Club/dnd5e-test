@@ -1,0 +1,22 @@
+{
+  "id": "chain-mail-phb",
+  "name": "Кольчуга",
+  "nameEn": "Chain Mail",
+  "description": "Кольчуга — тяжёлая броня, сделанная из переплетённых металлических колец. Под кольчугой носят слой стёганой ткани для предотвращения натирания и смягчения ударов. Создаёт помеху при использовании Скрытности.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 55,
+  "cost": "75 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "chain-mail",
+  "baseArmorAC": 16,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 13,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "heavy",
+  "typeLabel": "Снаряжение"
+}

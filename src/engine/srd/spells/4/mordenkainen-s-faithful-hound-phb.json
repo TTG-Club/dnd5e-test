@@ -1,0 +1,38 @@
+{
+  "id": "mordenkainen-s-faithful-hound-phb",
+  "name": "Верный пёс Морденкайнена",
+  "nameEn": "Mordenkainen`s Faithful Hound",
+  "level": 4,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "серебряный свисток"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "point",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы вызываете фантомного сторожевого пса в свободное пространство, которое видите в пределах дистанции. Пёс остаётся на всю длительность заклинания или до тех пор, пока вы не окажетесь на расстоянии более 300 футов друг от друга.\nНикто, кроме вас, не может видеть пса, и он неосязаем и неуязвим. Когда существо размера маленький или больше приблизится к псу на расстояние 30 футов, не произнеся пароль, который вы указали при накладывании заклинания, то пёс начинает громко лаять. Пёс обладает истинным зрением на расстоянии 30 футов.\nВ начале каждого вашего хода пёс пытается укусить 1 врага в пределах 5 футов от себя. Этот враг должен преуспеть в спасброске Ловкости, иначе он получит 4к8 урона силовым полем.\nВ последующие ходы вы можете использовать действие магия, чтобы переместить пса на расстояние до 30 футов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "wizard"
+  ],
+  "damageParts": [
+    {
+      "formula": "4к8@dmg.force",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "none"
+}

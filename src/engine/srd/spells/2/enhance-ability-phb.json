@@ -1,0 +1,35 @@
+{
+  "id": "enhance-ability-phb",
+  "name": "Улучшение характеристики",
+  "nameEn": "Enhance Ability",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "мех или перо"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь существа и выбираете Силу, Ловкость, Интеллект, Мудрость или Харизму. На время действия заклинания цель получает преимущество на проверки характеристик, использующие выбранную характеристику.",
+  "higherLevelDescription": "Вы можете выбрать 1 дополнительную цель за каждый уровень ячейки выше 2. Вы можете выбрать другую характеристику для каждой цели.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "sorcerer"
+  ],
+  "type": "spell"
+}

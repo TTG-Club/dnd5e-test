@@ -1,0 +1,115 @@
+{
+  "id": "rat-mm",
+  "name": "Крыса",
+  "nameEn": "Rat",
+  "type": "creature",
+  "isSRD": true,
+  "isReadOnly": true,
+  "header": "Крошечный зверь, без мировоззрения",
+  "description": "Крыса — крошечный зверь, который встречается практически повсюду. Не представляет серьёзной угрозы в одиночку, но рои крыс могут быть опасны.",
+  "token": {
+    "frameUrl": "assets/token-frames/0.png",
+    "showName": true,
+    "disposition": "hostile",
+    "scale": 1,
+    "vision": {
+      "range": 0,
+      "darkvision": 30,
+      "angle": 360,
+      "enabled": true
+    }
+  },
+  "system": {
+    "size": "tiny",
+    "type": "beast",
+    "subtype": "",
+    "alignment": "unaligned",
+    "armorClass": {
+      "value": 10,
+      "calculation": "flat",
+      "formula": "",
+      "flat": 10
+    },
+    "hitPoints": {
+      "average": 1,
+      "formula": "1к4 − 1",
+      "text": "",
+      "current": 1,
+      "max": 1,
+      "hitDie": 4,
+      "hitDiceCount": 1,
+      "bonus": -1
+    },
+    "movement": {
+      "walk": 20,
+      "swim": 0,
+      "fly": 0,
+      "climb": 0,
+      "burrow": 0,
+      "hover": false,
+      "units": "ft"
+    },
+    "abilities": {
+      "strength": 2,
+      "dexterity": 11,
+      "constitution": 9,
+      "intelligence": 2,
+      "wisdom": 10,
+      "charisma": 4
+    },
+    "challengeRating": "0",
+    "proficiencyBonus": 2,
+    "savingThrows": [],
+    "skills": {},
+    "defenses": {
+      "vulnerabilities": [],
+      "resistances": [],
+      "immunities": [],
+      "conditionImmunities": []
+    },
+    "senses": "тёмное зрение 30 фт., пассивная Внимательность 10",
+    "languages": [],
+    "environments": [
+      "urban",
+      "underdark",
+      "forest",
+      "swamp"
+    ],
+    "customEnvironments": "",
+    "traits": [
+      {
+        "name": "Обострённое обоняние",
+        "nameEn": "Keen Smell",
+        "description": [
+          "Крыса совершает с преимуществом проверки Мудрости (Внимательность), основанные на обонянии."
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "Укус",
+        "nameEn": "Bite",
+        "description": [
+          "Рукопашная атака оружием: +0 к попаданию, досягаемость 5 фт., одна цель. Попадание: 1 колющий урон."
+        ],
+        "attackBonus": 0,
+        "damageParts": [
+          {
+            "formula": "1",
+            "type": "piercing"
+          }
+        ],
+        "reach": 5,
+        "rangeType": "melee",
+        "distanceUnit": "ft"
+      }
+    ],
+    "bonusActions": [],
+    "reactions": [],
+    "legendary": {
+      "count": 0,
+      "actions": []
+    }
+  },
+  "sourceKey": "mm"
+}

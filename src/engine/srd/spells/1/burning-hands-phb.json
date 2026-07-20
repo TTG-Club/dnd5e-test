@@ -1,0 +1,48 @@
+{
+  "id": "burning-hands-phb",
+  "name": "Огненные ладони",
+  "nameEn": "Burning Hands",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "dexterity",
+  "description": "Тонкая струя пламени вырывается от вас. Каждое существо в пределах 15-футового конуса должно совершить спасбросок Ловкости, получая 3к6 урона огнём в случае провала или половину этого урона в случае успеха. Пламя поджигает все горючие предметы, никем не несомые и не носимые.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "cone",
+    "size": 15,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "3к6@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}

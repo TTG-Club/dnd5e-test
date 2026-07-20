@@ -1,0 +1,21 @@
+{
+  "id": "boon-of-combat-prowess-phb",
+  "name": "Дар боевой доблести",
+  "nameEn": "Boon of Combat Prowess",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": false,
+  "description": "Вы получаете следующие эффекты:\n\n- **Повышение характеристики.** Увеличьте показатель 1 вашей характеристики по выбору на 1, максимум до 30.\n- **Безупречная точность.** Когда вы промахиваетесь по цели, вы можете вместо этого попасть по ней. Использовать этот эффект можно только 1 раз до начала вашего следующего хода.",
+  "typeLabel": "Черты",
+  "featData": {
+    "type": "feat",
+    "abilityScoreIncrease": {
+      "choice": {
+        "amount": 1,
+        "count": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "id": "passwall-phb",
+  "name": "Создание прохода",
+  "nameEn": "Passwall",
+  "level": 5,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка семян кунжута"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Проход появляется в точке, которую вы видите на деревянной, оштукатуренной или каменной поверхности (например, на стене, потолке или полу) в пределах дистанции и существует в течение длительности заклинания. Вы выбираете размеры прохода: до 5 футов в ширину, 8 футов в высоту и 20 футов в глубину. Проход не дестабилизирует окружающую его конструкцию. Когда проход исчезает, то любые существа или объекты, оставшиеся в созданном заклинанием проходе, безопасно перемещаются в ближайшее незанятое пространство к поверхности, на которой вы наложили заклинание.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "wizard"
+  ],
+  "type": "spell"
+}

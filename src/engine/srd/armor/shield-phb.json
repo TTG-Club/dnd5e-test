@@ -1,0 +1,22 @@
+{
+  "id": "shield-phb",
+  "name": "Щит",
+  "nameEn": "Shield",
+  "description": "Щит изготавливается из дерева или металла и переносится в одной руке. Использование щита увеличивает ваш Класс доспеха на 2. Вы можете использовать только один щит одновременно.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 6,
+  "cost": "10 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "shield",
+  "baseArmorAC": 2,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "shield",
+  "typeLabel": "Снаряжение"
+}

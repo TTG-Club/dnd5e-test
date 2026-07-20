@@ -1,0 +1,42 @@
+{
+  "id": "sentinel-shield-phb",
+  "name": "Щит стража",
+  "nameEn": "Sentinel Shield",
+  "description": "Держа этот щит, вы совершаете с преимуществом проверки Инициативы и Мудрости (Внимательность).",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 6,
+  "cost": "-",
+  "rarity": "uncommon",
+  "equipped": false,
+  "baseType": "shield",
+  "baseArmorAC": 2,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "none",
+  "activeEffects": [
+    {
+      "id": "effect_sentinel_shield",
+      "name": "Бдительность стража",
+      "changes": [],
+      "sourceId": "sentinel-shield-phb",
+      "transfer": true,
+      "description": "",
+      "disabled": false,
+      "origin": "item",
+      "duration": {
+        "type": "permanent"
+      },
+      "flags": [
+        "initiative.advantage"
+      ]
+    }
+  ],
+  "equipmentCategory": "shield",
+  "typeLabel": "Снаряжение"
+}

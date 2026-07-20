@@ -1,0 +1,20 @@
+{
+  "id": "potter-s-tools-phb",
+  "name": "Инструменты гончара",
+  "nameEn": "Potter's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "potters-tools",
+  "rarity": "common",
+  "weight": 3,
+  "cost": {
+    "value": 10,
+    "currency": "gp"
+  },
+  "description": "Иглы для глины, струны, стеки и гончарный круг для создания керамики.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

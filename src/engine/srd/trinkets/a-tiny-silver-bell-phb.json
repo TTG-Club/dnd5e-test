@@ -1,0 +1,23 @@
+{
+  "id": "a-tiny-silver-bell-phb",
+  "name": "Крошечный серебряный колокольчик",
+  "nameEn": "A tiny silver bell",
+  "description": "Маленький серебряный колокольчик с нежным и мелодичным звоном, который раздаётся даже от самого лёгкого прикосновения.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

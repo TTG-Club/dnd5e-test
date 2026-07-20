@@ -1,0 +1,23 @@
+{
+  "id": "an-ornate-scabbard-with-no-matching-sword-phb",
+  "name": "Богато украшенные ножны без подходящего меча",
+  "nameEn": "An ornate scabbard with no matching sword",
+  "description": "Роскошные ножны, покрытые тиснёной кожей и украшенные полудрагоценными камнями. Ни один найденный меч к ним не подходит.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

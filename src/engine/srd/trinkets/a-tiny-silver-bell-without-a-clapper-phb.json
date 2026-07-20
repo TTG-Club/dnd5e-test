@@ -1,0 +1,23 @@
+{
+  "id": "a-tiny-silver-bell-without-a-clapper-phb",
+  "name": "Крошечный серебряный колокольчик без язычка",
+  "nameEn": "A tiny silver bell without a clapper",
+  "description": "Маленький серебряный колокольчик изящной работы, но без язычка. Впрочем, иногда кажется, будто вы слышите его тихий звон.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,32 @@
+{
+  "id": "goodberry-phb",
+  "name": "Чудо-ягоды",
+  "nameEn": "Goodberry",
+  "level": 1,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "веточка омелы"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 24,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "10 ягод появляются у вас в руке и наполняются магией на время действия заклинания. Существо может бонусным действием съесть одну ягоду. Съеденная ягода восстанавливает 1 хит и обеспечивает существо достаточным питанием на 1 день. Несъеденные ягоды исчезают, когда длительность заклинания заканчивается.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,23 @@
+{
+  "id": "a-blank-book-whose-pages-refuse-ink-chalk-graphite-or-any-other-substance-phb",
+  "name": "Чистая книга, страницы которой не принимают чернил, мел, графит или любое другое вещество",
+  "nameEn": "A blank book whose pages refuse ink, chalk, graphite, or any other substance",
+  "description": "Книга с чистыми страницами. Любая попытка написать или нарисовать что-либо на её страницах заканчивается неудачей — вещество просто исчезает.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

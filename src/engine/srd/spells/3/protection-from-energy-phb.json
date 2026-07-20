@@ -1,0 +1,35 @@
+{
+  "id": "protection-from-energy-phb",
+  "name": "Защита от энергии",
+  "nameEn": "Protection from Energy",
+  "level": 3,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа и на длительность заклинания оно получает сопротивление к 1 виду урона на ваш выбор: кислотный, холодный, огненный, электрический или звуковой.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "ranger",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

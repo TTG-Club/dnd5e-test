@@ -1,0 +1,22 @@
+{
+  "id": "scale-mail-phb",
+  "name": "Чешуйчатый доспех",
+  "nameEn": "Scale Mail",
+  "description": "Этот доспех состоит из кожаного покрытия и поножей, покрытых перекрывающимися металлическими пластинками, похожими на рыбью чешую. Создаёт помеху при использовании Скрытности.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 45,
+  "cost": "50 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "scale-mail",
+  "baseArmorAC": 14,
+  "maxDexBonus": 2,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "medium",
+  "typeLabel": "Снаряжение"
+}

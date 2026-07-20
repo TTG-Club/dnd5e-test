@@ -1,0 +1,33 @@
+{
+  "id": "bestow-curse-phb",
+  "name": "Проклятие",
+  "nameEn": "Bestow Curse",
+  "level": 3,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "wisdom",
+  "description": "Вы касаетесь существа, и оно должно преуспеть в спасброске Мудрости, иначе станет проклятым на период действия заклинания. Пока проклятье действует, цель страдает от одного из следующих эффектов на ваш выбор:",
+  "higherLevelDescription": "Если вы накладываете это заклинание, используя ячейку заклинаний 4 уровня, вы можете поддерживать концентрацию на нем до 10 минут. Если вы используете ячейку 5 уровня и выше, то заклинание не требует концентрации, а его продолжительность становится 8 часов (ячейки 5-6 уровня) или 24 часа (ячейки 7-8 уровня). Если вы используете ячейку 9 уровня, то заклинание длится до развеивания.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "wizard"
+  ],
+  "type": "spell"
+}

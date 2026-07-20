@@ -1,0 +1,47 @@
+{
+  "id": "meteor-swarm-phb",
+  "name": "Метеоритный дождь",
+  "nameEn": "Meteor Swarm",
+  "level": 9,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 1,
+  "rangeUnit": "mi",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Огненные шары падают на землю в 4 различных точках, которые вы видите в пределах дистанции. Каждое существо в сфере радиусом 40 футов, центрированной на каждой из этих точек, совершает спасбросок Ловкости. Существо получает 20к6 урона огнём и 20к6 дробящего урона при провале или половину этого урона при успехе. Существо, находящееся в области действия нескольких огненных сфер, получает урон только 1 раз. \nНемагические объекты, которые не носят и не несут, также получают урон, если они находятся в области действия заклинания, и начинают гореть, если они воспламеняемые.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 40,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "20к6@dmg.fire",
+      "target": "selected"
+    },
+    {
+      "formula": "20к6@dmg.bludgeoning",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

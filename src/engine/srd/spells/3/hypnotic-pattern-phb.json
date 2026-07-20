@@ -1,0 +1,97 @@
+{
+  "id": "hypnotic-pattern-phb",
+  "name": "Гипнотический узор",
+  "nameEn": "Hypnotic Pattern",
+  "level": 3,
+  "school": "illusion",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "щепотка конфетти"
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы создаёте извивающийся узор из цветов в 30-футовом кубе в пределах дистанции. Узор появляется на мгновение и исчезает. Каждое существо в области, которое видит узор, должно преуспеть в спасброске Мудрости или получить состояние очарованный на время действия заклинания. Пока существо очаровано, оно находится в состоянии недееспособный и его скорость равна 0.\nЗаклинание прекращает действовать на поражённое существо, если оно получает урон или если кто-то другой использует действие, чтобы вывести существо из ступора.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "rogue"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "hypnotic-pattern-charmed",
+      "name": "Очарованный",
+      "description": "Состояние: Очарованный; на 10 раундов.",
+      "icon": "tabler:heart",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "charmed",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": []
+    },
+    {
+      "id": "hypnotic-pattern-incapacitated",
+      "name": "Недееспособный",
+      "description": "Недееспособен (Не может совершать действия/реакции); Помеха на бросок инициативы; Состояние: Недееспособный; на 10 раундов.",
+      "icon": "tabler:ban",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "incapacitated",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "initiative.disadvantage"
+      ]
+    },
+    {
+      "id": "effect_1782192349507_ahl73hz",
+      "name": "Скорость 0",
+      "description": "Скорость равна нулю; на 10 раундов.",
+      "icon": "tabler:walk",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "speed.zero"
+      ],
+      "effectTarget": "target"
+    }
+  ],
+  "areaOfEffect": {
+    "shape": "rect",
+    "size": 30,
+    "unit": "ft"
+  }
+}

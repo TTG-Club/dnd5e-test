@@ -1,0 +1,32 @@
+{
+  "id": "greataxe-phb",
+  "name": "Секира",
+  "nameEn": "Greataxe",
+  "description": "Секира — воинское тяжёлое двуручное рукопашное оружие.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 7,
+  "cost": "30 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "greataxe",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к12",
+      "type": "slashing"
+    }
+  ],
+  "weaponProperties": [
+    "heavy",
+    "two-handed"
+  ],
+  "reach": 5,
+  "mastery": "cleave",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

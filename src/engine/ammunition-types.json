@@ -1,0 +1,27 @@
+[
+  {
+    "key": "arrows",
+    "name": "Стрелы",
+    "nameEn": "Arrows"
+  },
+  {
+    "key": "bolts",
+    "name": "Болты",
+    "nameEn": "Bolts"
+  },
+  {
+    "key": "bullets",
+    "name": "Пули",
+    "nameEn": "Bullets"
+  },
+  {
+    "key": "blowgun-needles",
+    "name": "Иглы",
+    "nameEn": "Blowgun Needles"
+  },
+  {
+    "key": "sling-bullets",
+    "name": "Снаряды для пращи",
+    "nameEn": "Sling Bullets"
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "id": "battleaxe-phb",
+  "name": "Боевой топор",
+  "nameEn": "Battleaxe",
+  "description": "Боевой топор — воинское рукопашное оружие. Может использоваться одной или двумя руками.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "10 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "battleaxe",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "slashing",
+      "versatileFormula": "1к10"
+    }
+  ],
+  "weaponProperties": [
+    "versatile"
+  ],
+  "reach": 5,
+  "mastery": "topple",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

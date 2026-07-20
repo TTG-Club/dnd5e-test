@@ -1,0 +1,43 @@
+{
+  "id": "mind-spike-phb",
+  "name": "Пронзание разума",
+  "nameEn": "Mind Spike",
+  "level": 2,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": false,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы вонзаете шип псионической энергии в разум 1 существа, которого видите в пределах дистанции. Цель совершает спасбросок Мудрости, получая 3к8 урона психической энергией при провале или половину этого урона при успехе. При провале вы также всегда знаете местоположение цели до конца действия заклинания, но только пока вы оба находитесь на одном плане существования. Пока вы обладаете этим знанием, цель не может скрыться от вас и если она находится в состоянии невидимый, то это состояние не даёт ей эффектов против вас.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "damageParts": [
+    {
+      "formula": "3к8@dmg.psychic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

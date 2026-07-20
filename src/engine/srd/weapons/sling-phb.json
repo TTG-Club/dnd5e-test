@@ -1,0 +1,35 @@
+{
+  "id": "sling-phb",
+  "name": "Праща",
+  "nameEn": "Sling",
+  "description": "Праща — простое дальнобойное оружие. Использует снаряды в качестве боеприпасов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "1 см",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "sling",
+  "weaponCategory": "simple",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к4",
+      "type": "bludgeoning"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition"
+  ],
+  "ammunitionType": "bullets",
+  "range": {
+    "normal": 30,
+    "long": 120
+  },
+  "mastery": "slow",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

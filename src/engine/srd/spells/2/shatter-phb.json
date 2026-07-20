@@ -1,0 +1,51 @@
+{
+  "id": "shatter-phb",
+  "name": "Дребезги",
+  "nameEn": "Shatter",
+  "level": 2,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек слюды"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Громкий звук возникает в точке по вашему выбору в пределах дистанции. Каждое существо в сфере радиусом 10 футов с центром в этой точке должно совершить спасбросок Телосложения, получая 3к8 урона звуком при провале или половину этого урона при успехе. Конструкты совершают спасбросок с помехой. \nНемагический предмет, который не надевается и не несётся, также получает урон, если он находится в области действия заклинания.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 10,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "3к8@dmg.thunder",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

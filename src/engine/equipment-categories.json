@@ -1,0 +1,74 @@
+[
+  {
+    "key": "light",
+    "name": "Лёгкая броня",
+    "nameEn": "Light Armor",
+    "isArmor": true
+  },
+  {
+    "key": "medium",
+    "name": "Средняя броня",
+    "nameEn": "Medium Armor",
+    "isArmor": true
+  },
+  {
+    "key": "heavy",
+    "name": "Тяжёлая броня",
+    "nameEn": "Heavy Armor",
+    "isArmor": true
+  },
+  {
+    "key": "shield",
+    "name": "Щит",
+    "nameEn": "Shield",
+    "isArmor": true
+  },
+  {
+    "key": "trinket",
+    "name": "Безделушка",
+    "nameEn": "Trinket",
+    "isArmor": false
+  },
+  {
+    "key": "ring",
+    "name": "Кольцо",
+    "nameEn": "Ring",
+    "isArmor": false
+  },
+  {
+    "key": "clothing",
+    "name": "Одежда",
+    "nameEn": "Clothing",
+    "isArmor": false
+  },
+  {
+    "key": "wand",
+    "name": "Жезл",
+    "nameEn": "Wand",
+    "isArmor": false
+  },
+  {
+    "key": "wondrous",
+    "name": "Чудесный предмет",
+    "nameEn": "Wondrous Item",
+    "isArmor": false
+  },
+  {
+    "key": "vehicle-equipment",
+    "name": "Снаряжение транспорта",
+    "nameEn": "Vehicle Equipment",
+    "isArmor": false
+  },
+  {
+    "key": "food",
+    "name": "Еда",
+    "nameEn": "Food",
+    "isArmor": false
+  },
+  {
+    "key": "adventurer-equipment",
+    "name": "Снаряжение приключенца",
+    "nameEn": "Adventuring Gear",
+    "isArmor": false
+  }
+]

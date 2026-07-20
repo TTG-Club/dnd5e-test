@@ -1,0 +1,32 @@
+{
+  "id": "sanctuary-phb",
+  "name": "Убежище",
+  "nameEn": "Sanctuary",
+  "level": 1,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "осколок зеркального стекла"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы защищаете существо в пределах дистанции. Во время длительности заклинания, любое существо, которое пытается атаковать защищаемое существо или наложить на него заклинание, наносящее урон, должно преуспеть в спасброске Мудрости или выбрать новую цель, либо потерять атаку или заклинание. Это заклинание не защищает от эффектов, влияющих на область. \nЗаклинание заканчивается, если защищаемое существо совершает атаку, накладывает заклинание или наносит урон.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell"
+}

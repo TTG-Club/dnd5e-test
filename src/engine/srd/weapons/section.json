@@ -1,0 +1,6 @@
+{
+  "id": "weapons",
+  "name": "Оружие",
+  "icon": "tabler:sword",
+  "dataKind": "weapon"
+}

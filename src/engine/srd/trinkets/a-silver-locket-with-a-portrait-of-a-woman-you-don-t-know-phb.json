@@ -1,0 +1,23 @@
+{
+  "id": "a-silver-locket-with-a-portrait-of-a-woman-you-don-t-know-phb",
+  "name": "Серебряный медальон с портретом женщины, которую вы не знаете",
+  "nameEn": "A silver locket with a portrait of a woman you don't know",
+  "description": "Овальный серебряный медальон, внутри которого миниатюрный портрет молодой женщины. Вы никогда её не встречали.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

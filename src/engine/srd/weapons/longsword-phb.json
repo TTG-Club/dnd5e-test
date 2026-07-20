@@ -1,0 +1,32 @@
+{
+  "id": "longsword-phb",
+  "name": "Длинный меч",
+  "nameEn": "Longsword",
+  "description": "Длинный меч — универсальное воинское оружие ближнего боя. Может использоваться одной или двумя руками.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 3,
+  "cost": "15 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "longsword",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "slashing",
+      "versatileFormula": "1к10"
+    }
+  ],
+  "weaponProperties": [
+    "versatile"
+  ],
+  "reach": 5,
+  "mastery": "sap",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

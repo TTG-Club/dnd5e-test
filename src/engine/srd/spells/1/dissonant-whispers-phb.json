@@ -1,0 +1,41 @@
+{
+  "id": "dissonant-whispers-phb",
+  "name": "Диссонирующий шёпот",
+  "nameEn": "Dissonant Whispers",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "1 существо по вашему выбору в пределах дистанции слышит нестройную мелодию в своём сознании. Цель совершает спасбросок Мудрости. При провале она получает 3к6  урона психической энергией и должна немедленно использовать свою реакцию, если она доступна, чтобы переместиться прочь от вас настолько далеко, насколько она может, используя самый безопасный путь. При успехе цель только получает половину урона.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "3к6@dmg.psychic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}

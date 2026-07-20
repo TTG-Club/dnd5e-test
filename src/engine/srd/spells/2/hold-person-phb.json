@@ -1,0 +1,70 @@
+{
+  "id": "hold-person-phb",
+  "name": "Удержание личности",
+  "nameEn": "Hold Person",
+  "level": 2,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "прямой кусок железа"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Выберите гуманоида, которого вы видите в пределах дистанции. Цель должна совершить спасбросок Мудрости или получить состояние парализованный на время действия заклинания. В конце каждого своего хода цель повторяет спасбросок, при успехе заклинание прекращается.",
+  "activeEffects": [
+    {
+      "id": "hold-person-paralyzed",
+      "name": "Парализован",
+      "description": "Недееспособен (Не может совершать действия/реакции); Скорость равна нулю; Автопровал спасбросков: Сила; Автопровал спасбросков: Ловкость; Преимущество атак по этому существу; Состояние: Парализованный; повторный спасбросок (Мудрость, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:lock",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10,
+        "remaining": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "speed.zero",
+        "save.autoFail.strength",
+        "save.autoFail.dexterity",
+        "attacksAgainst.advantage"
+      ],
+      "effectTarget": "target",
+      "conditionKey": "paralyzed",
+      "recurringSave": {
+        "ability": "wisdom",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ],
+  "higherLevelDescription": "Вы можете выбрать 1 дополнительного гуманоида за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell"
+}

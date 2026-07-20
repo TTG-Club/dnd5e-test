@@ -1,0 +1,61 @@
+{
+  "id": "storm-of-vengeance-phb",
+  "name": "Гроза гнева",
+  "nameEn": "Storm of Vengeance",
+  "level": 9,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 1,
+  "rangeUnit": "mi",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "На время действия заклинания над выбранной точкой в пределах дистанции появляется бурлящее штормовое облако, которое распространяется в 300 футовом радиусе. Каждое существо под облаком при его появлении должно преуспеть в спасброске Телосложения или получить 2к6 урона звуком и состояние оглохший на время действия заклинания. \nВ начале каждого вашего следующего хода шторм вызывает различные эффекты, как указано ниже. \nХод 2. Идёт кислотный дождь. Каждое существо и объект под облаком получает 4к6 урона кислотой. \nХод 3. Вы вызываете 6 ударов молнии из облака, которые поражают шесть различных существ или объектов под ним. Каждая цель должна совершить спасбросок Ловкости, получая 10к6 урона электричеством при провале или половину этого урона при успехе. \nХод 4. Выпадает град. Каждое существо под облаком получает 2к6 дробящего урона. \nХоды 5–10. Порывы ветра и ледяной дождь обрушиваются на область под облаком. Каждое существо в этой области получает 1к6 урона холодом. До окончания заклинания эта область становится труднопроходимой и сильно заслонённой местностью, дальнобойные атаки оружием в этой области невозможны и там дует сильный ветер.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "storm-of-vengeance-deafened",
+      "name": "Оглохший",
+      "description": "Состояние: Оглохший; на 10 раундов.",
+      "icon": "tabler:ear-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "deafened",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": []
+    }
+  ],
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 360,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "2к6@dmg.thunder",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "none"
+}

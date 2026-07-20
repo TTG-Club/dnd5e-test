@@ -1,0 +1,40 @@
+{
+  "id": "spiritual-weapon-phb",
+  "name": "Божественное оружие",
+  "nameEn": "Spiritual Weapon",
+  "level": 2,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы создаёте парящую, призрачную силу, которая принимает облик выбранного вами оружия и существует на время действия заклинания. Сила появляется в пределах дистанции в выбранной вами точке, и вы можете немедленно совершить одну рукопашную атаку заклинанием против существа в пределах 5 футов от силы. При попадании цель получает урон силовым полем в размере 1к8 + ваш модификатор заклинательной характеристики.\nБонусным действием в ваши последующие ходы вы можете переместить призрачную силу на 20 футов и повторить атаку против существа в пределах 5 футов от неё.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "1к8@dmg.force+@mod.spell",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

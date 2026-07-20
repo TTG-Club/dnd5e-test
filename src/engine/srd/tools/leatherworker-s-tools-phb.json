@@ -1,0 +1,20 @@
+{
+  "id": "leatherworker-s-tools-phb",
+  "name": "Инструменты кожевника",
+  "nameEn": "Leatherworker's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "leatherworkers-tools",
+  "rarity": "common",
+  "weight": 5,
+  "cost": {
+    "value": 5,
+    "currency": "gp"
+  },
+  "description": "Ножи, шила и прочные нити для выделки кожи и работы с ней.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

@@ -1,0 +1,31 @@
+{
+  "id": "glibness-phb",
+  "name": "Находчивость",
+  "nameEn": "Glibness",
+  "level": 8,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "До окончания действия заклинания, когда вы совершаете проверку Харизмы, то вы можете заменить выпавшее значение на 15. Кроме того, независимо от того, что вы говорите, магия, которая определяет, говорите ли вы правду, будет указывать, что вы говорите правду.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "warlock"
+  ],
+  "type": "spell"
+}

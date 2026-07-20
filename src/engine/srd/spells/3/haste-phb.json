@@ -1,0 +1,68 @@
+{
+  "id": "haste-phb",
+  "name": "Ускорение",
+  "nameEn": "Haste",
+  "level": 3,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "стружка корня лакрицы"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Выберите одно согласное существо, которое вы видите в пределах дистанции. Пока заклинание действует, скорость цели удваивается, она получает бонус +2 к КД, преимущество на спасброски Ловкости и дополнительное действие на каждом из своих ходов. Это действие можно использовать только для действий атака (только одна атака), рывок, отход, засада или использование. Когда заклинание заканчивается, цель получает состояние недееспособный и её скорость становится равной 0 до конца её следующего хода, так как на неё накатывает волна усталости.",
+  "activeEffects": [
+    {
+      "id": "haste-buff",
+      "name": "Ускорение",
+      "description": "Класс доспеха (AC) +2; Скорость (Ходьба) ×2; Преимущество на спасброски: Ловкость; на 10 раундов.",
+      "icon": "tabler:bolt",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10,
+        "remaining": 10
+      },
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "2",
+          "priority": 20
+        },
+        {
+          "key": "movement.walk",
+          "mode": "multiply",
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": [
+        "save.advantage.dexterity"
+      ],
+      "effectTarget": "target"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

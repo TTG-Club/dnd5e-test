@@ -1,0 +1,36 @@
+{
+  "id": "pistol-phb",
+  "name": "Пистоль",
+  "nameEn": "Pistol",
+  "description": "Пистоль — воинское огнестрельное дальнобойное оружие с перезарядкой. Использует пули в качестве боеприпасов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 3,
+  "cost": "250 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "pistol",
+  "weaponCategory": "martial",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к10",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition",
+    "loading"
+  ],
+  "ammunitionType": "bullets",
+  "range": {
+    "normal": 30,
+    "long": 90
+  },
+  "mastery": "vex",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

@@ -1,0 +1,55 @@
+{
+  "id": "mislead-phb",
+  "name": "Фальшивый двойник",
+  "nameEn": "Mislead",
+  "level": 5,
+  "school": "illusion",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": false,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы получаете состояние невидимый одновременно с появлением вашего иллюзорного двойника на том месте, где вы стояли. Двойник сохраняется на время длительности заклинания, но невидимость заканчивается сразу после того, как вы совершаете атаку, наносите урон или накладываете заклинание. \nДействием магия, вы можете переместить иллюзорного двойника на расстояние до двойной вашей скорости и заставить его жестикулировать, говорить и вести себя так, как вы пожелаете. Он является неосязаемым и неуязвимым. \nВы можете видеть его глазами и слышать его ушами, как если бы находились на его месте.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "effect_1782194334772_rj63t6s",
+      "name": "Невидимый",
+      "description": "Преимущество на все атаки; Помеха атак по этому существу; Преимущество на бросок инициативы; Невидимый (Скрыт от глаз, преимущество на атаки); Состояние: Невидимый; на 1 час.",
+      "icon": "tabler:eye-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attack.advantage",
+        "attacksAgainst.disadvantage",
+        "initiative.advantage",
+        "vision.invisible"
+      ],
+      "conditionKey": "invisible",
+      "effectTarget": "self"
+    }
+  ]
+}

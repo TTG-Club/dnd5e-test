@@ -1,0 +1,23 @@
+{
+  "id": "a-talon-covered-in-dragon-scales-phb",
+  "name": "Коготь, покрытый чешуей дракона",
+  "nameEn": "A talon covered in dragon scales",
+  "description": "Длинный изогнутый коготь, покрытый мелкими чешуйками, напоминающими драконью чешую.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

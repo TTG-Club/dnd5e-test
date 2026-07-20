@@ -1,0 +1,67 @@
+[
+  {
+    "key": "slashing",
+    "name": "Рубящий",
+    "nameEn": "Slashing"
+  },
+  {
+    "key": "piercing",
+    "name": "Колющий",
+    "nameEn": "Piercing"
+  },
+  {
+    "key": "bludgeoning",
+    "name": "Дробящий",
+    "nameEn": "Bludgeoning"
+  },
+  {
+    "key": "fire",
+    "name": "Огненный",
+    "nameEn": "Fire"
+  },
+  {
+    "key": "cold",
+    "name": "Холод",
+    "nameEn": "Cold"
+  },
+  {
+    "key": "lightning",
+    "name": "Молния",
+    "nameEn": "Lightning"
+  },
+  {
+    "key": "thunder",
+    "name": "Гром",
+    "nameEn": "Thunder"
+  },
+  {
+    "key": "poison",
+    "name": "Яд",
+    "nameEn": "Poison"
+  },
+  {
+    "key": "acid",
+    "name": "Кислота",
+    "nameEn": "Acid"
+  },
+  {
+    "key": "necrotic",
+    "name": "Некротический",
+    "nameEn": "Necrotic"
+  },
+  {
+    "key": "radiant",
+    "name": "Излучение",
+    "nameEn": "Radiant"
+  },
+  {
+    "key": "force",
+    "name": "Силовой",
+    "nameEn": "Force"
+  },
+  {
+    "key": "psychic",
+    "name": "Психический",
+    "nameEn": "Psychic"
+  }
+]

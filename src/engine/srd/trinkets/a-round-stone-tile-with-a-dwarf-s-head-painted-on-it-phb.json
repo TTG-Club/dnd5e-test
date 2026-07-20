@@ -1,0 +1,23 @@
+{
+  "id": "a-round-stone-tile-with-a-dwarf-s-head-painted-on-it-phb",
+  "name": "Круглая каменная плитка с нарисованной на ней головой дварфа",
+  "nameEn": "A round stone tile with a dwarf's head painted on it",
+  "description": "Плоская круглая каменная плитка с грубо, но узнаваемо нарисованной головой дварфа в шлеме с рогами.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

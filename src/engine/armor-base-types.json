@@ -1,0 +1,93 @@
+[
+  {
+    "key": "padded",
+    "name": "Стёганый доспех",
+    "nameEn": "Padded",
+    "category": "light",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "leather",
+    "name": "Кожаный доспех",
+    "nameEn": "Leather",
+    "category": "light",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "studded-leather",
+    "name": "Проклёпанный кожаный",
+    "nameEn": "Studded Leather",
+    "category": "light",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "hide",
+    "name": "Шкурный доспех",
+    "nameEn": "Hide",
+    "category": "medium",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "chain-shirt",
+    "name": "Кольчужная рубаха",
+    "nameEn": "Chain Shirt",
+    "category": "medium",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "scale-mail",
+    "name": "Чешуйчатый доспех",
+    "nameEn": "Scale Mail",
+    "category": "medium",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "breastplate",
+    "name": "Нагрудник",
+    "nameEn": "Breastplate",
+    "category": "medium",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "half-plate",
+    "name": "Полулатный доспех",
+    "nameEn": "Half Plate",
+    "category": "medium",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "ring-mail",
+    "name": "Колечный доспех",
+    "nameEn": "Ring Mail",
+    "category": "heavy",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "chain-mail",
+    "name": "Кольчуга",
+    "nameEn": "Chain Mail",
+    "category": "heavy",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "splint",
+    "name": "Наборный доспех",
+    "nameEn": "Splint",
+    "category": "heavy",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "plate",
+    "name": "Латный доспех",
+    "nameEn": "Plate",
+    "category": "heavy",
+    "icon": "tabler:shirt"
+  },
+  {
+    "key": "shield",
+    "name": "Щит",
+    "nameEn": "Shield",
+    "category": "shield",
+    "icon": "tabler:shield"
+  }
+]

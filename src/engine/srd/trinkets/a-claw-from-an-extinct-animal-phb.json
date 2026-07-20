@@ -1,0 +1,23 @@
+{
+  "id": "a-claw-from-an-extinct-animal-phb",
+  "name": "Коготь, принадлежащий вымершему животному",
+  "nameEn": "A claw from an extinct animal",
+  "description": "Крупный изогнутый коготь, принадлежавший существу, которое давно вымерло. Острый, как бритва, несмотря на возраст.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

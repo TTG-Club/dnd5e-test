@@ -1,0 +1,36 @@
+{
+  "id": "water-breathing-phb",
+  "name": "Подводное дыхание",
+  "nameEn": "Water Breathing",
+  "level": 3,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "короткий тростник"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 24,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Это заклинание даёт до 10 существам по вашему выбору в пределах дистанции способность дышать под водой до окончания действия заклинания. Затронутые существа сохраняют свой обычный способ дыхания.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "targetCount": 10
+}

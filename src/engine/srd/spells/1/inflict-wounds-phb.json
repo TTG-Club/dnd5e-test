@@ -1,0 +1,41 @@
+{
+  "id": "inflict-wounds-phb",
+  "name": "Нанесение ран",
+  "nameEn": "Inflict Wounds",
+  "level": 1,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "constitution",
+  "description": "Существо, к которому вы прикасаетесь, совершает спасбросок Телосложения. При провале оно получает 2к10 урона некротической энергией, а при успешном спасброске — половину этого урона.",
+  "higherLevelDescription": "Урон увеличивается на 1к10 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к10@dmg.necrotic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к10"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "id": "melf-s-acid-arrow-phb",
+  "name": "Мельфова кислотная стрела",
+  "nameEn": "Melf's Acid Arrow",
+  "level": 2,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "порошок из листьев ревеня"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Мерцающая зелёная стрела летит к цели в пределах дистанции и взрывается брызгами кислоты. Совершите дальнобойную атаку заклинанием против цели. При попадании цель получает 4к4 урона кислотой и 2к4 урона кислотой в конце её следующего хода. При промахе стрела обрызгивает цель кислотой, нанося ей половину начального урона.",
+  "higherLevelDescription": "Урон (как начальный, так и последующий) увеличивается на 1к4 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "wizard"
+  ],
+  "damageParts": [
+    {
+      "formula": "4к4@dmg.acid",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к4"
+  }
+}

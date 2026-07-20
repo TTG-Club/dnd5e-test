@@ -1,0 +1,45 @@
+{
+  "id": "mass-healing-word-phb",
+  "name": "Множественное лечащее слово",
+  "nameEn": "Mass Healing Word",
+  "level": 3,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "До 6 существ по вашему выбору, которых вы видите в пределах дистанции, восстанавливают количество хитов, равное 2к4 + ваш модификатор заклинательной характеристики.",
+  "higherLevelDescription": "Лечение увеличивается на 1к4 за каждый уровень ячейки выше 3.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к4@heal+@mod.spell",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к4"
+  },
+  "projectiles": {
+    "count": 6,
+    "targetDistribution": "distinct"
+  }
+}

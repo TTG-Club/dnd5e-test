@@ -1,0 +1,23 @@
+{
+  "id": "four-mummy-teeth-made-from-a-mysterious-material-phb",
+  "name": "Четыре зуба мумии из загадочного материала",
+  "nameEn": "Four mummy teeth made from a mysterious material",
+  "description": "Четыре зуба, извлечённые из мумии. Они сделаны из неизвестного материала, твёрдого как камень и тёплого на ощупь.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

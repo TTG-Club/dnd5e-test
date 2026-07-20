@@ -1,0 +1,377 @@
+{
+  "id": "tarrasque-mm",
+  "name": "Тарраска",
+  "nameEn": "Tarrasque",
+  "type": "creature",
+  "isSRD": true,
+  "isReadOnly": true,
+  "header": "Колоссальное чудовище (титан), без мировоззрения",
+  "description": "Тарраска — пожалуй, самое разрушительное существо, обитающее на Материальном плане. Гигантский монстр, способный поглотить всё на своём пути. К счастью, она большую часть времени спит глубоко под землёй.",
+  "token": {
+    "frameUrl": "assets/token-frames/0.png",
+    "showName": true,
+    "disposition": "hostile",
+    "scale": 4,
+    "vision": {
+      "range": 120,
+      "darkvision": 0,
+      "angle": 360,
+      "enabled": true
+    }
+  },
+  "system": {
+    "size": "gargantuan",
+    "type": "monstrosity",
+    "subtype": "титан",
+    "alignment": "unaligned",
+    "armorClass": {
+      "value": 25,
+      "calculation": "natural",
+      "formula": "",
+      "flat": 25
+    },
+    "hitPoints": {
+      "average": 676,
+      "formula": "33к20 + 330",
+      "text": "",
+      "current": 676,
+      "max": 676,
+      "hitDie": 20,
+      "hitDiceCount": 33,
+      "bonus": 330
+    },
+    "movement": {
+      "walk": 40,
+      "swim": 0,
+      "fly": 0,
+      "climb": 0,
+      "burrow": 0,
+      "hover": false,
+      "units": "ft"
+    },
+    "abilities": {
+      "strength": 30,
+      "dexterity": 11,
+      "constitution": 30,
+      "intelligence": 3,
+      "wisdom": 11,
+      "charisma": 11
+    },
+    "challengeRating": "30",
+    "proficiencyBonus": 9,
+    "savingThrows": [
+      "intelligence",
+      "wisdom",
+      "charisma"
+    ],
+    "skills": {},
+    "defenses": {
+      "vulnerabilities": [],
+      "resistances": [],
+      "immunities": [
+        "fire",
+        "poison",
+        "nonmagical"
+      ],
+      "conditionImmunities": [
+        "poisoned",
+        "charmed",
+        "frightened",
+        "paralyzed"
+      ]
+    },
+    "senses": "слепое зрение 120 фт., пассивная Внимательность 10",
+    "languages": [],
+    "environments": [
+      "any"
+    ],
+    "customEnvironments": "Спячка под землёй",
+    "traits": [
+      {
+        "name": "Осадный монстр",
+        "nameEn": "Siege Monster",
+        "description": [
+          "Тарраска наносит двойной урон объектам и строениям."
+        ]
+      },
+      {
+        "name": "Легендарное сопротивление (3/день)",
+        "nameEn": "Legendary Resistance (3/Day)",
+        "description": [
+          "Если тарраска проваливает испытание, она может вместо этого преуспеть."
+        ]
+      },
+      {
+        "name": "Магическое сопротивление",
+        "nameEn": "Magic Resistance",
+        "description": [
+          "Тарраска совершает с преимуществом испытания от заклинаний и прочих магических эффектов."
+        ]
+      },
+      {
+        "name": "Отражающий панцирь",
+        "nameEn": "Reflective Carapace",
+        "description": [
+          "Каждый раз, когда тарраска становится целью заклинания «волшебная стрела», заклинания, требующего бросок дальнобойной атаки, или заклинания, создающего линейный эффект, бросьте к6. При результате 1–5 тарраска не подвергается воздействию. При 6 тарраска не подвергается воздействию, а эффект отражается назад в заклинателя, как если бы он исходил от тарраски, и заклинатель становится целью."
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "Мультиатака",
+        "nameEn": "Multiattack",
+        "description": [
+          "Тарраска может использовать Ужасающее присутствие. Затем она совершает пять атак: одну укусом, две когтями, одну рогами и одну хвостом. Она может использовать Проглатывание вместо укуса."
+        ]
+      },
+      {
+        "name": "Укус",
+        "nameEn": "Bite",
+        "description": [
+          "Рукопашная атака оружием: +19 к попаданию, досягаемость 10 фт., одна цель. Попадание: 36 (4к12 + 10) колющего урона. Если цель — существо, она схвачена (СЛ высвобождения 20). Пока схвачена, цель опутана, а тарраска не может кусать другую цель."
+        ],
+        "attackBonus": 19,
+        "damageParts": [
+          {
+            "formula": "4к12 + 10",
+            "type": "piercing"
+          }
+        ],
+        "reach": 10,
+        "rangeType": "melee",
+        "distanceUnit": "ft",
+        "activeEffects": [
+          {
+            "id": "grappled",
+            "name": "Схваченный",
+            "description": "Существо схвачено тарраской. Скорость равна 0.",
+            "icon": "tabler:hand-grab",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": [
+              "speed.zero"
+            ]
+          },
+          {
+            "id": "restrained",
+            "name": "Опутанный",
+            "description": "Пока схвачено, существо опутано.",
+            "icon": "tabler:link",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": [
+              "speed.zero",
+              "attack.disadvantage",
+              "attacksAgainst.advantage",
+              "save.disadvantage.dexterity"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Коготь",
+        "nameEn": "Claw",
+        "description": [
+          "Рукопашная атака оружием: +19 к попаданию, досягаемость 15 фт., одна цель. Попадание: 28 (4к8 + 10) рубящего урона."
+        ],
+        "attackBonus": 19,
+        "damageParts": [
+          {
+            "formula": "4к8 + 10",
+            "type": "slashing"
+          }
+        ],
+        "reach": 15,
+        "rangeType": "melee",
+        "distanceUnit": "ft"
+      },
+      {
+        "name": "Рога",
+        "nameEn": "Horns",
+        "description": [
+          "Рукопашная атака оружием: +19 к попаданию, досягаемость 10 фт., одна цель. Попадание: 32 (4к10 + 10) колющего урона."
+        ],
+        "attackBonus": 19,
+        "damageParts": [
+          {
+            "formula": "4к10 + 10",
+            "type": "piercing"
+          }
+        ],
+        "reach": 10,
+        "rangeType": "melee",
+        "distanceUnit": "ft"
+      },
+      {
+        "name": "Хвост",
+        "nameEn": "Tail",
+        "description": [
+          "Рукопашная атака оружием: +19 к попаданию, досягаемость 20 фт., одна цель. Попадание: 24 (4к6 + 10) дробящего урона. Если цель — существо, оно должно пройти испытание Силы СЛ 20, иначе будет сбито с ног."
+        ],
+        "attackBonus": 19,
+        "damageParts": [
+          {
+            "formula": "4к6 + 10",
+            "type": "bludgeoning"
+          }
+        ],
+        "reach": 20,
+        "rangeType": "melee",
+        "distanceUnit": "ft",
+        "activeEffects": [
+          {
+            "id": "prone",
+            "name": "Сбитый с ног",
+            "description": "Существо сбито с ног. Оно может только ползать, пока не встанет.",
+            "icon": "tabler:walk",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "conditionKey": "prone",
+            "applySave": {
+              "ability": "strength",
+              "dc": 20,
+              "onSuccess": "negate"
+            },
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": [
+              "attack.disadvantage"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Ужасающее присутствие",
+        "nameEn": "Frightful Presence",
+        "description": [
+          "Каждое существо по выбору тарраски в пределах 120 футов, которое знает о ней, должно пройти испытание Мудрости СЛ 17, иначе будет испугано на 1 минуту. Существо может повторять испытание в конце каждого своего хода, оканчивая эффект при успехе. Если существо преуспело или эффект окончился, оно получает иммунитет к Ужасающему присутствию тарраски на 24 часа."
+        ],
+        "activeEffects": [
+          {
+            "id": "frightened",
+            "name": "Испуганный",
+            "description": "Существо испугано. Совершает проверки характеристик и броски атаки с помехой, пока источник страха находится в пределах видимости. Спасбросок Мудрости СЛ 17 при наложении; повтор в конце каждого своего хода оканчивает эффект.",
+            "icon": "tabler:ghost",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "conditionKey": "frightened",
+            "applySave": {
+              "ability": "wisdom",
+              "dc": 17,
+              "onSuccess": "negate"
+            },
+            "recurringSave": {
+              "ability": "wisdom",
+              "dc": 17,
+              "timing": "endOfTurn"
+            },
+            "duration": {
+              "type": "minutes",
+              "value": 1
+            },
+            "changes": [],
+            "flags": [
+              "attack.disadvantage",
+              "abilityCheck.disadvantage"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Проглатывание",
+        "nameEn": "Swallow",
+        "description": [
+          "Тарраска совершает одну атаку укусом по существу Большого или меньшего размера, которое она схватила. При попадании цель получает урон от укуса, проглатывается, и захват оканчивается. Проглоченное существо ослеплено и опутано, имеет полное укрытие от атак и эффектов извне тарраски и получает 56 (16к6) урона кислотой в начале каждого хода тарраски. Если тарраска получает 60 или более урона за один ход от существа внутри неё, она должна пройти испытание Телосложения СЛ 20 в конце этого хода, иначе срыгнёт всех проглоченных существ, которые падают ничком в пространство в пределах 10 футов от тарраски. Если тарраска умирает, проглоченное существо перестаёт быть опутанным и может выбраться, потратив 30 футов движения, выходя ничком."
+        ],
+        "activeEffects": [
+          {
+            "id": "blinded",
+            "name": "Ослепленный",
+            "description": "Существо ослеплено в животе тарраски.",
+            "icon": "tabler:eye-off",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": [
+              "vision.blinded",
+              "attack.disadvantage",
+              "attacksAgainst.advantage"
+            ]
+          },
+          {
+            "id": "restrained",
+            "name": "Опутанный",
+            "description": "Существо опутано внутри тарраски.",
+            "icon": "tabler:link",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "duration": {
+              "type": "special"
+            },
+            "changes": [],
+            "flags": [
+              "speed.zero",
+              "attack.disadvantage",
+              "attacksAgainst.advantage",
+              "save.disadvantage.dexterity"
+            ]
+          }
+        ]
+      }
+    ],
+    "bonusActions": [],
+    "reactions": [],
+    "legendary": {
+      "count": 3,
+      "actions": [
+        {
+          "name": "Атака",
+          "nameEn": "Attack",
+          "description": [
+            "Тарраска совершает одну атаку когтем или хвостом."
+          ]
+        },
+        {
+          "name": "Движение",
+          "nameEn": "Move",
+          "description": [
+            "Тарраска перемещается на расстояние до половины своей скорости."
+          ]
+        },
+        {
+          "name": "Жевать (стоит 2 действия)",
+          "nameEn": "Chew (Costs 2 Actions)",
+          "description": [
+            "Тарраска совершает одну атаку укусом или использует Проглатывание."
+          ]
+        }
+      ]
+    }
+  },
+  "sourceKey": "mm"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "locate-object-phb",
+  "name": "Поиск объекта",
+  "nameEn": "Locate Object",
+  "level": 2,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "раздвоенная веточка"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Опишите или назовите объект, который вам знаком. Вы чувствуете направление к местоположению объекта, если оно находится в пределах 1 000 футов от вас. Если объект движется, то вы знаете направление его движения. \nЗаклинание может обнаружить конкретный известный вам объект, если вы видели его вблизи (на расстоянии не более 30 футов) хотя бы один раз. В качестве альтернативы, заклинание может обнаружить ближайший объект определенного типа, например, одежду, украшение, мебель, инструмент или оружие. \nЭто заклинание не может обнаружить объект, если слой свинца любой толщины блокирует прямой путь между вами и объектом.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger",
+    "wizard"
+  ],
+  "type": "spell"
+}

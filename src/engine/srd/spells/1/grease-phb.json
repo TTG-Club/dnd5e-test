@@ -1,0 +1,53 @@
+{
+  "id": "grease-phb",
+  "name": "Скольжение",
+  "nameEn": "Grease",
+  "level": 1,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек свиного сала или масла"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Несгораемый жир покрывает землю в 10-футовом квадрате с центром в точке в пределах дистанции и превращает её в труднопроходимую местность на время действия.\nКогда жир появляется, все существа, стоящие в этой области, должны преуспеть в спасброске Ловкости или получить состояние лежащий ничком. Существо, входящее в область или заканчивающее свой ход в ней, также должно преуспеть в этом спасброске или упасть ничком.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "grease-prone",
+      "name": "Лежащий ничком",
+      "description": "Помеха на все атаки; Состояние: Лежащий ничком.",
+      "icon": "tabler:download",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "prone",
+      "duration": {
+        "type": "special"
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage"
+      ]
+    }
+  ]
+}

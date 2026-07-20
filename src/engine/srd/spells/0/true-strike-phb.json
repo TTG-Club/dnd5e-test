@@ -1,0 +1,67 @@
+{
+  "id": "true-strike-phb",
+  "name": "Меткий удар",
+  "nameEn": "True Strike",
+  "level": 0,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": false,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "оружие, которым у вас есть владение, и которое стоит 1+ зм"
+  },
+  "range": 0,
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Ведомый вспышкой магического прозрения, вы совершаете одну атаку с помощью оружия, использованного при наложении заклинания. Для бросков атаки и урона вместо Силы или Ловкости используется ваша заклинательная характеристика. Если атака наносит урон, то он может быть излучением или нормальным типом урона оружия (по вашему выбору).",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell",
+  "damageParts": [],
+  "cantripScalingTiers": [
+    {
+      "level": 5,
+      "parts": [
+        {
+          "formula": "1к6@dmg.radiant",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "parts": [
+        {
+          "formula": "2к6@dmg.radiant",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "parts": [
+        {
+          "formula": "3к6@dmg.radiant",
+          "target": "selected"
+        }
+      ]
+    }
+  ],
+  "rangeUnit": "ft",
+  "higherLevelDescription": "Независимо от того, наносите ли вы урон излучением или нормальным типом урона оружия, атака наносит дополнительный урон излучением при достижении 5 уровня (1к6), 11 уровня (2к6) и 17 уровня (3к6)."
+}

@@ -1,0 +1,54 @@
+{
+  "id": "mind-blank-phb",
+  "name": "Сокрытие разума",
+  "nameEn": "Mind Blank",
+  "level": 8,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 24,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "До окончания действия заклинания одно согласное существо, которого вы касаетесь, получает иммунитет к урону психической энергией и состоянию очарованный. Цель также не подвержена влиянию эффектов, которые могут ощущать её эмоции или мировоззрение, читать её мысли или магически определять её местоположение. Никакое заклинание, даже Желание [Wish], не может получить информацию о цели, наблюдать за ней на расстоянии или контролировать её разум.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "effect_1782194334773_k7kvfzz",
+      "name": "Сокрытие разума",
+      "description": "Иммунитет: Психический урон; иммунитет к состояниям: Очарованный; на 24 часа.",
+      "icon": "tabler:brain",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 24
+      },
+      "changes": [],
+      "flags": [
+        "immunity.psychic"
+      ],
+      "effectTarget": "target",
+      "conditionImmunities": [
+        "charmed"
+      ]
+    }
+  ]
+}

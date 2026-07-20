@@ -1,0 +1,23 @@
+{
+  "id": "a-music-box-with-gnomish-motifs-that-plays-a-single-tune-phb",
+  "name": "Музыкальная шкатулка с гномьими мотивами, играющая одну мелодию",
+  "nameEn": "A music box with gnomish motifs that plays a single tune",
+  "description": "Маленькая музыкальная шкатулка, украшенная гномьим орнаментом. Она играет только одну мелодию — весёлую и заводную.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

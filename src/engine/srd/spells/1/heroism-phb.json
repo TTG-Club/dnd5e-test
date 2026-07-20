@@ -1,0 +1,53 @@
+{
+  "id": "heroism-phb",
+  "name": "Героизм",
+  "nameEn": "Heroism",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Существо по вашему выбору, которого вы касаетесь, наполняется смелостью. Пока заклинание действует, существо становится невосприимчивым к состоянию испуганный и получает временные хиты, равные вашему модификатору заклинательной характеристики, в начале каждого своего хода.",
+  "higherLevelDescription": "Вы можете выбрать одно дополнительное существо за каждый уровень ячейки заклинаний выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "paladin"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "effect_1782194334765_4401f9x",
+      "name": "Героизм",
+      "description": "Иммунитет к состояниям: Испуганный; на 10 раундов.",
+      "icon": "tabler:mood-boy",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [],
+      "effectTarget": "target",
+      "conditionImmunities": [
+        "frightened"
+      ]
+    }
+  ]
+}

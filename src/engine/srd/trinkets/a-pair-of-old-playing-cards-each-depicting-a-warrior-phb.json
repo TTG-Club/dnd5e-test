@@ -1,0 +1,23 @@
+{
+  "id": "a-pair-of-old-playing-cards-each-depicting-a-warrior-phb",
+  "name": "Пара старых игральных карт, на каждой из которых нарисован воин",
+  "nameEn": "A pair of old playing cards, each depicting a warrior",
+  "description": "Две игральные карты, на каждой из которых изображён один и тот же воин, но в разных позах.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

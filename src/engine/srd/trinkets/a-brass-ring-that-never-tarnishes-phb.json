@@ -1,0 +1,23 @@
+{
+  "id": "a-brass-ring-that-never-tarnishes-phb",
+  "name": "Латунное кольцо, которое никогда не тускнеет",
+  "nameEn": "A brass ring that never tarnishes",
+  "description": "Простое латунное кольцо, которое всегда сохраняет свой блеск, словно только что отполированное.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "protection-from-poison-phb",
+  "name": "Защита от яда",
+  "nameEn": "Protection from Poison",
+  "level": 2,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь существа и снимаете с него состояние отравленный. На время действия заклинания цель получает преимущество на спасброски, чтобы избежать или прекратить состояние отравленный, а также получает сопротивление урону ядом.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger"
+  ],
+  "type": "spell"
+}

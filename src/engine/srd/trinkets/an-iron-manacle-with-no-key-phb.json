@@ -1,0 +1,23 @@
+{
+  "id": "an-iron-manacle-with-no-key-phb",
+  "name": "Наручник из железа без ключа",
+  "nameEn": "An iron manacle with no key",
+  "description": "Одиночный железный наручник, раскрытый и без ключа. На внутренней стороне выцарапано чьё-то имя.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

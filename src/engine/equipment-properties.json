@@ -1,0 +1,30 @@
+[
+  {
+    "key": "adamantine",
+    "name": "Адамантиновое",
+    "nameEn": "Adamantine",
+    "source": "DMG",
+    "description": "Критическое попадание по владельцу этого доспеха считается обычным попаданием."
+  },
+  {
+    "key": "magical",
+    "name": "Магическое",
+    "nameEn": "Magical",
+    "source": "DMG",
+    "description": "Доспех обладает магическими свойствами, которые могут давать бонус к КД или иные эффекты."
+  },
+  {
+    "key": "stealth-disadvantage",
+    "name": "Помеха скрытности",
+    "nameEn": "Stealth Disadvantage",
+    "source": "PHB",
+    "description": "Владелец совершает проверки Скрытности (Ловкость) с помехой."
+  },
+  {
+    "key": "focus",
+    "name": "Фокусирующее",
+    "nameEn": "Focus",
+    "source": "DMG",
+    "description": "Может использоваться как магическая фокусировка для заклинаний."
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "id": "a-cloth-bag-holding-twenty-nine-teeth-from-various-creatures-phb",
+  "name": "Мешочек из ткани с двадцатью девятью зубами разных существ",
+  "nameEn": "A cloth bag holding twenty-nine teeth from various creatures",
+  "description": "Мешочек из грубой ткани, в котором лежат 29 зубов, принадлежащих различным существам — от крохотных мышиных до крупных клыков хищника.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

@@ -1,0 +1,77 @@
+{
+  "id": "weird-phb",
+  "name": "Жуть",
+  "nameEn": "Weird",
+  "level": 9,
+  "school": "illusion",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы пытаетесь создать иллюзорные ужасы в разумах других. Каждое существо на ваш выбор в 30-футовой сфере  с центром в точке в пределах дистанции совершает спасбросок Мудрости. При провале цель получает 10к10 урона психической энергией и получает состояние испуганный на длительность заклинания. При успешном спасброске цель получает половину урона. \nИспуганная цель совершает спасбросок Мудрости в конце каждого своего хода. При провале она получает 5к10 урона психической энергией. При успешном спасброске действие заклинания на цель заканчивается.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "weird-frightened",
+      "name": "Испуганный",
+      "description": "Помеха на все атаки; Помеха на ВСЕ проверки характеристик; Состояние: Испуганный; урон каждый ход (в конце хода): 5к10 психический; повторный спасбросок (Мудрость, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:mood-sad",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "frightened",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "abilityCheck.disadvantage"
+      ],
+      "recurringSave": {
+        "ability": "wisdom",
+        "dc": 0,
+        "timing": "endOfTurn"
+      },
+      "recurringDamage": {
+        "damageParts": [
+          {
+            "formula": "5к10@dmg.psychic"
+          }
+        ],
+        "timing": "endOfTurn"
+      }
+    }
+  ],
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 30,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "10к10@dmg.psychic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

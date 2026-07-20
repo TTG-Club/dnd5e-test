@@ -1,0 +1,20 @@
+{
+  "id": "cartographer-s-tools-phb",
+  "name": "Инструменты картографа",
+  "nameEn": "Cartographer's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "cartographers-tools",
+  "rarity": "common",
+  "weight": 6,
+  "cost": {
+    "value": 15,
+    "currency": "gp"
+  },
+  "description": "Инструменты, необходимые для создания карт: перья, циркули, пергамент и чернила.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

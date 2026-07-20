@@ -1,0 +1,44 @@
+{
+  "id": "magic-missile-phb",
+  "name": "Волшебная стрела",
+  "nameEn": "Magic Missile",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Вы создаёте 3 светящихся дротика из магической силы. Каждый дротик поражает существо на ваш выбор, которое вы видите в пределах дистанции. Дротик наносит цели 1к4 + 1 урона силовым полем. Все дротики поражают одновременно и вы можете направить их в одно существо или в несколько.",
+  "higherLevelDescription": "Заклинание создаёт 1 дополнительный дротик за каждый уровень ячейки заклинаний выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "1к4@dmg.force+1",
+      "target": "selected"
+    }
+  ],
+  "projectiles": {
+    "count": 3,
+    "perSlotLevel": 1
+  }
+}

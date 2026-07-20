@@ -1,0 +1,64 @@
+{
+  "id": "ray-of-sickness-phb",
+  "name": "Луч болезни",
+  "nameEn": "Ray of Sickness",
+  "level": 1,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы выпускаете зеленоватый луч в существо в пределах дистанции. Совершите дальнобойную атаку заклинанием против цели. При попадании цель получает 2к8 урона ядом и получает состояние отравленный до конца вашего следующего хода.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "ray-of-sickness-poisoned",
+      "name": "Отравленный",
+      "description": "Помеха на все атаки; Помеха на ВСЕ проверки характеристик; Состояние: Отравленный; на 1 раунд.",
+      "icon": "tabler:droplet",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "poisoned",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "abilityCheck.disadvantage"
+      ]
+    }
+  ],
+  "damageParts": [
+    {
+      "formula": "2к8@dmg.poison",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "defense-phb",
+  "name": "Оборона",
+  "nameEn": "Defense",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": false,
+  "description": "Когда вы носите лёгкий, средний или тяжёлый доспех, вы получаете бонус +1 к КД.",
+  "typeLabel": "Черты",
+  "activeEffects": [
+    {
+      "id": "defense-armor-ac",
+      "name": "Оборона",
+      "description": "+1 к КД при ношении доспеха.",
+      "icon": "tabler:shield",
+      "disabled": false,
+      "origin": "feature",
+      "transfer": false,
+      "duration": {
+        "type": "permanent"
+      },
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": []
+    }
+  ]
+}

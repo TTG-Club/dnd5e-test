@@ -1,0 +1,43 @@
+{
+  "id": "blade-barrier-phb",
+  "name": "Стена клинков",
+  "nameEn": "Blade Barrier",
+  "level": 6,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы создаёте стену из вращабщихся бритвенноострых клинков из магической энергии. Стена появляется в пределах дистанции и существует на протяжении длительности заклинания. Вы можете создать прямую стену длиной 100 футов, высотой 20 футов и толщиной 5 футов, или закольцованную стену диаметром 60 футов, высотой 20 футов и толщиной 5 футов. Стена предоставляет существам, находящимся за ней, укрытие на три четверти, и её пространство является труднопроходимой местностью. \nЛюбое существо в пространстве стены совершает спасбросок Ловкости, получая 6к10 урона силовым полем при провале или половину этого урона при успехе. Существо также совершает этот спасбросок, если входит в пространство стены или заканчивает в нём свой ход. Однако существо совершает этот спасбросок только 1 раз за ход.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "ray",
+    "size": 100,
+    "width": 5,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "6к10@dmg.force",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "locate-animals-or-plants-phb",
+  "name": "Поиск животных или растений",
+  "nameEn": "Locate Animals or Plants",
+  "level": 2,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "шёрстка ищейки"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Опишите или назовите конкретный вид зверя, растения (существа) или немагического растения. Вы узнаете направление и расстояние до ближайшего существа или растения этого вида в пределах 5 миль, если таковые имеются.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid",
+    "ranger"
+  ],
+  "type": "spell"
+}

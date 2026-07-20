@@ -1,0 +1,47 @@
+{
+  "id": "cloudkill-phb",
+  "name": "Облако смерти",
+  "nameEn": "Cloudkill",
+  "level": 5,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Вы создаёте сферу с радиусом 20 футов из жёлто-зелёного тумана с центром в точке, выбранной вами в пределах дистанции. Туман существует всё время действия заклинания или до тех пор, пока сильный ветер (например, созданный с помощью заклинания Порыв ветра [Gust of Wind]) не рассеет его, завершив заклинание. Область действия заклинания становится сильно заслонённой.\nКаждое существо в сфере совершает спасбросок Телосложения, получая 5к8 урона ядом при неудачном спасброске или половину этого урона при успехе. Существо также должно совершить этот спасбросок, когда сфера перемещается в его область и когда оно входит в сферу или завершает свой ход в ней. Существо совершает этот спасбросок только один раз за ход.\nСфера перемещается на 10 футов от вас в начале каждого вашего хода.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 5.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 20,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "5к8@dmg.poison",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

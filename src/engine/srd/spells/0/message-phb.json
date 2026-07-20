@@ -1,0 +1,34 @@
+{
+  "id": "message-phb",
+  "name": "Сообщение",
+  "nameEn": "Message",
+  "level": 0,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": false,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "медная проволока"
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "special",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы указываете на существо в пределах дистанции и шепчете послание. Цель (и только цель) слышит сообщение и может ответить вам шёпотом, который слышите только вы.\nВы можете наложить это заклинание через твёрдые объекты, если вы знакомы с целью и знаете, что она находится за преградой. Магическая тишина, 1 фут камня, металла или дерева, или тонкий лист свинца блокируют заклинание.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell"
+}

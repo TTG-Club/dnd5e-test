@@ -1,0 +1,23 @@
+{
+  "id": "wand-of-enemy-detection-dmg",
+  "name": "Жезл обнаружения врагов",
+  "nameEn": "Wand of Enemy Detection",
+  "description": "Этот жезл содержит 7 зарядов и требует настройки. Держа его, вы можете действием потратить 1 заряд, чтобы узнать направление до ближайшего существа, враждебного к вам, в пределах 60 футов, если таковое существо есть. Вы узнаёте не природу существа, а только направление к нему.\n\nЖезл восстанавливает {@roll 1d6+1} потраченных зарядов ежедневно на заре. Если вы потратите последний заряд, бросьте {@roll 1d20}. Если выпадет 1, жезл рассыпается в прах и уничтожается.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 1,
+  "cost": "",
+  "rarity": "uncommon",
+  "equipped": false,
+  "equipmentCategory": "wand",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "dmg",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "required",
+  "typeLabel": "Снаряжение"
+}

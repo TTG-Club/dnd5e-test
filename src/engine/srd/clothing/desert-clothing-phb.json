@@ -1,0 +1,23 @@
+{
+  "id": "desert-clothing-phb",
+  "name": "Одежда для пустыни",
+  "nameEn": "Desert Clothing",
+  "description": "Свободная, лёгкая одежда, защищающая от палящего солнца и песчаных бурь. Если вы не носите среднюю или тяжёлую броню, вы автоматически преуспеваете в спасбросках против сильной жары.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "5 зм",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "clothing",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

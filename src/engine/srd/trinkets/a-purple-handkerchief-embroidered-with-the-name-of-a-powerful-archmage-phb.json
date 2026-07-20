@@ -1,0 +1,23 @@
+{
+  "id": "a-purple-handkerchief-embroidered-with-the-name-of-a-powerful-archmage-phb",
+  "name": "Фиолетовый платок, расшитый именем могущественного архимага",
+  "nameEn": "A purple handkerchief embroidered with the name of a powerful archmage",
+  "description": "Шёлковый платок фиолетового цвета, по краю которого золотой нитью вышито имя архимага, жившего столетия назад.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

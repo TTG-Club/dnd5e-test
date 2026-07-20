@@ -1,0 +1,32 @@
+{
+  "id": "scimitar-phb",
+  "name": "Скимитар",
+  "nameEn": "Scimitar",
+  "description": "Скимитар — воинское рукопашное оружие. Лёгкое и фехтовальное.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 3,
+  "cost": "25 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "scimitar",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "slashing"
+    }
+  ],
+  "weaponProperties": [
+    "finesse",
+    "light"
+  ],
+  "reach": 5,
+  "mastery": "nick",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

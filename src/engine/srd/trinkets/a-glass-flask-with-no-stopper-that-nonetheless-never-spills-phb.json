@@ -1,0 +1,23 @@
+{
+  "id": "a-glass-flask-with-no-stopper-that-nonetheless-never-spills-phb",
+  "name": "Стеклянная фляга без пробки, которая, тем не менее, не проливается",
+  "nameEn": "A glass flask with no stopper that nonetheless never spills",
+  "description": "Маленькая стеклянная фляга, наполненная жидкостью. У неё нет пробки, но жидкость никогда не выливается, даже если перевернуть флягу.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

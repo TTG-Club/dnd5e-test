@@ -1,0 +1,32 @@
+{
+  "id": "conjure-minor-elementals-phb",
+  "name": "Вызов малых элементалей",
+  "nameEn": "Conjure Minor Elementals",
+  "level": 4,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы вызываете духов со Стихийных планов, которые кружат вокруг вас в радиусе 15 футов на протяжении действия заклинания. Пока заклинание активно, любая ваша атака наносит дополнительно 2к8 урона при попадании по существу, находящемуся в пределах этого радиуса. Этот урон может быть кислотой, холодом, огнём или электричеством (вы выбираете тип урона при выполнении атаки). Кроме того, земля в пределах радиуса действия заклинания становится труднопроходимой местностью для ваших врагов.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 4.\nизменено Эрратой",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "wizard"
+  ],
+  "type": "spell"
+}

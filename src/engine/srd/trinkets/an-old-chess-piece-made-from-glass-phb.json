@@ -1,0 +1,23 @@
+{
+  "id": "an-old-chess-piece-made-from-glass-phb",
+  "name": "Старая шахматная фигура из стекла",
+  "nameEn": "An old chess piece made from glass",
+  "description": "Стеклянная шахматная фигура тонкой работы. Стекло слегка мутное от времени, но фигура всё ещё красива.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

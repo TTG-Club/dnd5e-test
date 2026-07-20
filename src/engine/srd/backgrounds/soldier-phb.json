@@ -1,0 +1,42 @@
+{
+  "key": "soldier",
+  "name": "Солдат",
+  "nameEn": "Soldier",
+  "description": "**Солдат** — вы начали обучаться сражению в таком раннем возрасте, что у вас осталось лишь несколько драгоценных воспоминаний о том, какой была жизнь до того, как вы взяли в руки оружие. Битва у вас в крови. Иногда вы ловите себя на том, что рефлекторно выполняете основные боевые упражнения, которым научились в юности. В конце концов, вы применяете это обучение на поле боя, защищая королевство, ведя войну.",
+  "isSRD": true,
+  "abilityGrant": {
+    "abilities": [
+      "strength",
+      "dexterity",
+      "constitution"
+    ]
+  },
+  "skillGrant": {
+    "skills": [
+      "athletics",
+      "intimidation"
+    ]
+  },
+  "toolGrant": {
+    "items": [
+      "gaming-set"
+    ]
+  },
+  "featGrant": {
+    "featId": "savage-attacker-phb",
+    "featName": "Дикий атакующий",
+    "featNameEn": "Savage Attacker"
+  },
+  "equipmentOptions": [
+    {
+      "description": "Копьё, Короткий лук, 20 стрел, Игровой набор (на ваш выбор), Комплект целителя, Колчан, Одежда путешественника, 14 зм"
+    },
+    {
+      "description": "50 зм",
+      "goldAlternative": 50
+    }
+  ],
+  "type": "background",
+  "id": "soldier-phb",
+  "sourceKey": "phb"
+}

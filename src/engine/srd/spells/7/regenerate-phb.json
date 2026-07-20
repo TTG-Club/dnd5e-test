@@ -1,0 +1,39 @@
+{
+  "id": "regenerate-phb",
+  "name": "Регенерация",
+  "nameEn": "Regenerate",
+  "level": 7,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "молитвенное колесо"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Существо, которого вы касаетесь, восстанавливает 4к8 + 15 хитов. На протяжении действия заклинания цель восстанавливает 1 хит в начале каждого своего хода и любые отрубленные части тела отрастают через 2 минуты.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "4к8@heal + 15",
+      "target": "selected"
+    }
+  ]
+}

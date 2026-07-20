@@ -1,0 +1,87 @@
+{
+  "id": "blindness-deafness-phb",
+  "name": "Глухота/слепота",
+  "nameEn": "Blindness/Deafness",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Одно существо, которое вы видите в пределах дистанции, должно преуспеть в спасброске Телосложения, иначе получит состояние ослеплённый или оглохший (на ваш выбор) на время длительности заклинания. В конце каждого своего хода цель повторяет спасбросок, заканчивая заклинание на себе в случае успеха.",
+  "activeEffects": [
+    {
+      "id": "blindness-blinded",
+      "name": "Слепота",
+      "description": "Помеха на все атаки; Преимущество атак по этому существу; Ослеплен (Ничего не видит, автопровал проверок зрения); Состояние: Ослеплённый; повторный спасбросок (Телосложение, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:eye-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10,
+        "remaining": 10
+      },
+      "changes": [],
+      "conditionKey": "blinded",
+      "flags": [
+        "attack.disadvantage",
+        "attacksAgainst.advantage",
+        "vision.blinded"
+      ],
+      "effectTarget": "target",
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    },
+    {
+      "id": "effect_1782192349504_89jvgee",
+      "name": "Глухота",
+      "description": "Состояние: Оглохший; повторный спасбросок (Телосложение, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:ear-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10,
+        "remaining": 10
+      },
+      "changes": [],
+      "flags": [],
+      "conditionKey": "deafened",
+      "effectTarget": "target",
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ],
+  "higherLevelDescription": "Вы можете сделать целью 1 дополнительное существо за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

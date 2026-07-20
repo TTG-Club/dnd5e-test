@@ -1,0 +1,35 @@
+{
+  "id": "feather-fall-phb",
+  "name": "Падение пёрышком",
+  "nameEn": "Feather Fall",
+  "level": 1,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "reaction",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": true,
+    "materialDescription": "небольшое перо или кусочек пуха"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Выберите до 5 существ, находящихся в падении и в пределах досягаемости. Скорость падения выбранного существа замедляется до 60 футов в раунд, пока заклинание не закончится. Если существо приземлится до окончания действия заклинания, то оно не получает урона от падения, и заклинание заканчивается для этого существа.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "targetCount": 5
+}

@@ -1,0 +1,32 @@
+{
+  "id": "mordenkainen-s-private-sanctum-phb",
+  "name": "Кабинет Морденкайнена",
+  "nameEn": "Mordenkainen`s Private Sanctum",
+  "level": 4,
+  "school": "abjuration",
+  "castingTimeValue": 10,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "тонкий лист свинца"
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 24,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы делаете область в пределах дистанции магически защищённой. Область представляет собой куб, который может быть от 5 до 100 футов с каждой стороны. Заклинание действует в течение указанной длительности.\nКогда вы накладываете заклинание, то вы решаете, какой тип защиты оно предоставляет, выбирая любые из следующих свойств:\nНакладывание этого заклинания на одно и то же место каждый день в течение 365 дней делает его постоянным, пока оно не будет рассеяно.",
+  "higherLevelDescription": "Вы можете увеличить размер куба на 100 футов за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "wizard"
+  ]
+}

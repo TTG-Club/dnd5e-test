@@ -1,0 +1,69 @@
+{
+  "id": "sunbeam-phb",
+  "name": "Солнечный луч",
+  "nameEn": "Sunbeam",
+  "level": 6,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "увеличительное стекло"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "constitution",
+  "description": "Вы выпускаете линией солнечный луч шириной 5 футов и длиной 60 футов. Каждое существо в линии должно совершить спасбросок Телосложения. При провале существо получает 6к8 урона излучением и получает состояние ослеплённый до начала вашего следующего хода. При успешном спасброске существо получает половину урона. \nДо окончания длительности заклинания вы можете действием магия создать новую линию луча. \nНа время длительности заклинания над вами сияет частица яркого света, излучающая яркий свет в радиусе 30 футов и тусклый свет ещё на 30 футов. Этот свет является солнечным.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "ray",
+    "size": 60,
+    "width": 5,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "6к8@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "activeEffects": [
+    {
+      "id": "sunbeam-blinded",
+      "name": "Ослеплённый",
+      "description": "Помеха на все атаки; Преимущество атак по этому существу; Ослеплен (Ничего не видит, автопровал проверок зрения); Состояние: Ослеплённый; на 1 раунд.",
+      "icon": "tabler:eye-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "blinded",
+      "duration": {
+        "type": "rounds",
+        "value": 1
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "attacksAgainst.advantage",
+        "vision.blinded"
+      ]
+    }
+  ]
+}

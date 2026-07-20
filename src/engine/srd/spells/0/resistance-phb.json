@@ -1,0 +1,31 @@
+{
+  "id": "resistance-phb",
+  "name": "Сопротивление",
+  "nameEn": "Resistance",
+  "level": 0,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа и выбираете тип урона: кислотный, дробящий, холодный, огненный, электрический, некротический, колющий, ядовитый, излучение, рубящий или звуковой. Когда существо получает урон выбранного типа до окончания действия заклинания, то оно уменьшает полученный урон на 1к4. Существо может получить эффект от этого заклинания только один раз за ход.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid"
+  ],
+  "type": "spell"
+}

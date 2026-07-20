@@ -1,0 +1,147 @@
+{
+  "id": "homunculus-mm",
+  "name": "Гомункул",
+  "nameEn": "Homunculus",
+  "type": "creature",
+  "isSRD": true,
+  "isReadOnly": true,
+  "header": "Крошечная конструкция, нейтральное",
+  "description": "Гомункул — крошечная конструкция, созданная волшебником в качестве помощника. Он связан телепатической связью со своим создателем и послушно выполняет приказы.",
+  "token": {
+    "frameUrl": "assets/token-frames/0.png",
+    "showName": true,
+    "disposition": "neutral",
+    "scale": 1,
+    "vision": {
+      "range": 0,
+      "darkvision": 60,
+      "angle": 360,
+      "enabled": true
+    }
+  },
+  "system": {
+    "size": "tiny",
+    "type": "construct",
+    "subtype": "",
+    "alignment": "true-neutral",
+    "armorClass": {
+      "value": 13,
+      "calculation": "natural",
+      "formula": "",
+      "flat": 13
+    },
+    "hitPoints": {
+      "average": 5,
+      "formula": "2к4",
+      "text": "",
+      "current": 5,
+      "max": 5,
+      "hitDie": 4,
+      "hitDiceCount": 2,
+      "bonus": 0
+    },
+    "movement": {
+      "walk": 20,
+      "swim": 0,
+      "fly": 40,
+      "climb": 0,
+      "burrow": 0,
+      "hover": false,
+      "units": "ft"
+    },
+    "abilities": {
+      "strength": 4,
+      "dexterity": 15,
+      "constitution": 11,
+      "intelligence": 10,
+      "wisdom": 10,
+      "charisma": 7
+    },
+    "challengeRating": "—",
+    "proficiencyBonus": 2,
+    "savingThrows": [],
+    "skills": {},
+    "defenses": {
+      "vulnerabilities": [],
+      "resistances": [],
+      "immunities": [
+        "poison"
+      ],
+      "conditionImmunities": [
+        "poisoned",
+        "charmed"
+      ]
+    },
+    "senses": "тёмное зрение 60 фт., пассивная Внимательность 10",
+    "languages": [
+      "понимает языки своего создателя, но не может говорить"
+    ],
+    "environments": [
+      "urban",
+      "any"
+    ],
+    "customEnvironments": "Лаборатория мага",
+    "traits": [
+      {
+        "name": "Телепатическая связь",
+        "nameEn": "Telepathic Bond",
+        "description": [
+          "Пока гомункул и его хозяин находятся на одном плане существования, хозяин может телепатически общаться с гомункулом и воспринимать через его чувства. Хозяин также может общаться через гомункула телепатически."
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "Укус",
+        "nameEn": "Bite",
+        "description": [
+          "Рукопашная атака оружием: +4 к попаданию, досягаемость 5 фт., одна цель. Попадание: 1 колющий урон, и цель должна пройти испытание Телосложения СЛ 10, иначе будет отравлена на 1 минуту. Если испытание провалено на 5 или более, цель вместо этого отравлена на 5 (1к10) минут и находится без сознания, пока отравлена."
+        ],
+        "attackBonus": 4,
+        "damageParts": [
+          {
+            "formula": "1",
+            "type": "piercing"
+          }
+        ],
+        "reach": 5,
+        "rangeType": "melee",
+        "distanceUnit": "ft",
+        "activeEffects": [
+          {
+            "id": "poisoned",
+            "name": "Отравленный",
+            "description": "Существо отравлено: совершает с помехой броски атаки и проверки характеристик.",
+            "icon": "tabler:biohazard",
+            "disabled": false,
+            "origin": "feature",
+            "transfer": false,
+            "effectTarget": "target",
+            "conditionKey": "poisoned",
+            "applySave": {
+              "ability": "constitution",
+              "dc": 10,
+              "onSuccess": "negate"
+            },
+            "duration": {
+              "type": "minutes",
+              "value": 1
+            },
+            "changes": [],
+            "flags": [
+              "attack.disadvantage",
+              "abilityCheck.disadvantage"
+            ]
+          }
+        ]
+      }
+    ],
+    "bonusActions": [],
+    "reactions": [],
+    "legendary": {
+      "count": 0,
+      "actions": []
+    }
+  },
+  "sourceKey": "mm"
+}

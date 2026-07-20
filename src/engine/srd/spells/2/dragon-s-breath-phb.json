@@ -1,0 +1,49 @@
+{
+  "id": "dragon-s-breath-phb",
+  "name": "Дыхание дракона",
+  "nameEn": "Dragon's Breath",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "острый перец"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "touch",
+  "saveType": "dexterity",
+  "description": "Вы касаетесь одного согласного существа и выбираете 1 из следующих типов урона: кислотный, холодный, огненный, электрический или ядовитый. Пока заклинание действует, цель может использовать действие магия, чтобы выдохнуть 15-футовый конус. Каждое существо в этой области должно совершить спасбросок Ловкости, получая 3к6 урона выбранного типа при провале или половину этого урона при успехе.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "sorcerer",
+    "wizard"
+  ],
+  "areaOfEffect": {
+    "shape": "cone",
+    "size": 15,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "3к6",
+      "type": "choice",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}

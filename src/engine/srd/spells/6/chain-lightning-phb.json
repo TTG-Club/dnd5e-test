@@ -1,0 +1,45 @@
+{
+  "id": "chain-lightning-phb",
+  "name": "Цепная молния",
+  "nameEn": "Chain Lightning",
+  "level": 6,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "три серебряные булавки"
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы выпускаете молнию в цель, которую видите в пределах дистанции. Затем 3 молнии прыгают от этой цели к 3 другим целям по вашему выбору, каждая из которых должна находиться в пределах 30 футов от первой цели. Целью может быть существо или объект, и 1 молния может поразить только 1 цель. \nКаждая цель совершает спасбросок Ловкости, получая 10к8 урона электричеством при провале или половину этого урона при успехе.",
+  "higherLevelDescription": "Дополнительная молния прыгает от первой цели к другой цели за каждую ячейку заклинания выше 6.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "saveEffect": "half",
+  "damageParts": [
+    {
+      "formula": "10к8@dmg.lightning",
+      "target": "selected"
+    }
+  ],
+  "projectiles": {
+    "count": 4,
+    "perSlotLevel": 1,
+    "targetDistribution": "distinct"
+  }
+}

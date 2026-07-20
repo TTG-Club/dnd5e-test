@@ -1,0 +1,35 @@
+{
+  "id": "mage-hand-phb",
+  "name": "Волшебная рука",
+  "nameEn": "Mage Hand",
+  "level": 0,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Призрачная парящая рука появляется в точке, которую вы выбираете в пределах дистанции, и существует на протяжении всей длительности заклинания. Она исчезает, если окажется дальше 30 футов от вас или если вы снова наложите это заклинание.\nПри накладывании заклинания вы можете использовать руку для манипуляции объектами: открывать незапертые двери или контейнеры, убирать или извлекать предметы из открытых контейнеров, а также выливать содержимое из склянок.\nВ дальнейшем, используя действие магия, вы можете снова управлять рукой, перемещая её на расстояние до 30 футов. Рука не может атаковать, активировать магические предметы или переносить более 10 фунтов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell"
+}

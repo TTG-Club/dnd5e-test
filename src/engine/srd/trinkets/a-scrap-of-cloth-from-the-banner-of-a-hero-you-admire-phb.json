@@ -1,0 +1,23 @@
+{
+  "id": "a-scrap-of-cloth-from-the-banner-of-a-hero-you-admire-phb",
+  "name": "Клочок ткани от знамени героя, которого вы уважаете",
+  "nameEn": "A scrap of cloth from the banner of a hero you admire",
+  "description": "Небольшой обрывок ткани от знамени легендарного героя. Ткань не выцветает и не рвётся.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

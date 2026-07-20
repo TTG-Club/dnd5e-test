@@ -1,0 +1,42 @@
+{
+  "id": "confusion-phb",
+  "name": "Смятение",
+  "nameEn": "Confusion",
+  "level": 4,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "3 ореховые скорлупки"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Каждое существо в 10-футовой сфере с центром в точке, выбранной вами в пределах дистанции, должно успешно совершить спасбросок Мудрости, иначе оно не сможет совершать бонусные действия или реакции и должно бросить 1к10 в начале каждого своего хода, чтобы определить своё поведение на этот ход, используя таблицу ниже.\nВ конце каждого своего хода поражённая цель повторяет спасбросок, оканчивая действие эффекта на себе при успехе.",
+  "higherLevelDescription": "Радиус сферы увеличивается на 5 футов за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "druid",
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 10,
+    "unit": "ft"
+  }
+}

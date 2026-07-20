@@ -1,0 +1,58 @@
+{
+  "id": "shield-of-faith-phb",
+  "name": "Щит веры",
+  "nameEn": "Shield of Faith",
+  "level": 1,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "свиток с молитвой"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Мерцающее поле окружает существо на ваш выбор в пределах дистанции, предоставляя ему бонус +2 к КД на время длительности.",
+  "activeEffects": [
+    {
+      "id": "shield-of-faith-ac",
+      "name": "Щит веры (+2 КД)",
+      "description": "Класс доспеха (AC) +2; на 10 минут.",
+      "icon": "tabler:shield-plus",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "minutes",
+        "value": 10
+      },
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "target"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell"
+}

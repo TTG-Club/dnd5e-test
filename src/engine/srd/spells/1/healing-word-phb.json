@@ -1,0 +1,42 @@
+{
+  "id": "healing-word-phb",
+  "name": "Лечащее слово",
+  "nameEn": "Healing Word",
+  "level": 1,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Существо на ваш выбор, которое вы видите в пределах дистанции, восстанавливает хиты в количестве 2к4 + ваш модификатор заклинательной характеристики.",
+  "higherLevelDescription": "Лечение увеличивается на 2к4 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к4@heal+@mod.spell",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "2к4"
+  }
+}

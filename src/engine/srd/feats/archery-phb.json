@@ -1,0 +1,35 @@
+{
+  "id": "archery-phb",
+  "name": "Стрельба ",
+  "nameEn": "Archery",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": false,
+  "description": "Вы получаете бонус +2 к броскам атаки, которые вы совершаете с использованием дальнобойного оружия.\n\n> #### Сборник советов мудреца\n>\n> **Работает ли черта Стрельба с рукопашным оружием, которое вы метаете?**\n>\n> Нет, черта Стрельба даёт бонус только к броскам атаки, совершаемым с дальнобойным оружием. Черта Сражение метательным оружием даёт бонус к дальнобойным атакам, совершаемым рукопашным оружием со свойством метательное.",
+  "typeLabel": "Черты",
+  "activeEffects": [
+    {
+      "id": "archery-ranged-attack",
+      "name": "Стрельба",
+      "description": "+2 к броскам атаки дальнобойным оружием.",
+      "icon": "tabler:bow",
+      "disabled": false,
+      "origin": "feature",
+      "transfer": false,
+      "duration": {
+        "type": "permanent"
+      },
+      "changes": [
+        {
+          "key": "attack.ranged",
+          "mode": "add",
+          "value": "2",
+          "priority": 20
+        }
+      ],
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "id": "aid-phb",
+  "name": "Подмога",
+  "nameEn": "Aid",
+  "level": 2,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "полоска белой ткани"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Выберите до 3 существ в пределах дистанции. На время длительности максимум хитов и текущие хиты всех целей увеличиваются на 5.",
+  "higherLevelDescription": "Хиты целей увеличиваются ещё на 5 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "paladin"
+  ],
+  "type": "spell",
+  "targetCount": 3
+}

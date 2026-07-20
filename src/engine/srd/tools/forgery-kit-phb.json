@@ -1,0 +1,20 @@
+{
+  "id": "forgery-kit-phb",
+  "name": "Набор для фальсификации",
+  "nameEn": "Forgery Kit",
+  "type": "tool",
+  "toolCategory": "other",
+  "baseToolType": "forgery-kit",
+  "rarity": "common",
+  "weight": 5,
+  "cost": {
+    "value": 15,
+    "currency": "gp"
+  },
+  "description": "Этот небольшой ящичек содержит разные виды бумаги и пергамента, перья и чернила, печати и сургуч, золотые и серебряные листы, и прочее необходимое для подделывания документов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

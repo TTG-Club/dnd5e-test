@@ -1,0 +1,59 @@
+{
+  "id": "banishment-phb",
+  "name": "Изгнание",
+  "nameEn": "Banishment",
+  "level": 4,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "пентакль"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "charisma",
+  "description": "1 существо, которое вы видите в пределах дистанции, должно преуспеть в спасброске Харизмы или быть перенесено в безопасный демиплан на время длительности заклинания.\nНаходясь там, цель получает состояние недееcпособный. Когда заклинание заканчивается, цель возвращается в то пространство, которое покинула, или в ближайшее незанятое пространство, если исходное пространство занято.\nЕсли целью является существо с типом аберрация, небожитель, элементаль, фея или исчадие и заклинание длится 1 минуту, то цель не возвращается. Вместо этого цель переносится в случайное место на плане (на усмотрение Мастера), ассоциированном с её типом существа.",
+  "higherLevelDescription": "Вы можете выбрать 1 дополнительную цель за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "banishment-incapacitated",
+      "name": "Недееспособный",
+      "description": "Недееспособен (Не может совершать действия/реакции); Помеха на бросок инициативы; Состояние: Недееспособный; на 10 раундов.",
+      "icon": "tabler:ban",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "incapacitated",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "initiative.disadvantage"
+      ]
+    }
+  ]
+}

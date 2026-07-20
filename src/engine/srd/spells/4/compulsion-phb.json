@@ -1,0 +1,49 @@
+{
+  "id": "compulsion-phb",
+  "name": "Принуждение",
+  "nameEn": "Compulsion",
+  "level": 4,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Каждое существо на ваш выбор, которое вы видите в пределах дистанции, должно преуспеть в спасброске Мудрости или оказаться под воздействием состояния очарованный до окончания действия заклинания.\nНа протяжении длительности заклинания вы можете совершать бонусное действие, чтобы указать направление, горизонтальное вам. Каждая очарованная цель должна использовать всю свою скорость для передвижения в этом направлении в свой следующий ход, выбирая самый безопасный путь. После того как существо переместится таким образом, оно повторяет спасбросок. При успешном спасброске заклинание для этого существа заканчивается.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "compulsion-charmed",
+      "name": "Очарованный",
+      "description": "Состояние: Очарованный; на 10 раундов.",
+      "icon": "tabler:heart",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "charmed",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": []
+    }
+  ]
+}

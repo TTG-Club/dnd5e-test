@@ -1,0 +1,35 @@
+{
+  "id": "mirror-image-phb",
+  "name": "Отражения",
+  "nameEn": "Mirror Image",
+  "level": 2,
+  "school": "illusion",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Три иллюзорные копии вас появляются в вашем пространстве. Пока заклинание действует, копии движутся вместе с вами и повторяют ваши действия, перемещаясь так, что невозможно определить, какое изображение настоящее. \nКаждый раз, когда существо попадает по вам атакой во время действия заклинания, бросайте к6 за каждую из оставшихся копий. Если на любом из к6 выпадает 3 или больше, то одна из копий получает удар вместо вас, и копия уничтожается. В противном случае, копии игнорируют весь остальной урон и эффекты. Заклинание заканчивается, когда все 3 копии уничтожены. \nСущество не подвержено этому заклинанию, если оно в состоянии ослеплённый, имеет слепое зрение или истинное зрение.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell"
+}

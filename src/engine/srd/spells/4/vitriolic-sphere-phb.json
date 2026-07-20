@@ -1,0 +1,50 @@
+{
+  "id": "vitriolic-sphere-phb",
+  "name": "Едкий шар",
+  "nameEn": "Vitriolic Sphere",
+  "level": 4,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "капля желчи"
+  },
+  "range": 150,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы указываете на точку в пределах дистанции и туда устремляется светящийся шар диаметром 1 фут, наполненный кислотой, который взрывается в радиусе 20 футов. Каждое существо в этой области должно совершить спасбросок Ловкости. При провале существо получает 10к4 урона кислотой и ещё 5к4 урона кислотой в конце своего следующего хода. При успешном спасброске существо получает только половину первоначального урона.",
+  "higherLevelDescription": "Первоначальный урон увеличивается на 2к4 за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "ray",
+    "size": 10,
+    "width": 5,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "10к4@dmg.acid",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "2к4"
+  }
+}

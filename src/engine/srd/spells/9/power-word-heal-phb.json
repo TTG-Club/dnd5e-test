@@ -1,0 +1,36 @@
+{
+  "id": "power-word-heal-phb",
+  "name": "Слово силы: Исцеление",
+  "nameEn": "Power Word Heal",
+  "level": 9,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Волна исцеляющей энергии окутывает 1 существо, которое вы видите в пределах дистанции. Цель восстанавливает все свои хиты. Если у существа есть состояние очарованный, испуганный, парализованный, отравленный или ошеломлённый, то это состояние заканчивается. Если у существа есть состояние лежащий ничком, то оно может использовать свою реакцию, чтобы встать.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "9999@heal",
+      "target": "selected"
+    }
+  ]
+}

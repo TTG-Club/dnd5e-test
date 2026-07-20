@@ -1,0 +1,23 @@
+{
+  "id": "a-shard-of-obsidian-that-always-feels-warm-to-the-touch-phb",
+  "name": "Осколок обсидиана, который всегда тёплый на ощупь",
+  "nameEn": "A shard of obsidian that always feels warm to the touch",
+  "description": "Гладкий кусок вулканического стекла, который, вопреки здравому смыслу, всегда остаётся тёплым, будто его только что достали из огня.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

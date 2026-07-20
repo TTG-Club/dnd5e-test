@@ -1,0 +1,32 @@
+{
+  "id": "shortsword-phb",
+  "name": "Короткий меч",
+  "nameEn": "Shortsword",
+  "description": "Короткий меч — воинское рукопашное оружие. Лёгкое и фехтовальное.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "10 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "shortsword",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к6",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "finesse",
+    "light"
+  ],
+  "reach": 5,
+  "mastery": "vex",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

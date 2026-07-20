@@ -1,0 +1,32 @@
+{
+  "id": "hex-phb",
+  "name": "Сглаз",
+  "nameEn": "Hex",
+  "level": 1,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "окаменевший глаз тритона"
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы накладываете проклятье на существо, которое видите в пределах дистанции. Пока заклинание не закончится, вы наносите цели дополнительно 1к6 урона некротической энергией каждый раз, когда попадаете по ней атакой. Также, выберите одну характеристику при накладывании заклинания. Цель будет совершать проверки выбранной характеристики с помехой.\nЕсли количество хитов цели падает до 0 до окончания заклинания, то вы можете бонусным действием в последующий ход проклясть другое существо.",
+  "higherLevelDescription": "Ваша концентрация может продлиться дольше, если использовать ячейку 2 уровня (до 4 часов), 3-4 уровней (до 8 часов) или 5+ уровня (до 24 часов).",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "warlock"
+  ],
+  "type": "spell"
+}

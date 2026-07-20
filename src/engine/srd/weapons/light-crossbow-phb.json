@@ -1,0 +1,37 @@
+{
+  "id": "light-crossbow-phb",
+  "name": "Лёгкий арбалет",
+  "nameEn": "Light crossbow",
+  "description": "Лёгкий арбалет — простое дальнобойное оружие. Требует болты в качестве боеприпасов и использование двух рук. Имеет свойство перезарядки.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 5,
+  "cost": "25 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "light-crossbow",
+  "weaponCategory": "simple",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition",
+    "loading",
+    "two-handed"
+  ],
+  "ammunitionType": "bolts",
+  "range": {
+    "normal": 80,
+    "long": 320
+  },
+  "mastery": "slow",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

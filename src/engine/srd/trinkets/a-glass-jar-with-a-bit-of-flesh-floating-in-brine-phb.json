@@ -1,0 +1,23 @@
+{
+  "id": "a-glass-jar-with-a-bit-of-flesh-floating-in-brine-phb",
+  "name": "Стеклянная баночка с кусочком мяса, плавающим в рассоле",
+  "nameEn": "A glass jar with a bit of flesh floating in brine",
+  "description": "Маленькая стеклянная баночка, в которой плавает в мутном рассоле неопознаваемый кусочек мяса.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

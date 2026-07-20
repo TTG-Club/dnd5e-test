@@ -1,0 +1,20 @@
+{
+  "id": "carpenter-s-tools-phb",
+  "name": "Инструменты плотника",
+  "nameEn": "Carpenter's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "carpenters-tools",
+  "rarity": "common",
+  "weight": 6,
+  "cost": {
+    "value": 8,
+    "currency": "gp"
+  },
+  "description": "Пилы, молотки, гвозди, доски и другие инструменты для работы с деревом.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

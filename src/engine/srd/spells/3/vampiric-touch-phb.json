@@ -1,0 +1,41 @@
+{
+  "id": "vampiric-touch-phb",
+  "name": "Прикосновение вампира",
+  "nameEn": "Vampiric Touch",
+  "level": 3,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "melee",
+  "saveType": "none",
+  "description": "Касание вашей руки, окутанной тенью, может высасывать жизненную силу из других, чтобы исцелять ваши раны. Совершите Бросок рукопашной атаки заклинанием против 1 существа в пределах досягаемости. Попадание: цель получает 3к6 урона некротической энергией, и вы восстанавливаете количество хитов, равное половине нанесённого урона некротической энергией.\nДо окончания действия заклинания вы можете повторно совершать эту атаку на каждом своём ходу действием Магия, нацеливая её на то же существо или другое.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 3.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "3к6@dmg.necrotic",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}

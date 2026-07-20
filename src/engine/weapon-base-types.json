@@ -1,0 +1,306 @@
+[
+  {
+    "key": "club",
+    "name": "Дубинка",
+    "nameEn": "Club",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "ttg:club"
+  },
+  {
+    "key": "dagger",
+    "name": "Кинжал",
+    "nameEn": "Dagger",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "tabler:slice"
+  },
+  {
+    "key": "greatclub",
+    "name": "Палица",
+    "nameEn": "Greatclub",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "ttg:club"
+  },
+  {
+    "key": "handaxe",
+    "name": "Ручной топор",
+    "nameEn": "Handaxe",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "tabler:axe"
+  },
+  {
+    "key": "javelin",
+    "name": "Метательное копьё",
+    "nameEn": "Javelin",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "ttg:spear"
+  },
+  {
+    "key": "light-hammer",
+    "name": "Лёгкий молот",
+    "nameEn": "Light hammer",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "tabler:hammer"
+  },
+  {
+    "key": "mace",
+    "name": "Булава",
+    "nameEn": "Mace",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "ttg:mace"
+  },
+  {
+    "key": "quarterstaff",
+    "name": "Боевой посох",
+    "nameEn": "Quarterstaff",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "ttg:stick"
+  },
+  {
+    "key": "sickle",
+    "name": "Серп",
+    "nameEn": "Sickle",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "ttg:sickle"
+  },
+  {
+    "key": "spear",
+    "name": "Копьё",
+    "nameEn": "Spear",
+    "category": "simple",
+    "rangeType": "melee",
+    "icon": "ttg:spear"
+  },
+  {
+    "key": "dart",
+    "name": "Дротик",
+    "nameEn": "Dart",
+    "category": "simple",
+    "rangeType": "ranged",
+    "icon": "tabler:target-arrow"
+  },
+  {
+    "key": "shortbow",
+    "name": "Короткий лук",
+    "nameEn": "Shortbow",
+    "category": "simple",
+    "rangeType": "ranged",
+    "icon": "tabler:bow"
+  },
+  {
+    "key": "light-crossbow",
+    "name": "Лёгкий арбалет",
+    "nameEn": "Light crossbow",
+    "category": "simple",
+    "rangeType": "ranged",
+    "icon": "tabler:bow"
+  },
+  {
+    "key": "sling",
+    "name": "Праща",
+    "nameEn": "Sling",
+    "category": "simple",
+    "rangeType": "ranged",
+    "icon": "tabler:target-arrow"
+  },
+  {
+    "key": "battleaxe",
+    "name": "Боевой топор",
+    "nameEn": "Battleaxe",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:axe"
+  },
+  {
+    "key": "flail",
+    "name": "Цеп",
+    "nameEn": "Flail",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:hammer"
+  },
+  {
+    "key": "glaive",
+    "name": "Глефа",
+    "nameEn": "Glaive",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:trident"
+  },
+  {
+    "key": "greataxe",
+    "name": "Секира",
+    "nameEn": "Greataxe",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:axe"
+  },
+  {
+    "key": "greatsword",
+    "name": "Двуручный меч",
+    "nameEn": "Greatsword",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:sword"
+  },
+  {
+    "key": "halberd",
+    "name": "Алебарда",
+    "nameEn": "Halberd",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:trident"
+  },
+  {
+    "key": "lance",
+    "name": "Длинное копьё",
+    "nameEn": "Lance",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "ttg:spear"
+  },
+  {
+    "key": "longsword",
+    "name": "Длинный меч",
+    "nameEn": "Longsword",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:sword"
+  },
+  {
+    "key": "maul",
+    "name": "Молот",
+    "nameEn": "Maul",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:hammer"
+  },
+  {
+    "key": "morningstar",
+    "name": "Моргенштерн",
+    "nameEn": "Morningstar",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:hammer"
+  },
+  {
+    "key": "pike",
+    "name": "Пика",
+    "nameEn": "Pike",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:trident"
+  },
+  {
+    "key": "rapier",
+    "name": "Рапира",
+    "nameEn": "Rapier",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:sword"
+  },
+  {
+    "key": "scimitar",
+    "name": "Скимитар",
+    "nameEn": "Scimitar",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:sword"
+  },
+  {
+    "key": "shortsword",
+    "name": "Короткий меч",
+    "nameEn": "Shortsword",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:sword"
+  },
+  {
+    "key": "trident",
+    "name": "Трезубец",
+    "nameEn": "Trident",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:trident"
+  },
+  {
+    "key": "war-pick",
+    "name": "Боевой клевец",
+    "nameEn": "War pick",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:hammer"
+  },
+  {
+    "key": "warhammer",
+    "name": "Боевой молот",
+    "nameEn": "Warhammer",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:hammer"
+  },
+  {
+    "key": "whip",
+    "name": "Кнут",
+    "nameEn": "Whip",
+    "category": "martial",
+    "rangeType": "melee",
+    "icon": "tabler:lasso"
+  },
+  {
+    "key": "blowgun",
+    "name": "Духовая трубка",
+    "nameEn": "Blowgun",
+    "category": "martial",
+    "rangeType": "ranged",
+    "icon": "tabler:target-arrow"
+  },
+  {
+    "key": "hand-crossbow",
+    "name": "Ручной арбалет",
+    "nameEn": "Hand crossbow",
+    "category": "martial",
+    "rangeType": "ranged",
+    "icon": "tabler:bow"
+  },
+  {
+    "key": "heavy-crossbow",
+    "name": "Тяжёлый арбалет",
+    "nameEn": "Heavy crossbow",
+    "category": "martial",
+    "rangeType": "ranged",
+    "icon": "tabler:bow"
+  },
+  {
+    "key": "longbow",
+    "name": "Длинный лук",
+    "nameEn": "Longbow",
+    "category": "martial",
+    "rangeType": "ranged",
+    "icon": "tabler:bow"
+  },
+  {
+    "key": "musket",
+    "name": "Мушкет",
+    "nameEn": "Musket",
+    "category": "martial",
+    "rangeType": "ranged",
+    "icon": "tabler:target-arrow"
+  },
+  {
+    "key": "pistol",
+    "name": "Пистоль",
+    "nameEn": "Pistol",
+    "category": "martial",
+    "rangeType": "ranged",
+    "icon": "tabler:target-arrow"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "id": "light-hammer-phb",
+  "name": "Лёгкий молот",
+  "nameEn": "Light hammer",
+  "description": "Лёгкий молот — простое рукопашное оружие. Лёгкое и метательное, может быть брошено на дистанцию 20/60 футов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "2 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "light-hammer",
+  "weaponCategory": "simple",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к4",
+      "type": "bludgeoning"
+    }
+  ],
+  "weaponProperties": [
+    "light",
+    "thrown"
+  ],
+  "range": {
+    "normal": 20,
+    "long": 60
+  },
+  "reach": 5,
+  "mastery": "nick",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

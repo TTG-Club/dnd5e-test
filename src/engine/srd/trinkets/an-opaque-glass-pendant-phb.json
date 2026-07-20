@@ -1,0 +1,23 @@
+{
+  "id": "an-opaque-glass-pendant-phb",
+  "name": "Непрозрачная стеклянная подвеска",
+  "nameEn": "An opaque glass pendant",
+  "description": "Подвеска из непрозрачного стекла молочного цвета на тонкой серебряной цепочке. Внутри угадывается что-то тёмное.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

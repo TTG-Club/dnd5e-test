@@ -1,0 +1,32 @@
+{
+  "id": "greatsword-phb",
+  "name": "Двуручный меч",
+  "nameEn": "Greatsword",
+  "description": "Двуручный меч — воинское тяжёлое двуручное рукопашное оружие.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 6,
+  "cost": "50 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "greatsword",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "2к6",
+      "type": "slashing"
+    }
+  ],
+  "weaponProperties": [
+    "heavy",
+    "two-handed"
+  ],
+  "reach": 5,
+  "mastery": "graze",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

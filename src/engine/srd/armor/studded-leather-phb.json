@@ -1,0 +1,22 @@
+{
+  "id": "studded-leather-phb",
+  "name": "Проклёпанный кожаный доспех",
+  "nameEn": "Studded Leather",
+  "description": "Проклёпанный кожаный доспех сделан из прочной, но гибкой кожи, усиленной плотными заклёпками.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 13,
+  "cost": "45 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "studded-leather",
+  "baseArmorAC": 12,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "light",
+  "typeLabel": "Снаряжение"
+}

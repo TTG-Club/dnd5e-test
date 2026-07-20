@@ -1,0 +1,43 @@
+{
+  "id": "scorching-ray-phb",
+  "name": "Палящий луч",
+  "nameEn": "Scorching Ray",
+  "level": 2,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы метаете 3 огненных луча. Вы можете метнуть их в 1 цель в пределах дистанции или в несколько. Совершите дальнобойную атаку заклинанием для каждого луча. При попадании цель получает 2к6 урона огнём.",
+  "higherLevelDescription": "Вы создаёте 1 дополнительный луч за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к6@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "projectiles": {
+    "count": 3,
+    "perSlotLevel": 1
+  }
+}

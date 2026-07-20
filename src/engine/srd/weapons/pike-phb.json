@@ -1,0 +1,33 @@
+{
+  "id": "pike-phb",
+  "name": "Пика",
+  "nameEn": "Pike",
+  "description": "Пика — воинское тяжёлое двуручное рукопашное оружие с увеличенной досягаемостью.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 18,
+  "cost": "5 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "pike",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к10",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "heavy",
+    "reach",
+    "two-handed"
+  ],
+  "reach": 10,
+  "mastery": "push",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

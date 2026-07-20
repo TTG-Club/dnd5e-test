@@ -1,0 +1,33 @@
+{
+  "id": "find-the-path-phb",
+  "name": "Поиск пути",
+  "nameEn": "Find the Path",
+  "level": 6,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "набор инструментов для прорицания, такие как карты или руна, стоимостью 100+ зм"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "day",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы магическим образом чувствуете самый прямой физический путь к названному вами месту. Вы должны быть знакомы с этим местом. Заклинание не сработает, если вы укажете местом назначения другуой план, движущееся место (например, передвижную крепость) или неопределённое место (например, логово зелёного дракона). \nВ течение длительности заклинания, пока вы находитесь на том же плане, что и место назначения, вы знаете, на каком расстоянии оно находится и в каком направлении лежит. Каждый раз, когда перед вами будет выбор пути, вы будете знать, какой из них является самым прямым.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "insect-plague-phb",
+  "name": "Нашествие насекомых",
+  "nameEn": "Insect Plague",
+  "level": 5,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "саранча"
+  },
+  "range": 300,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Рой саранчи заполняет сферу радиусом 20 футов с центром в точке, которую вы выбираете в пределах дистанции. Сфера остаётся на время длительности заклинания, и её область становится слабо заслонённой и труднопроходимой местностью. \nКогда рой появляется, то каждое существо в его пределах совершает спасбросок Телосложения, получая 4к10 колющего урона при неудачном спасброске или половину этого урона при успешном. Существо также совершает этот спасбросок, когда впервые за ход входит в область действия заклинания или заканчивает там свой ход. Существо совершает этот спасбросок только 1 раз за ход.",
+  "higherLevelDescription": "Урон увеличивается на 1к10 за каждый уровень ячейки выше 5.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "sorcerer"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 20,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "4к10@dmg.piercing",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к10"
+  }
+}

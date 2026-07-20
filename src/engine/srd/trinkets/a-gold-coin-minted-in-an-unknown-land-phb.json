@@ -1,0 +1,23 @@
+{
+  "id": "a-gold-coin-minted-in-an-unknown-land-phb",
+  "name": "Золотая монета, отчеканенная в неизвестной стране",
+  "nameEn": "A gold coin minted in an unknown land",
+  "description": "Золотая монета с незнакомыми символами и портретом неизвестного правителя. Ни один учёный не смог определить её происхождение.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

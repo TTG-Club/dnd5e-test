@@ -1,0 +1,31 @@
+{
+  "id": "arcane-eye-phb",
+  "name": "Магический глаз",
+  "nameEn": "Arcane Eye",
+  "level": 4,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "мех летучей мыши"
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы создаёте невидимый неуязвимый магический глаз в пределах дистанции, который парит в воздухе на время длительности. Вы мысленно воспринимаете зрительную информацию с глаза, у которого обычное зрение и тёмное зрение в пределах 30 футов. Глаз смотрит во всех направлениях.\nВы можете бонусным действием переместить глаз на 30 футов в любом направлении. Глаз может удаляться от вас на любое расстояние, но не может уходить на другие планы существования. Сплошные препятствия блокируют движение глаза, но он может проходить через отверстия диаметром не менее 1 дюйма (2,5 сантиметра).",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "wizard"
+  ],
+  "type": "spell"
+}

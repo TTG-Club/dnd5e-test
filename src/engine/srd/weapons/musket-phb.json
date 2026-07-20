@@ -1,0 +1,37 @@
+{
+  "id": "musket-phb",
+  "name": "Мушкет",
+  "nameEn": "Musket",
+  "description": "Мушкет — воинское огнестрельное дальнобойное оружие. Двуручное, с перезарядкой. Использует пули в качестве боеприпасов.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 10,
+  "cost": "500 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "musket",
+  "weaponCategory": "martial",
+  "rangeType": "ranged",
+  "damageParts": [
+    {
+      "formula": "1к12",
+      "type": "piercing"
+    }
+  ],
+  "weaponProperties": [
+    "ammunition",
+    "loading",
+    "two-handed"
+  ],
+  "ammunitionType": "bullets",
+  "range": {
+    "normal": 40,
+    "long": 120
+  },
+  "mastery": "slow",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

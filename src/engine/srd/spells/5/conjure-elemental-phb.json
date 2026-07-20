@@ -1,0 +1,80 @@
+{
+  "id": "conjure-elemental-phb",
+  "name": "Вызов элементаля",
+  "nameEn": "Conjure Elemental",
+  "level": 5,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "none",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы вызываете большого, неосязаемого духа с Планов стихий, который появляется в незанятом пространстве в пределах дистанции. Выберите стихию духа, которая определяет тип его урона: воздух (электрический), земля (звуковой), огонь (огненный) или вода (холодный). Дух существует на протяжении действия заклинания. \nКаждый раз, когда существо, которое вы видите, входит в пространство духа или начинает свой ход в пределах 5 футов от духа, то вы можете заставить это существо совершить спасбросок Ловкости, если дух не опутал какое-либо другое существо. При провале цель получает 8к8 урона тип которого зависит от типа духа и она получает состояние опутанный до конца действия заклинания. В начале каждого своего хода опутанное существо повторяет спасбросок. При провале цель получает 4к8 урона тип которого зависит от типа духа. При успешном спасброске цель не опутана духом.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 5.\nизменено Эрратой",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "conjure-elemental-restrained",
+      "name": "Опутанный",
+      "description": "Скорость равна нулю; Помеха на все атаки; Преимущество атак по этому существу; Состояние: Опутанный; урон каждый ход (в начале хода): 4к8 огненный; повторный спасбросок (Ловкость, Сл заклинателя) в начале хода снимает эффект; на 10 минут.",
+      "icon": "tabler:link",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "restrained",
+      "duration": {
+        "type": "minutes",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "speed.zero",
+        "attack.disadvantage",
+        "attacksAgainst.advantage"
+      ],
+      "recurringSave": {
+        "ability": "dexterity",
+        "dc": 0,
+        "timing": "startOfTurn"
+      },
+      "recurringDamage": {
+        "damageParts": [
+          {
+            "formula": "4к8",
+            "type": "fire"
+          }
+        ],
+        "timing": "startOfTurn"
+      }
+    }
+  ],
+  "damageParts": [
+    {
+      "formula": "8к8",
+      "type": "choice",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "none",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

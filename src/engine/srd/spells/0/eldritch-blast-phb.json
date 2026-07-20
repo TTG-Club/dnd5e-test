@@ -1,0 +1,54 @@
+{
+  "id": "eldritch-blast-phb",
+  "name": "Мистический заряд",
+  "nameEn": "Eldritch Blast",
+  "level": 0,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы выпускаете луч потрескивающей энергии. Совершите дальнобойную атаку заклинанием против 1 существа или объекта в пределах дистанции. При попадании цель получает 1к10 урона силовым полем.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "warlock"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "1к10@dmg.force",
+      "target": "selected"
+    }
+  ],
+  "projectiles": {
+    "count": 1,
+    "countByCharacterLevel": [
+      {
+        "level": 5,
+        "count": 2
+      },
+      {
+        "level": 11,
+        "count": 3
+      },
+      {
+        "level": 17,
+        "count": 4
+      }
+    ]
+  },
+  "higherLevelDescription": "Заклинание создаёт 2 луча на 5 уровне, 3 луча на 11 уровне и 4 луча на 17 уровне. Вы можете направить лучи на одну и ту же цель или на разные. Совершите отдельный бросок атаки для каждого луча."
+}

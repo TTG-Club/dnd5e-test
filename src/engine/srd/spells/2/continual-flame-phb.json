@@ -1,0 +1,33 @@
+{
+  "id": "continual-flame-phb",
+  "name": "Вечный огонь",
+  "nameEn": "Continual Flame",
+  "level": 2,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "порошок из рубина стоимостью 50+ зм, расходуемый заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "special",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Пламя вспыхивает из объекта, которого вы касаетесь. Эффект излучает яркий свет в радиусе 20 футов и тусклый свет на дополнительные 20 футов. Оно выглядит как обычное пламя, но не излучает тепла и не потребляет топливо. Пламя можно накрыть или спрятать, но нельзя потушить или загасить.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "wizard"
+  ],
+  "type": "spell"
+}

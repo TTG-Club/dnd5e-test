@@ -1,0 +1,42 @@
+{
+  "key": "sage",
+  "name": "Мудрец",
+  "nameEn": "Sage",
+  "description": "**Мудрец** — вы провели годы своего становления, путешествуя между поместьями и монастырями, выполняя различные случайные работы и услуги в обмен на доступ к их библиотекам. Вы провели много долгих вечеров, уткнувшись носом в книги и свитки, изучая знания о мультивселенной (даже основы магии), и ваш разум жаждет большего.",
+  "isSRD": true,
+  "abilityGrant": {
+    "abilities": [
+      "constitution",
+      "intelligence",
+      "wisdom"
+    ]
+  },
+  "skillGrant": {
+    "skills": [
+      "arcana",
+      "history"
+    ]
+  },
+  "toolGrant": {
+    "items": [
+      "calligraphers-supplies"
+    ]
+  },
+  "featGrant": {
+    "featId": "magic-initiate-phb",
+    "featName": "Посвящённый в магию",
+    "featNameEn": "Magic Initiate"
+  },
+  "equipmentOptions": [
+    {
+      "description": "Боевой посох, Книга (история), Инструменты каллиграфа, Роба, Пергамент (8 листов), 8 зм"
+    },
+    {
+      "description": "50 зм",
+      "goldAlternative": 50
+    }
+  ],
+  "type": "background",
+  "id": "sage-phb",
+  "sourceKey": "phb"
+}

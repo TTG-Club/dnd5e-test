@@ -1,0 +1,10 @@
+{
+  "id": "dnd5e",
+  "name": "Dungeons & Dragons 5th Edition (2024)",
+  "version": "1.0.0",
+  "description": "Игровая система D&D 5e редакции 2024 года — характеристики, навыки, КД, ХП, инициатива",
+  "author": "TTG Club",
+  "defaultDistanceUnit": "ft",
+  "dataPath": "../../../../shared/src/system/dnd",
+  "client": { "entry": "client.js", "styles": ["client.css"] }
+}

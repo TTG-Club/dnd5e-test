@@ -1,0 +1,34 @@
+{
+  "id": "detect-poison-and-disease-phb",
+  "name": "Обнаружение болезней и яда",
+  "nameEn": "Detect Poison and Disease",
+  "level": 1,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "лист тиса"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "На время длительности заклинания вы ощущаете местонахождение ядов, ядовитых существ и магических заражений в пределах 30 футов от вас. Вы определяете вид яда, существа или заражения в каждом случае. Заклинание блокируется 1 футом камня, земли или дерева; 1 дюймом металла или тонким листом свинца.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "paladin",
+    "ranger"
+  ],
+  "type": "spell"
+}

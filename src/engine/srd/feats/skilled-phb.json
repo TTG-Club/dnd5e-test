@@ -1,0 +1,12 @@
+{
+  "id": "skilled-phb",
+  "name": "Одарённый",
+  "nameEn": "Skilled",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": true,
+  "description": "Вы получаете владение 3 любыми навыками или инструментами на ваш выбор.\n\n**Повторяемая.** Вы можете выбирать эту черту больше 1 раза.",
+  "typeLabel": "Черты"
+}

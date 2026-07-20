@@ -1,0 +1,53 @@
+{
+  "id": "geas-phb",
+  "name": "Обет",
+  "nameEn": "Geas",
+  "level": 5,
+  "school": "enchantment",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 30,
+  "durationUnit": "day",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "wisdom",
+  "description": "Вы отдаёте вербальный приказ существу, которое видите в пределах дистанции, приказывая ему выполнить некую услугу или воздержаться от действия или курса действий, по вашему выбору. Цель должна преуспеть в спасброске Мудрости, иначе она получает состояние очарованный на время действия заклинания. Цель автоматически преуспевает, если не понимает ваш приказ.\nПока существо очаровано, оно получает 5к10 урона психической энергией, если действует прямо противоположно вашему приказу. Этот урон наносится не более 1 раза в день.\nВы можете отдать любой приказ, кроме тех, которые приведут к неминуемой смерти. Если вы отдаёте самоубийственный приказ, то заклинание заканчивается.\nЗаклинания Снятие проклятья [Remove Curse], Высшее восстановление [Greater Restoration] или Желание [Wish] прекращают действие этого заклинания.",
+  "higherLevelDescription": "Если вы используете ячейку 7 или 8 уровня, то длительность увеличивается до 365 дней. Если вы используете ячейку 9 уровня, заклинание действует до тех пор, пока не будет прекращено одним из вышеупомянутых заклинаний.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "druid",
+    "paladin",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "geas-charmed",
+      "name": "Очарованный",
+      "description": "Состояние: Очарованный.",
+      "icon": "tabler:heart",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "charmed",
+      "duration": {
+        "type": "special"
+      },
+      "changes": [],
+      "flags": []
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "id": "pass-without-trace-phb",
+  "name": "Бесследное передвижение",
+  "nameEn": "Pass without Trace",
+  "level": 2,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "пепел от сожжённой омелы"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы излучаете маскирующую ауру в 30-футовой эманации на время действия заклинания. Пока существо находится в эманации, вы и каждое выбранное вами существо получаете бонус +10 к проверкам Ловкости (Скрытность) и не оставляете следов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 30,
+    "unit": "ft"
+  },
+  "activeEffects": [
+    {
+      "id": "effect_1782194334766_2y9m514",
+      "name": "Бесследное передвижение",
+      "description": "Навык (Скрытность) +10; на 1 час.",
+      "icon": "tabler:shoe-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [
+        {
+          "key": "skill.stealth",
+          "mode": "add",
+          "value": "10",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "self"
+    }
+  ]
+}

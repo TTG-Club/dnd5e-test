@@ -1,0 +1,41 @@
+{
+  "id": "flame-blade-phb",
+  "name": "Горящий клинок",
+  "nameEn": "Flame Blade",
+  "level": 2,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "лист сумаха"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "melee",
+  "saveType": "none",
+  "description": "Вы призываете горящий клинок в свою свободную руку. Клинок по размеру и форме напоминает скимитар и существует на протяжении действия заклинания. Если вы отпускаете клинок, он исчезает, но вы можете вновь призвать его бонусным действием. Действием магия, вы можете совершить рукопашную атаку заклинанием с помощью горящего клинка. При попадании цель получает урон огнём в размере 3к6 + ваш модификатор заклинательной характеристики. Горящий клинок излучает яркий свет в радиусе 10 футов и тусклый свет ещё на 10 футов.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки выше 2.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "3к6@dmg.fire+@mod.spell",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}

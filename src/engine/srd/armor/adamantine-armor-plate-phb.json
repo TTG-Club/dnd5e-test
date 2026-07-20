@@ -1,0 +1,34 @@
+{
+  "id": "adamantine-armor-plate-phb",
+  "name": "Адамантиновая броня (латы)",
+  "nameEn": "Adamantine Armor (Plate)",
+  "description": "Этот доспех укреплен адамантином, одним из самых твердых веществ. Пока вы носите его, любой критический удар по вам становится обычным попаданием.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 65,
+  "cost": "500 зм поверх базовой стоимости",
+  "rarity": "uncommon",
+  "equipped": false,
+  "baseType": "plate",
+  "baseArmorAC": 18,
+  "maxDexBonus": 0,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 15,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": true,
+  "magicAttunement": "none",
+  "equipmentCategory": "heavy",
+  "activeEffects": [
+    {
+      "id": "ae_adamantine_plate",
+      "name": "Адамантиновая прочность",
+      "flags": [
+        "defense.critImmunity"
+      ],
+      "changes": []
+    }
+  ],
+  "typeLabel": "Снаряжение"
+}

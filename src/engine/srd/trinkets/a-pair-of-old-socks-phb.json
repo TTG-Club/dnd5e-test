@@ -1,0 +1,23 @@
+{
+  "id": "a-pair-of-old-socks-phb",
+  "name": "Пара старых носков",
+  "nameEn": "A pair of old socks",
+  "description": "Пара поношенных шерстяных носков, заштопанных в нескольких местах. Почему-то вы не можете расстаться с ними.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

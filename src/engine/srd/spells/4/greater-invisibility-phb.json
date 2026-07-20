@@ -1,0 +1,60 @@
+{
+  "id": "greater-invisibility-phb",
+  "name": "Высшая невидимость",
+  "nameEn": "Greater Invisibility",
+  "level": 4,
+  "school": "illusion",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Существо, которого вы коснулись, получает состояние невидимый до окончания длительности заклинания.",
+  "activeEffects": [
+    {
+      "id": "greater-invisibility-invisible",
+      "name": "Высшая невидимость",
+      "description": "Преимущество на все атаки; Помеха атак по этому существу; Преимущество на бросок инициативы; Невидимый (Скрыт от глаз, преимущество на атаки); Состояние: Невидимый; на 10 раундов.",
+      "icon": "tabler:eye-off",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10,
+        "remaining": 10
+      },
+      "changes": [],
+      "flags": [
+        "attack.advantage",
+        "attacksAgainst.disadvantage",
+        "initiative.advantage",
+        "vision.invisible"
+      ],
+      "effectTarget": "target",
+      "conditionKey": "invisible"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "wizard",
+    "fighter",
+    "rogue"
+  ],
+  "type": "spell"
+}

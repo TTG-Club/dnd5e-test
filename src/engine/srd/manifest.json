@@ -1,0 +1,36 @@
+{
+  "id": "srd-backup",
+  "name": "SRD Test",
+  "readOnly": true,
+  "sections": [
+    {
+      "id": "equipment",
+      "name": "Снаряжение",
+      "icon": "tabler:briefcase",
+      "children": [
+        "weapons",
+        "armor",
+        "clothing",
+        "tools",
+        "trinkets",
+        {
+          "id": "potions",
+          "name": "Зелья",
+          "icon": "tabler:flask"
+        },
+        {
+          "id": "rings",
+          "name": "Кольца",
+          "icon": "tabler:diamond"
+        },
+        "wands"
+      ]
+    },
+    "classes",
+    "species",
+    "feats",
+    "backgrounds",
+    "spells",
+    "creatures"
+  ]
+}

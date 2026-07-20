@@ -1,0 +1,23 @@
+{
+  "id": "a-gemstone-that-looks-like-a-lump-of-coal-to-everyone-but-you-phb",
+  "name": "Драгоценный камень, который выглядит как кусок угля для всех, кроме вас",
+  "nameEn": "A gemstone that looks like a lump of coal to everyone but you",
+  "description": "Камень, который в ваших руках сверкает как настоящий драгоценный камень, но все остальные видят лишь обычный кусок угля.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

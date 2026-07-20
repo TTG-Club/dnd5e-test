@@ -1,0 +1,45 @@
+{
+  "id": "blight-phb",
+  "name": "Усыхание",
+  "nameEn": "Blight",
+  "level": 4,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Существо, которое вы видите в пределах дистанции заклинания, совершает спасбросок Телосложения, получая 8к8 урона некротической энергией в случае провала или половину этого урона в случае успеха. Существа с типом растение автоматически проваливают этот спасбросок.\nЕсли цель — не магическое растение, не являющееся существом (например, дерево или куст), то оно не совершает спасбросок; а просто засыхает и умирает.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "8к8@dmg.necrotic",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

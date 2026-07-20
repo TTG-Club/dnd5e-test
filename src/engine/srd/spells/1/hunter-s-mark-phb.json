@@ -1,0 +1,31 @@
+{
+  "id": "hunter-s-mark-phb",
+  "name": "Метка охотника",
+  "nameEn": "Hunter's Mark",
+  "level": 1,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 90,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы магически отмечаете 1 существо, которое видите в пределах дистанции, как свою добычу. До окончания действия заклинания вы наносите цели дополнительно 1к6 урона силовым полем каждый раз, когда попадаете по ней броском атаки. Вы также получаете преимущество на любую проверку Мудрости (Внимательность или Выживание), которую совершаете, чтобы найти её. \nЕсли хиты цели падают до 0 хитов до окончания заклинания, то вы можете бонусным действием переместить метку на другое существо, которое видите в пределах дистанции.",
+  "higherLevelDescription": "Ваша концентрация может длиться дольше при использовании ячейки заклинаний 3-4 уровня (до 8 часов) или 5+ уровня (до 24 часов).",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "ranger"
+  ]
+}

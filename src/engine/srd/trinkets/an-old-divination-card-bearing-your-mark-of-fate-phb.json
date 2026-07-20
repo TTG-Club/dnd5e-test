@@ -1,0 +1,23 @@
+{
+  "id": "an-old-divination-card-bearing-your-mark-of-fate-phb",
+  "name": "Старая карта гадания, несущая ваш знак судьбы",
+  "nameEn": "An old divination card bearing your mark of fate",
+  "description": "Потрёпанная карта из колоды Таро или аналогичной гадательной колоды. Изображение на ней, по странному совпадению, отражает вашу жизнь.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

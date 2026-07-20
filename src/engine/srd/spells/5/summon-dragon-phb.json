@@ -1,0 +1,33 @@
+{
+  "id": "summon-dragon-phb",
+  "name": "Призыв духа дракона",
+  "nameEn": "Summon Dragon",
+  "level": 5,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "предмет с изображением дракона стоимостью 500+ зм"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы призываете дух дракона. Он появляется в свободном пространстве в пределах видимой дистанции и использует статблок {@bestiary Дух дракона [Draconic Spirit]|url:draconic-spirit-phb}. Существо исчезает, когда его хиты достигают 0 или когда заклинание заканчивается.\nСущество является союзником для вас и ваших союзников. В бою оно действует сразу после вас, но имеет ваш порядок инициативы. Оно подчиняется вашим вербальным командам (вам не требуется тратить действия). Если вы не отдаёте команд, то оно использует действие уклонение и перемещается, чтобы избегать опасности.",
+  "higherLevelDescription": "Используйте уровень ячейки для параметра «уровень заклинания» в статблоке.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "type": "spell",
+  "classKeys": [
+    "druid",
+    "wizard"
+  ]
+}

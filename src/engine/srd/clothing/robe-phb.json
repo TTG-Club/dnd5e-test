@@ -1,0 +1,23 @@
+{
+  "id": "robe-phb",
+  "name": "Мантия",
+  "nameEn": "Robe",
+  "description": "Длинная просторная одежда, обычно с капюшоном. Мантии носят учёные, маги и священнослужители, хотя они подходят практически для любого случая.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 4,
+  "cost": "1 зм",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "clothing",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

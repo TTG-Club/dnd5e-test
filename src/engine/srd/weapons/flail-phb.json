@@ -1,0 +1,29 @@
+{
+  "id": "flail-phb",
+  "name": "Цеп",
+  "nameEn": "Flail",
+  "description": "Цеп — воинское рукопашное оружие без особых свойств.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 2,
+  "cost": "10 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "flail",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к8",
+      "type": "bludgeoning"
+    }
+  ],
+  "weaponProperties": [],
+  "reach": 5,
+  "mastery": "sap",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

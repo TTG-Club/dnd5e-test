@@ -1,0 +1,67 @@
+{
+  "id": "sacred-flame-phb",
+  "name": "Священное пламя",
+  "nameEn": "Sacred Flame",
+  "level": 0,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Луч света, подобный пламени, нисходит на существо, которое вы можете видеть в пределах дистанции. Цель должна преуспеть в спасброске Ловкости или получить 1к8 урона излучением. Цель не получает эффекты от укрытия наполовину или на три четверти для этого спасброска.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "1к8@dmg.radiant",
+      "target": "selected"
+    }
+  ],
+  "cantripScalingTiers": [
+    {
+      "level": 5,
+      "parts": [
+        {
+          "formula": "2к8@dmg.radiant",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "parts": [
+        {
+          "formula": "3к8@dmg.radiant",
+          "target": "selected"
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "parts": [
+        {
+          "formula": "4к8@dmg.radiant",
+          "target": "selected"
+        }
+      ]
+    }
+  ],
+  "higherLevelDescription": "Урон увеличивается на 1к8, когда вы достигаете 5 уровня (2к8), 11 уровня (3к8) и 17 уровня (4к8).",
+  "saveEffect": "none"
+}

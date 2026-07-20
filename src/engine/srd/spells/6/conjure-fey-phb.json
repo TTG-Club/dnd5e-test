@@ -1,0 +1,41 @@
+{
+  "id": "conjure-fey-phb",
+  "name": "Вызов феи",
+  "nameEn": "Conjure Fey",
+  "level": 6,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы призываете среднего духа из Страны фей в свободное пространство, которое видите в пределах дистанции. Дух существует в течение длительности и выглядит как фея по вашему выбору. Когда дух появляется, вы можете совершить 1 рукопашную атаку заклинанием против существа в пределах 5 футов от духа. При попадании цель получает урон психической энергией, равный 3к12 + ваш модификатор заклинательной характеристики, и на неё накладывается состояние испуганный до начала вашего следующего хода, причём источником страха будете и вы, и дух. \nБонусным действием в ваши последующие ходы вы можете телепортировать духа в свободное видимое вами пространство в пределах 30 футов от того места, которое он покидает, и совершить атаку против существа в пределах 5 футов от духа.",
+  "higherLevelDescription": "Урон увеличивается на 1к12 за каждый уровень ячейки выше 6.\nизменено Эрратой",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "warlock"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "3к12@dmg.psychic+@mod.spell",
+      "target": "selected"
+    }
+  ],
+  "scaling": {
+    "additionalDice": "1к12"
+  }
+}

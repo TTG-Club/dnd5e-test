@@ -1,0 +1,23 @@
+{
+  "id": "a-glass-jar-of-lard-labeled-griffon-grease-phb",
+  "name": "Стеклянная баночка со свиным жиром с пометкой «Грифоний жир»",
+  "nameEn": "A glass jar of lard labeled \"Griffon Grease\"",
+  "description": "Маленькая баночка, наполненная обычным свиным жиром. На приклеенном ярлычке аккуратно выведено «Грифоний жир».",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

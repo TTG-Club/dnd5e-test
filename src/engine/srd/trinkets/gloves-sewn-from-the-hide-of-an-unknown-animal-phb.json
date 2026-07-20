@@ -1,0 +1,23 @@
+{
+  "id": "gloves-sewn-from-the-hide-of-an-unknown-animal-phb",
+  "name": "Перчатки, сшитые из кожи неизвестного животного",
+  "nameEn": "Gloves sewn from the hide of an unknown animal",
+  "description": "Пара перчаток из кожи неизвестного происхождения. Кожа необычного текстурного рисунка и приятна на ощупь.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

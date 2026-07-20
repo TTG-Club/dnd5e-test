@@ -1,0 +1,20 @@
+{
+  "id": "mason-s-tools-phb",
+  "name": "Инструменты каменщика",
+  "nameEn": "Mason's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "masons-tools",
+  "rarity": "common",
+  "weight": 8,
+  "cost": {
+    "value": 10,
+    "currency": "gp"
+  },
+  "description": "Молотки, зубила и мастерки для строительства из камня и кирпича.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

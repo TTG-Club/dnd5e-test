@@ -1,0 +1,75 @@
+{
+  "id": "magic-weapon-phb",
+  "name": "Магическое оружие",
+  "nameEn": "Magic Weapon",
+  "level": 2,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь немагического оружия. Пока заклинание активно, это оружие становится магическим и получает бонус +1 к броскам атаки и урону. Заклинание заканчивается досрочно, если вы накладываете его снова.",
+  "higherLevelDescription": "Бонус увеличивается до +2 при использовании ячейки 3-5 уровня. Бонус увеличивается до +3 при использовании ячейки 6 уровня и выше.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "paladin",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "effect_1782194334766_1zj4o6o",
+      "name": "Магическое оружие",
+      "description": "Атака: Рукопашное оружие +1; Атака: Дальнобойное оружие +1; Урон: Рукопашное оружие +1; Урон: Дальнобойное оружие +1; на 1 час.",
+      "icon": "tabler:sword",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 1
+      },
+      "changes": [
+        {
+          "key": "attack.melee",
+          "mode": "add",
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "attack.ranged",
+          "mode": "add",
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "damage.melee",
+          "mode": "add",
+          "value": "1",
+          "priority": 20
+        },
+        {
+          "key": "damage.ranged",
+          "mode": "add",
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "target"
+    }
+  ]
+}

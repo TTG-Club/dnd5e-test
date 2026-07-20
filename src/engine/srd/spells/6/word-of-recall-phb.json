@@ -1,0 +1,31 @@
+{
+  "id": "word-of-recall-phb",
+  "name": "Слово возврата",
+  "nameEn": "Word of Recall",
+  "level": 6,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": false,
+    "material": false
+  },
+  "range": 5,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы и до 5 согласных существ в пределах 5 футов от вас мгновенно перемещаетесь в ранее назначенное святилище. Вы и любые существа, которые телепортируются с вами, появляетесь на ближайшем незанятом пространстве к месту, которое вы указали при подготовке своего святилища (см. ниже). Если вы накладываете это заклинание, не подготовив сначала святилище, оно не оказывает никакого эффекта. \nВы должны назначить местоположение, например, храм, в качестве святилища, наложив это заклинание там.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell",
+  "targetCount": 5
+}

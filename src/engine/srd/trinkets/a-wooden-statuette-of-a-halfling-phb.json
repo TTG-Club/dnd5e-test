@@ -1,0 +1,23 @@
+{
+  "id": "a-wooden-statuette-of-a-halfling-phb",
+  "name": "Деревянная статуэтка полурослика",
+  "nameEn": "A wooden statuette of a halfling",
+  "description": "Тщательно вырезанная из дерева фигурка полурослика, стоящего в героической позе.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

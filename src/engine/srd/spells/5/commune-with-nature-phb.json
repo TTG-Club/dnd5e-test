@@ -1,0 +1,31 @@
+{
+  "id": "commune-with-nature-phb",
+  "name": "Общение с природой",
+  "nameEn": "Commune with Nature",
+  "level": 5,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы общаетесь с духами природы и получаете знание о ближайшей территории. На открытой местности заклинание даёт вам знание о территории в пределах 3 миль от вас. В пещерах и других природных подземных локациях радиус ограничен 300 футами. Заклинание не действует в местах, где природа была заменена на строительные конструкции, такие как замки и поселения.\nВыберите 3 из следующих фактов; вы узнаёте эти факты в пределах области действия заклинания:\nНапример, вы можете определить местоположение мощного монстра в области, местоположение водоёмов и местоположение любых поселений.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger"
+  ],
+  "type": "spell"
+}

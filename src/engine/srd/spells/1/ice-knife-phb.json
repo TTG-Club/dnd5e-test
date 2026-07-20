@@ -1,0 +1,51 @@
+{
+  "id": "ice-knife-phb",
+  "name": "Ледяной кинжал",
+  "nameEn": "Ice Knife",
+  "level": 1,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "капля воды или кусочек льда"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы создаёте осколок льда и бросаете его в одно существо в пределах дистанции. Совершите дальнобойную атаку заклинанием против цели. При попадании цель получает 1к10 колющего урона. После этого, вне зависимости от попадания или промаха, осколок взрывается. Цель и каждое существо в пределах 5 футов от неё должны совершить спасбросок Ловкости, иначе получат 2к6 урона холодом.",
+  "higherLevelDescription": "Урон холодом увеличивается на 1к6 за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 5,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "1к10@dmg.piercing",
+      "target": "selected"
+    },
+    {
+      "formula": "2к6@dmg.cold",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "special"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "boon-of-spell-recall-phb",
+  "name": "Дар восстановления чар",
+  "nameEn": "Boon of Spell Recall",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": false,
+  "description": "Вы получаете следующие эффекты:\n\n- **Повышение характеристики.** Увеличьте ваш показатель Интеллекта, Мудрости или Харизмы на 1, максимум до 30.\n- **Свободное заклинание.** Когда вы накладываете заклинание, используя ячейку заклинания 1–4 уровня, бросьте к4. Если выпавшее число совпадает с уровнем ячейки, то ячейка не расходуется.",
+  "typeLabel": "Черты",
+  "featData": {
+    "type": "feat",
+    "abilityScoreIncrease": {
+      "choice": {
+        "amount": 1,
+        "count": 1,
+        "from": [
+          "intelligence",
+          "wisdom",
+          "charisma"
+        ]
+      }
+    }
+  }
+}

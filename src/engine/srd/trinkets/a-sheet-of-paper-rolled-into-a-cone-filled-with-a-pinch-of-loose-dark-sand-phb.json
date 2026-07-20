@@ -1,0 +1,23 @@
+{
+  "id": "a-sheet-of-paper-rolled-into-a-cone-filled-with-a-pinch-of-loose-dark-sand-phb",
+  "name": "Лист бумаги, свёрнутый в конус, заполненный щепоткой рыхлого тёмного песка",
+  "nameEn": "A sheet of paper rolled into a cone, filled with a pinch of loose dark sand",
+  "description": "Бумажный конус, внутри которого хранится горсть странного тёмного песка, мерцающего едва заметными фиолетовыми искрами.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

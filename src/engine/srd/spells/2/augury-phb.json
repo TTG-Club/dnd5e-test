@@ -1,0 +1,31 @@
+{
+  "id": "augury-phb",
+  "name": "Гадание",
+  "nameEn": "Augury",
+  "level": 2,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "minute",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "особые палочки с отметинами, костяшки, карты, или другие гадальные принадлежности,\nстоящие 25+ зм"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "self",
+  "deliveryType": "self",
+  "saveType": "none",
+  "description": "Вы получаете знамение от иномировой сущности о результатах определённого курса действий, которые вы планируете совершить в течение следующих 30 минут. Мастер выбирает знамение из таблицы «Знамения».\nЭто заклинание не принимает в расчёт обстоятельства, такие как другиезаклинания, способные изменить исход.\nЕсли вы накладываете это заклинание более одного раза до завершения продолжительного отдыха, существует накопительный шанс 25% за каждое использование после первого, что вы не получите ответ.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell"
+}

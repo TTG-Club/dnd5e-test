@@ -1,0 +1,20 @@
+{
+  "id": "poisoner-s-kit-phb",
+  "name": "Набор отравителя",
+  "nameEn": "Poisoner's Kit",
+  "type": "tool",
+  "toolCategory": "other",
+  "baseToolType": "poisoners-kit",
+  "rarity": "common",
+  "weight": 2,
+  "cost": {
+    "value": 50,
+    "currency": "gp"
+  },
+  "description": "Набор включает флаконы, химические реагенты и другие материалы, необходимые для изготовления ядов.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

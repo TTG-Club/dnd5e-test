@@ -1,0 +1,83 @@
+{
+  "id": "flesh-to-stone-phb",
+  "name": "Окаменение",
+  "nameEn": "Flesh to Stone",
+  "level": 6,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "перо кокатриса"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "constitution",
+  "description": "Вы пытаетесь превратить 1 существо, которое видите в пределах дистанции, в камень. Цель совершает спасбросок Телосложения. В случае провала, она получает состояние опутанный на время действия заклинания. В случае успешного спасброска, её скорость становится равной 0 до начала вашего следующего хода. Конструкты автоматически преуспевают в спасброске. \nОпутанная цель совершает ещё 1 спасбросок Телосложения в конце каждого своего хода. Если она успешно совершает спасбросок 3 раза, то заклинание заканчивается. Если она проваливает 3 спасброска, то она превращается в камень и получает состояние окаменевший на время действия заклинания. Успехи и провалы не обязательно должны идти подряд: ведите учёт обоих, пока цель не наберётся три одинаковых результата. \nЕсли вы поддерживаете концентрацию на этом заклинании в течение всего возможного времени, то цель остаётся окаменевшей до тех пор, пока состояние не будет снято с помощью Высшего восстановления или подобной магии",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "flesh-to-stone-restrained",
+      "name": "Опутанный",
+      "description": "Скорость равна нулю; Помеха на все атаки; Преимущество атак по этому существу; Состояние: Опутанный; повторный спасбросок (Телосложение, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:link",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "restrained",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "speed.zero",
+        "attack.disadvantage",
+        "attacksAgainst.advantage"
+      ],
+      "recurringSave": {
+        "ability": "constitution",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    },
+    {
+      "id": "effect_1782192349514_cpqr4nd",
+      "name": "Окаменевший",
+      "description": "Недееспособен (Не может совершать действия/реакции); Скорость равна нулю; Автопровал спасбросков: Сила; Автопровал спасбросков: Ловкость; Преимущество атак по этому существу; Состояние: Окаменевший; на 10 раундов.",
+      "icon": "tabler:wall",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "incapacitated",
+        "speed.zero",
+        "save.autoFail.strength",
+        "save.autoFail.dexterity",
+        "attacksAgainst.advantage"
+      ],
+      "conditionKey": "petrified",
+      "effectTarget": "target"
+    }
+  ]
+}

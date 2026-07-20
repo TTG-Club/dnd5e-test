@@ -1,0 +1,23 @@
+{
+  "id": "a-wax-candle-that-can-t-be-lit-phb",
+  "name": "Восковая свеча, которую невозможно зажечь",
+  "nameEn": "A wax candle that can't be lit",
+  "description": "Обычная на вид восковая свеча, которая, однако, не загорается, сколько бы вы ни пытались её поджечь.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

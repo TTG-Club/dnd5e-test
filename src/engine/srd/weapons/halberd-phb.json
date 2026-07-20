@@ -1,0 +1,33 @@
+{
+  "id": "halberd-phb",
+  "name": "Алебарда",
+  "nameEn": "Halberd",
+  "description": "Алебарда — воинское тяжёлое двуручное рукопашное оружие с увеличенной досягаемостью.",
+  "type": "weapon",
+  "quantity": 1,
+  "weight": 6,
+  "cost": "20 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "halberd",
+  "weaponCategory": "martial",
+  "rangeType": "melee",
+  "damageParts": [
+    {
+      "formula": "1к10",
+      "type": "slashing"
+    }
+  ],
+  "weaponProperties": [
+    "heavy",
+    "reach",
+    "two-handed"
+  ],
+  "reach": 10,
+  "mastery": "cleave",
+  "proficiencyMode": "auto",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Оружие"
+}

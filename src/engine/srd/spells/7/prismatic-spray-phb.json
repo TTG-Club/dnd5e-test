@@ -1,0 +1,36 @@
+{
+  "id": "prismatic-spray-phb",
+  "name": "Радужные брызги",
+  "nameEn": "Prismatic Spray",
+  "level": 7,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "dexterity",
+  "description": "8 лучей света вырываются из вас в 60-футовом конусе. Каждое существо в конусе совершает спасбросок Ловкости. Для каждой цели бросьте 1к8, чтобы определить, какой цвет луча воздействует на неё, используя таблицу «Радужные лучи».",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "cone",
+    "size": 60,
+    "unit": "ft"
+  }
+}

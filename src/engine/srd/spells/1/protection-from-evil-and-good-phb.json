@@ -1,0 +1,35 @@
+{
+  "id": "protection-from-evil-and-good-phb",
+  "name": "Защита от зла и добра",
+  "nameEn": "Protection from Evil and Good",
+  "level": 1,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "фляга святой воды стоимостью 25+ зм, расходуемая заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 10,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь одного согласного существа и оно до окончания длительности заклинания защищено от существ с типом: аберрация, небожитель, элементаль, фея, исчадие или нежить. \nЗащита предоставляет несколько эффектов. Существа этих типов совершают атаки по цели с помехой. Цель также не может быть одержима и получать состояния очарованный или испуганный от таких существ. Если цель уже одержима, очарована или испугана таким существом, то она получает преимущество на любые новые спасброски против соответствующего эффекта",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "paladin",
+    "warlock",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

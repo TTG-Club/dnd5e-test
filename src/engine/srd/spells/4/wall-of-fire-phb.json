@@ -1,0 +1,51 @@
+{
+  "id": "wall-of-fire-phb",
+  "name": "Стена огня",
+  "nameEn": "Wall of Fire",
+  "level": 4,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусочек угля"
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы создаёте стену огня на твёрдой поверхности в пределах дистанции. Вы можете сделать стену длиной до 60 футов, высотой 20 футов и толщиной 1 фут, либо кольцевую стену диаметром до 20 футов, высотой 20 футов и толщиной 1 фут. Стена является непрозрачной и существует на протяжении всего времени действия заклинания.\nКогда стена появляется, каждое существо в её области должно совершить спасбросок Ловкости. При провале оно получает 5к8 урона огнём, при успехе – половину этого урона.\n1 сторона стены, выбранная вами при накладывании заклинания, наносит 5к8 урона огнём каждому существу, которое заканчивает свой ход в пределах 10 футов от этой стороны или внутри стены. Существо также получает этот урон, если впервые за ход входит в стену или заканчивает ход в её пределах. Другая сторона стены урона не наносит.",
+  "higherLevelDescription": "Урон увеличивается на 1к8 за каждый уровень ячейки выше 4.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "ray",
+    "size": 60,
+    "width": 5,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "5к8@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к8"
+  }
+}

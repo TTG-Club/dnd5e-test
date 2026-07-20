@@ -1,0 +1,35 @@
+{
+  "id": "jump-phb",
+  "name": "Прыжок",
+  "nameEn": "Jump",
+  "level": 1,
+  "school": "transmutation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "bonus",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "задняя лапка кузнечика"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа. Один раз в каждый свой ход до окончания действия заклинания это существо может прыгнуть на расстояние до 30 футов, потратив 10 футов перемещения.",
+  "higherLevelDescription": "Вы можете выбрать одну дополнительную цель за каждый уровень ячейки заклинания выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger",
+    "sorcerer",
+    "wizard"
+  ],
+  "type": "spell"
+}

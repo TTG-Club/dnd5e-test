@@ -1,0 +1,35 @@
+{
+  "id": "fog-cloud-phb",
+  "name": "Туманное облако",
+  "nameEn": "Fog Cloud",
+  "level": 1,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 120,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Вы создаёте сферу тумана с радиусом 20 фт. с центром в точке в пределах дистанции. Сфера является сильно заслонённой местностью. Она существует в течение длительности заклинания или до тех пор, пока сильный ветер (например, созданный заклинанием Порыв ветра [Gust of Wind]) не развеет её.",
+  "higherLevelDescription": "Радиус тумана увеличивается на 20 футов за каждый уровень ячейки выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "ranger",
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

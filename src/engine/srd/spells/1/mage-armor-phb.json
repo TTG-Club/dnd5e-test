@@ -1,0 +1,59 @@
+{
+  "id": "mage-armor-phb",
+  "name": "Доспехи мага",
+  "nameEn": "Mage Armor",
+  "level": 1,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "кусок выделанной кожи"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 8,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "autoHit": true,
+  "saveType": "none",
+  "description": "Вы касаетесь согласного существа, не носящего доспехи. Пока заклинание активно, базовый КД цели становится 13 + модификатор Ловкости цели. Заклинание оканчивается, если цель надевает доспехи.",
+  "activeEffects": [
+    {
+      "id": "mage-armor-ac",
+      "name": "Доспехи мага (+3 КД)",
+      "description": "Класс доспеха (AC) +3; на 8 часов.",
+      "icon": "tabler:shield-half",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "duration": {
+        "type": "hours",
+        "value": 8
+      },
+      "changes": [
+        {
+          "key": "armorClass",
+          "mode": "add",
+          "value": "3",
+          "priority": 20
+        }
+      ],
+      "flags": [],
+      "effectTarget": "target"
+    }
+  ],
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "sorcerer",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell"
+}

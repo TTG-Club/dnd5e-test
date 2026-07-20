@@ -1,0 +1,12 @@
+{
+  "id": "two-weapon-fighting-phb",
+  "name": "Сражение двумя оружиями",
+  "nameEn": "Two-Weapon Fighting",
+  "type": "feat",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "featureType": "feat",
+  "repeatable": false,
+  "description": "Когда вы совершаете дополнительную атаку в результате использования оружия со свойством лёгкое, вы можете добавить ваш модификатор характеристики к урону этой атаки, если вы ещё не добавляли его к урону.",
+  "typeLabel": "Черты"
+}

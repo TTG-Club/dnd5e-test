@@ -1,0 +1,22 @@
+{
+  "id": "padded-phb",
+  "name": "Стёганый доспех",
+  "nameEn": "Padded",
+  "description": "Стёганый доспех — лёгкая броня, состоящая из нескольких слоёв ткани. Создаёт помеху при использовании Скрытности.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 8,
+  "cost": "5 зм",
+  "rarity": "none",
+  "equipped": false,
+  "baseType": "padded",
+  "baseArmorAC": 11,
+  "maxDexBonus": null,
+  "stealthDisadvantage": true,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "equipmentCategory": "light",
+  "typeLabel": "Снаряжение"
+}

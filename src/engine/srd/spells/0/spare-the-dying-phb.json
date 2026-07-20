@@ -1,0 +1,32 @@
+{
+  "id": "spare-the-dying-phb",
+  "name": "Уход за умирающим",
+  "nameEn": "Spare the Dying",
+  "level": 0,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 15,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Выберите существо в пределах досягаемости, у которого 0 хитов и которое не мертво. Существо стабилизируется.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid"
+  ],
+  "type": "spell",
+  "higherLevelDescription": "Дистанция увеличивается вдвое, когда вы достигаете 5 (30 футов), 11 (60 футов) и 17 (120 футов) уровней."
+}

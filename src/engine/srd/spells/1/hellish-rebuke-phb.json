@@ -1,0 +1,41 @@
+{
+  "id": "hellish-rebuke-phb",
+  "name": "Адское возмездие",
+  "nameEn": "Hellish Rebuke",
+  "level": 1,
+  "school": "evocation",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "reaction",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Существо, наносящее вам урон, на мгновение оказывается окружено зелёными огнями. Оно должно совершить спасбросок Ловкости, получая 2к10 урона огнём при провале или половину этого урона при успехе.",
+  "higherLevelDescription": "Урон увеличивается на 1к10 за каждый уровень ячейки заклинаний выше 1.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "warlock"
+  ],
+  "type": "spell",
+  "damageParts": [
+    {
+      "formula": "2к10@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к10"
+  }
+}

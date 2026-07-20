@@ -1,0 +1,30 @@
+{
+  "id": "beacon-of-hope-phb",
+  "name": "Маяк надежды",
+  "nameEn": "Beacon of Hope",
+  "level": 3,
+  "school": "abjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": false
+  },
+  "range": 30,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "ranged",
+  "saveType": "none",
+  "description": "Выберите любое количество существ в пределах досягаемости. На время действия заклинания каждое выбранное существо получает преимущество на спасброски Мудрости и спасброски от смерти, а также восстанавливает максимально возможное количество хитов от любого лечения.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric"
+  ],
+  "type": "spell"
+}

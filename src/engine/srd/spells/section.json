@@ -1,0 +1,56 @@
+{
+  "id": "spells",
+  "name": "Заклинания",
+  "icon": "tabler:sparkles",
+  "dataKind": "spell",
+  "view": {
+    "layout": "filtered",
+    "groupBy": {
+      "path": "level",
+      "format": "spellLevel"
+    },
+    "filters": [
+      {
+        "id": "level",
+        "label": "Круг",
+        "type": "enum",
+        "path": "level",
+        "format": "spellLevel",
+        "style": "badges"
+      },
+      {
+        "id": "props",
+        "label": "Свойства",
+        "type": "toggles",
+        "toggles": [
+          {
+            "label": "Лечение",
+            "predicate": "spellHealing",
+            "icon": "tabler:heart-filled",
+            "color": "success"
+          },
+          {
+            "label": "Концентрация",
+            "path": "concentration",
+            "icon": "tabler:eye",
+            "color": "warning"
+          },
+          {
+            "label": "Ритуал",
+            "path": "ritual",
+            "icon": "tabler:book",
+            "color": "info"
+          }
+        ]
+      },
+      {
+        "id": "class",
+        "label": "Класс",
+        "type": "enum",
+        "path": "classKeys",
+        "format": "spellClass",
+        "style": "list"
+      }
+    ]
+  }
+}

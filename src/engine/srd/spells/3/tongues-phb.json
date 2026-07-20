@@ -1,0 +1,35 @@
+{
+  "id": "tongues-phb",
+  "name": "Языки",
+  "nameEn": "Tongues",
+  "level": 3,
+  "school": "divination",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "миниатюрный зиккурат"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "hour",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Это заклинание дарует существу, которого вы касаетесь, способность понимать буквальный смысл всех услышанных речей или увиденных жестов на любых языках. Более того, если цель общается словами или жестами, то любое существо, которое знает хотя бы 1 язык, сможет понять её, если может слышать речь или видеть жесты.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "cleric",
+    "sorcerer",
+    "warlock",
+    "wizard"
+  ],
+  "type": "spell"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "revivify-phb",
+  "name": "Низшее воскрешение",
+  "nameEn": "Revivify",
+  "level": 3,
+  "school": "necromancy",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "алмаз стоимостью 300+ зм, расходуемый заклинанием"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 0,
+  "durationUnit": "instantaneous",
+  "concentration": false,
+  "ritual": false,
+  "targetType": "creature",
+  "deliveryType": "touch",
+  "saveType": "none",
+  "description": "Вы касаетесь мёртвого существа, которое умерло не более 1 минуты назад и не скончалось от старости. Существо возвращается к жизни с 1 хитом. Это заклинание не восстанавливает недостающие части тела.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "cleric",
+    "druid",
+    "paladin"
+  ],
+  "type": "spell"
+}

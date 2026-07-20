@@ -1,0 +1,67 @@
+{
+  "id": "fear-phb",
+  "name": "Ужас",
+  "nameEn": "Fear",
+  "level": 3,
+  "school": "illusion",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "белое перо"
+  },
+  "range": 0,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "area",
+  "deliveryType": "self",
+  "saveType": "wisdom",
+  "description": "Каждое существо в 30-футовом конусе должно успешно совершить спасбросок Мудрости или уронить всё, что оно держит, и получить состояние испуганный на время длительности эффекта. Испуганное существо совершает действие рывок и перемещается от вас по самому безопасному маршруту в каждый свой ход, пока у неё есть куда перемещаться. Если существо заканчивает свой ход в месте, откуда оно не видит вас, то оно совершает спасбросок Мудрости. При успешном спасброске заклинание заканчивается для этого существа.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "bard",
+    "sorcerer",
+    "warlock",
+    "wizard",
+    "rogue"
+  ],
+  "type": "spell",
+  "activeEffects": [
+    {
+      "id": "fear-frightened",
+      "name": "Испуганный",
+      "description": "Помеха на все атаки; Помеха на ВСЕ проверки характеристик; Состояние: Испуганный; повторный спасбросок (Мудрость, Сл заклинателя) в конце хода снимает эффект; на 10 раундов.",
+      "icon": "tabler:mood-sad",
+      "disabled": false,
+      "origin": "spell",
+      "transfer": false,
+      "effectTarget": "target",
+      "conditionKey": "frightened",
+      "duration": {
+        "type": "rounds",
+        "value": 10
+      },
+      "changes": [],
+      "flags": [
+        "attack.disadvantage",
+        "abilityCheck.disadvantage"
+      ],
+      "recurringSave": {
+        "ability": "wisdom",
+        "dc": 0,
+        "timing": "endOfTurn"
+      }
+    }
+  ],
+  "areaOfEffect": {
+    "shape": "cone",
+    "size": 30,
+    "unit": "ft"
+  }
+}

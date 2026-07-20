@@ -1,0 +1,20 @@
+{
+  "id": "painter-s-supplies-phb",
+  "name": "Инструменты художника",
+  "nameEn": "Painter's Supplies",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "painters-supplies",
+  "rarity": "common",
+  "weight": 5,
+  "cost": {
+    "value": 10,
+    "currency": "gp"
+  },
+  "description": "Кисти, краски, палитры и холсты.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

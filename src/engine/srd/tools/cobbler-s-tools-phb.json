@@ -1,0 +1,20 @@
+{
+  "id": "cobbler-s-tools-phb",
+  "name": "Инструменты сапожника",
+  "nameEn": "Cobbler's Tools",
+  "type": "tool",
+  "toolCategory": "artisan",
+  "baseToolType": "cobblers-tools",
+  "rarity": "common",
+  "weight": 5,
+  "cost": {
+    "value": 5,
+    "currency": "gp"
+  },
+  "description": "Используются для создания и ремонта обуви.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "typeLabel": "Инструменты",
+  "quantity": 1
+}

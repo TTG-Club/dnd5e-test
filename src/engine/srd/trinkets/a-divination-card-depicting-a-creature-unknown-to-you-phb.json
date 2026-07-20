@@ -1,0 +1,23 @@
+{
+  "id": "a-divination-card-depicting-a-creature-unknown-to-you-phb",
+  "name": "Гадальная карта с изображением незнакомого вам существа",
+  "nameEn": "A divination card depicting a creature unknown to you",
+  "description": "Старая гадальная карта из колоды, на которой изображено существо, которого вы никогда не видели и не встречали в книгах.",
+  "type": "equipment",
+  "quantity": 1,
+  "weight": 0,
+  "cost": "",
+  "rarity": "none",
+  "equipped": false,
+  "equipmentCategory": "trinket",
+  "baseArmorAC": 0,
+  "maxDexBonus": null,
+  "stealthDisadvantage": false,
+  "strengthRequirement": 0,
+  "sourceKey": "phb",
+  "isSRD": true,
+  "isReadOnly": true,
+  "isMagical": false,
+  "magicAttunement": "none",
+  "typeLabel": "Снаряжение"
+}

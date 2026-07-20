@@ -1,0 +1,49 @@
+{
+  "id": "flaming-sphere-phb",
+  "name": "Пылающий шар",
+  "nameEn": "Flaming Sphere",
+  "level": 2,
+  "school": "conjuration",
+  "castingTimeValue": 1,
+  "castingTimeUnit": "action",
+  "components": {
+    "verbal": true,
+    "somatic": true,
+    "material": true,
+    "materialDescription": "шарик воска"
+  },
+  "range": 60,
+  "rangeUnit": "ft",
+  "durationValue": 1,
+  "durationUnit": "minute",
+  "concentration": true,
+  "ritual": false,
+  "targetType": "point",
+  "deliveryType": "ranged",
+  "saveType": "dexterity",
+  "description": "Вы создаёте огненный шар диаметром 5 футов в незанятом пространстве на земле в пределах дистанции. Он существует в течение всего времени действия заклинания. Любое существо, заканчивающее свой ход в пределах 5 футов от шара, совершает спасбросок Ловкости, получая 2к6 урона огнём при провале или половину этого урона при успехе. \nБонусным действием вы можете переместить шар на расстояние до 30 футов, катя его по земле. Если вы перемещаете шар в пространство, занятое существом, то это существо совершает спасбросок против шара, и шар останавливается в этот ход. \nКогда вы перемещаете шар, вы можете направлять его через барьеры высотой до 5 футов и перепрыгивать через ямы шириной до 10 футов. Легковоспламеняющиеся предметы, которые не носят и не держат, загораются при контакте с шаром. Шар излучает яркий свет в радиусе 20 футов и тусклый свет на 20 футов дальше.",
+  "higherLevelDescription": "Урон увеличивается на 1к6 за каждый уровень ячейки заклинаний выше второго.",
+  "sourceKey": "phb",
+  "isSRD": true,
+  "classKeys": [
+    "druid",
+    "wizard",
+    "fighter"
+  ],
+  "type": "spell",
+  "areaOfEffect": {
+    "shape": "circle",
+    "size": 5,
+    "unit": "ft"
+  },
+  "damageParts": [
+    {
+      "formula": "2к6@dmg.fire",
+      "target": "selected"
+    }
+  ],
+  "saveEffect": "half",
+  "scaling": {
+    "additionalDice": "1к6"
+  }
+}
