@@ -57,6 +57,7 @@ const stamped = {
   readme: `https://github.com/${repository}/blob/main/README.md`,
   bugs: `https://github.com/${repository}/issues`,
   changelog: `${releaseBase}`,
+  license: `https://github.com/${repository}/blob/main/LICENSE`,
 };
 
 writeFileSync(

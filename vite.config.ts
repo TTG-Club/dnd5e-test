@@ -97,6 +97,23 @@ export default defineConfig({
 
         return null;
       },
+      // ОБЯЗАТЕЛЬНО: статические импорты внешних модулей Rollup разворачивает в
+      // `globalThis.__VTTHost[…]` через `output.globals`, а ДИНАМИЧЕСКИЕ — нет.
+      // Оставшийся `import('@/stores/…')` не резолвится в браузере и падает
+      // асинхронно («Uncaught (in promise) TypeError») уже ПОСЛЕ того, как
+      // система успешно зарегистрировалась — то есть мир открывается, а ломается
+      // потом. Подменяем на синхронный резолв из реестра хоста, сохраняя форму
+      // промиса с неймспейсом модуля.
+      renderDynamicImport({ targetModuleId }) {
+        if (targetModuleId && EXTERNAL.has(targetModuleId)) {
+          return {
+            left: 'Promise.resolve(globalThis.__VTTHost[',
+            right: '])',
+          };
+        }
+
+        return null;
+      },
     },
     vue(),
     ui({
