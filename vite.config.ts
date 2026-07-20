@@ -89,10 +89,27 @@ export default defineConfig({
           return { id: source, external: true };
         }
 
-        // Ассеты ПРИЛОЖЕНИЯ по абсолютному URL (фоны модалок и т.п.): их отдаёт
-        // веб-корень VTTG, а не папка системы — оставляем ссылку как есть.
+        // Ассеты ПРИЛОЖЕНИЯ по абсолютному URL (фоны модалок и т.п.). Их отдаёт
+        // веб-корень VTTG, а не папка системы, поэтому ссылку надо сохранить
+        // как строку.
+        //
+        // ⚠️ Пометить их EXTERNAL НЕЛЬЗЯ: тогда они попадают под общий маппинг
+        // `output.globals` и превращаются в `globalThis.__VTTHost["/assets/…"]`.
+        // Такого «модуля» приложение не отдаёт → `undefined`, а `import bg from`
+        // читает у него `.default` → «Cannot read properties of undefined» уже
+        // при отрисовке листа. Поэтому подставляем КРОШЕЧНЫЙ виртуальный модуль,
+        // экспортирующий сам URL: форма импорта сохраняется, адрес не меняется.
         if (source.startsWith('/assets/')) {
-          return { id: source, external: true };
+          return `\0vttg-app-asset:${source}`;
+        }
+
+        return null;
+      },
+      load(id: string) {
+        if (id.startsWith('\0vttg-app-asset:')) {
+          const url = id.slice('\0vttg-app-asset:'.length);
+
+          return `export default ${JSON.stringify(url)};`;
         }
 
         return null;
