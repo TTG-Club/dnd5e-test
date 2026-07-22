@@ -190,7 +190,7 @@ const COMPENDIUM_PREDICATES: Record<string, (entry: unknown) => boolean> = {
  * СЃ РРЅРёС†РёР°С‚РёРІРѕР№, Р‘РѕРµРІРєРѕР№ Рё С‚.Рґ.
  */
 export class Dnd5eVttSystem implements VttSystem {
-  readonly id = 'dnd5e-test';
+  readonly id = 'dnd5e-2024';
 
   readonly name = 'Dungeons & Dragons 5th Edition';
 
@@ -762,7 +762,7 @@ export class Dnd5eVttSystem implements VttSystem {
       label: condition.nameRu,
       icon: condition.icon,
       description: condition.description,
-      systemId: 'dnd5e-test',
+      systemId: 'dnd5e-2024',
       customImage: condition.customImage,
     }));
   }

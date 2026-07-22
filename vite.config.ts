@@ -189,7 +189,7 @@ export default defineConfig({
     lib: {
       entry: path.resolve(__dirname, './src/client/systemEntry.ts'),
       formats: ['iife'],
-      name: '__vttgSystemDnd5eTest',
+      name: '__vttgSystemDnd5e2024',
       fileName: () => 'client.js',
       cssFileName: 'client',
     },
