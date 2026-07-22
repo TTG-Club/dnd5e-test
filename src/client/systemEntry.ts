@@ -20,6 +20,6 @@ import type { ClientSystemAPI } from '@/core/systemBootstrap';
 
 import { registerClientSystem } from './clientSystem';
 
-globalThis.VTTSystems.register('dnd5e-test', (api: ClientSystemAPI) => {
+globalThis.VTTSystems.register('dnd5e-2024', (api: ClientSystemAPI) => {
   registerClientSystem(api);
 });
