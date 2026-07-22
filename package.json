@@ -1,7 +1,7 @@
 {
   "name": "vttg-system-dnd5e-test",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.4",
   "private": true,
   "description": "Игровая система D&D 5e для VTTG — собирается ВНЕ приложения (тестовый форк для отладки внешней доставки систем)",
   "scripts": {

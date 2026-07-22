@@ -60,11 +60,19 @@ export interface FeatApplyResult {
   token?: Actor['token'];
 }
 
-/** Глубокая копия владений (чтобы не мутировать исходный объект актора). */
+/**
+ * Глубокая копия владений (чтобы не мутировать исходный объект актора).
+ *
+ * Клонируем через JSON, а НЕ `structuredClone`: актор приходит из `ref` листа
+ * (`localActor`), поэтому `actor.system.proficiencies` — реактивный Proxy Vue, на
+ * котором `structuredClone` бросает `DataCloneError` («could not be cloned»).
+ * Владения — чистый JSON (массивы строк + запись строка→строка), так что клон
+ * без потерь. Тот же приём используется в `applyFeatDarkvision` ниже.
+ */
 function cloneProficiencies(
   proficiencies: ActorProficiencies,
 ): ActorProficiencies {
-  return structuredClone(proficiencies);
+  return JSON.parse(JSON.stringify(proficiencies));
 }
 
 /** Применяет владения черты к копии владений актора (in-place). */
