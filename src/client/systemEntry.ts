@@ -18,6 +18,8 @@
 
 import type { ClientSystemAPI } from '@/core/systemBootstrap';
 
+import './system.css';
+
 import { registerClientSystem } from './clientSystem';
 
 globalThis.VTTSystems.register('dnd5e-2024', (api: ClientSystemAPI) => {

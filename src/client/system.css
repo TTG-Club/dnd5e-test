@@ -1,0 +1,72 @@
+/*
+ * CSS-вход самодостаточного бандла системы.
+ *
+ * Система обязана нести ВСЕ свои стили сама: шаблоны используют Tailwind-утилиты
+ * и семантические цвета, которые раньше (когда dnd5e была встроенной) попадали в
+ * CSS приложения — его Tailwind сканировал исходники системы. Внешней системе
+ * CSS хоста утилиты НЕ гарантирует: хост генерирует только то, что использует
+ * его собственный код. Без этого файла client.css содержит лишь scoped-стили
+ * компонентов, и листы/компендиум рендерятся «голыми».
+ *
+ * Импорты и блок @theme зеркалят packages/client/src/assets/css/tailwind.css
+ * приложения (версия @nuxt/ui совпадает с хостом). Дублирование правил с CSS
+ * хоста безвредно: значения идентичны, слои совпадают.
+ */
+
+@import 'tailwindcss';
+@import '@nuxt/ui';
+
+@theme {
+  /* ── Семантические цвета приложения (зеркало хоста) ────────── */
+
+  /* Опасность / ошибка / отрицательное значение */
+  --color-danger: var(--color-red-400);
+  --color-danger-subtle: var(--color-red-950);
+  --color-danger-border: var(--color-red-500);
+  --color-danger-muted: var(--color-red-300);
+
+  /* Успех / положительное значение / дружественный */
+  --color-success: var(--color-green-400);
+  --color-success-subtle: var(--color-green-950);
+  --color-success-border: var(--color-green-500);
+  --color-success-muted: var(--color-green-300);
+
+  /* Предупреждение / нейтральный / очки */
+  --color-warning: var(--color-yellow-400);
+  --color-warning-subtle: var(--color-yellow-950);
+  --color-warning-border: var(--color-yellow-500);
+  --color-warning-muted: var(--color-yellow-300);
+
+  /* Золото / стоимость / монеты (D&D) */
+  --color-gold: var(--color-amber-400);
+  --color-gold-subtle: var(--color-amber-950);
+  --color-gold-border: var(--color-amber-500);
+  --color-gold-muted: var(--color-amber-300);
+
+  /* Информация / статы / свойства */
+  --color-info: var(--color-blue-400);
+  --color-info-subtle: var(--color-blue-950);
+  --color-info-border: var(--color-blue-800);
+  --color-info-muted: var(--color-blue-300);
+
+  /* Магия / заклинания / пакт */
+  --color-magic: var(--color-purple-400);
+  --color-magic-subtle: var(--color-purple-950);
+  --color-magic-border: var(--color-purple-700);
+  --color-magic-muted: var(--color-purple-300);
+
+  /* Магические предметы / зачарование */
+  --color-arcane: var(--color-violet-400);
+  --color-arcane-subtle: var(--color-violet-950);
+  --color-arcane-border: var(--color-violet-500);
+
+  /* Источник / активные эффекты */
+  --color-source: var(--color-cyan-400);
+  --color-source-subtle: var(--color-cyan-950);
+
+  /* Исцеление */
+  --color-healing: var(--color-emerald-400);
+
+  /* Временные ОЗ (temp HP) / щиты */
+  --color-shield: var(--color-sky-400);
+}
